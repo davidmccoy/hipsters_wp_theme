@@ -1,0 +1,20 @@
+@import 'fonts';
+@import 'header';
+@import 'navbar';
+@import 'home';
+
+body {
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  font-family: 'itc-charter';
+  font-size: 16px;
+
+  h1, h2, h3, h4, h5 {
+    font-family: 'kievit-medium';
+  }
+
+  #wrap {
+    padding: 15px 15px 0px
+  }
+}

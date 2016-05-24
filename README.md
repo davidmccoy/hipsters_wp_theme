@@ -1,0 +1,1 @@
+Wordpress theme for [Hipsters of the Coast](hipstersofthecoast.com).

@@ -1,0 +1,33 @@
+#homepage {
+  .homepagecontent {
+    .homeinfo {
+      a {
+        text-decoration: none;
+      }
+      ul {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        li {
+          list-style: none;
+        }
+      }
+      h3 {
+        text-transform: uppercase;
+        font-size: 20px;
+        margin: 0px;
+      }
+      h4 {
+        text-transform: uppercase;
+        font-size: 14px;
+        margin: 15px 0px 5px;
+        a {
+          color: #666666;
+        }
+      }
+      p {
+        margin: 10px 0px 15px;
+      }
+    }
+  }
+}
