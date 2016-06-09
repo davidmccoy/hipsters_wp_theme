@@ -302,37 +302,41 @@
   background: transparent;
 }
 
-/* line 4, ../scss/_home.scss */
+/* line 2, ../scss/_home.scss */
+#homepage .homepagecontent {
+  margin-bottom: 30px;
+}
+/* line 5, ../scss/_home.scss */
 #homepage .homepagecontent .homeinfo a {
   text-decoration: none;
 }
-/* line 7, ../scss/_home.scss */
+/* line 8, ../scss/_home.scss */
 #homepage .homepagecontent .homeinfo ul {
   margin: 0px;
   padding: 0px;
   list-style: none;
 }
-/* line 11, ../scss/_home.scss */
+/* line 12, ../scss/_home.scss */
 #homepage .homepagecontent .homeinfo ul li {
   list-style: none;
 }
-/* line 15, ../scss/_home.scss */
+/* line 16, ../scss/_home.scss */
 #homepage .homepagecontent .homeinfo h3 {
   text-transform: uppercase;
   font-size: 20px;
   margin: 0px;
 }
-/* line 20, ../scss/_home.scss */
+/* line 21, ../scss/_home.scss */
 #homepage .homepagecontent .homeinfo h4 {
   text-transform: uppercase;
   font-size: 14px;
   margin: 15px 0px 5px;
 }
-/* line 24, ../scss/_home.scss */
+/* line 25, ../scss/_home.scss */
 #homepage .homepagecontent .homeinfo h4 a {
   color: #666666;
 }
-/* line 28, ../scss/_home.scss */
+/* line 29, ../scss/_home.scss */
 #homepage .homepagecontent .homeinfo p {
   margin: 10px 0px 15px;
 }

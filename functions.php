@@ -329,4 +329,24 @@ function custom_excerpt_length( $length ) {
 } 
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
+/**
+ * Add infinite scroll.
+ */
+
+function mytheme_infinite_scroll_init() {
+  add_theme_support( 'infinite-scroll', array(
+    'type' => 'scroll',
+    'container' => 'homepage',
+    'render' => 'mytheme_infinite_scroll_render',
+    'posts_per_page' => 12,
+    'footer' => false,
+  ) );
+} 
+add_action( 'init', 'mytheme_infinite_scroll_init' );
+
+function mytheme_infinite_scroll_render() {
+  while ( have_posts() ) : the_post();
+    get_template_part( 'homepage_content' );
+  endwhile;
+}
 ?>
