@@ -1,0 +1,12 @@
+#footer {
+  height: auto;
+  .footerleft {
+    display: inline-block;
+    float: left;
+  }
+  .footerright {
+    display: inline-block;
+    float: right;
+    text-align: right;
+  }
+}

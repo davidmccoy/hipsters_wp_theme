@@ -1,49 +1,26 @@
 <div style="clear:both;"></div>
 
-<div id="footertopbg">
-
-    <div id="footerwidgets">
-        
-            <div class="footerwidgetleft">
-				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer Left') ) : ?>
-                <?php endif; ?>
-            </div>
-            
-            <div class="footerwidgetmidleft">
-				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer Mid Left') ) : ?>
-                <?php endif; ?>
-            </div>
-            
-            <div class="footerwidgetmidright">
-				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer Mid Right') ) : ?>
-                <?php endif; ?>
-            </div>
-            
-            <div class="footerwidgetright">
-				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Footer Right') ) : ?>
-                <?php endif; ?>
-            </div>
-            
-    </div>
-
-</div>
-
-<div id="footerbg">
+<div id="footer">
 
 	<div id="footer">
     
     	<div class="footerleft">
             <div class="footertop">
-                <p><?php _e("Copyright", 'organicthemes'); ?> <?php echo date(__("Y", 'organicthemes')); ?> <?php bloginfo('name'); ?> &middot; <a href="<?php bloginfo('rss_url'); ?>" target="_blank"><?php _e("RSS Feed", 'organicthemes'); ?></a> &middot; <?php wp_loginout(); ?></p>
+                <p><?php _e("Copyright", 'hipsters'); ?> <?php echo date(__("Y", 'hipsters')); ?> <?php bloginfo('name'); ?></p>
             </div>
             
             <div class="footerbottom">
-                <p><a href="http://www.organicthemes.com/themes/" target="_blank"><?php _e("The Structure Theme v3", 'organicthemes'); ?></a> <?php _e("by", 'organicthemes'); ?> <a href="http://www.organicthemes.com" target="_blank"><?php _e("Organic Themes", 'organicthemes'); ?></a> &middot; <a href="http://kahunahost.com" target="_blank" title="WordPress Hosting"><?php _e("WordPress Hosting", 'organicthemes'); ?></a></p>
+                <p><a href="<?php bloginfo('rss_url'); ?>" target="_blank"><?php _e("RSS Feed", 'hipsters'); ?></a> &middot; <?php wp_loginout(); ?></p>
             </div>
         </div>
         
         <div class="footerright">
-    		<a href="http://www.organicthemes.com" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/footer_logo.png" alt="<?php _e("Organic Themes",'organicthemes'); ?>" /></a>
+            <div class="footertop">
+                <p>Theme by David McCoy</p>
+            </div>
+            <div class="footerbottom">
+                <p><a href="http://www.davidmccoy.com" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/footer_logo.png" alt="<?php _e("Theme by David McCoy",'davidmccoy'); ?>" /></a></p>
+            </div>
     	</div>
 		
 	</div>

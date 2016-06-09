@@ -46,6 +46,18 @@
   height: auto;
 }
 
+@media screen and (min-width: 480px) {
+  /* line 18, ../scss/_header.scss */
+  #header img#full-logo {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  /* line 23, ../scss/_header.scss */
+  #header img#mobile-logo {
+    display: none;
+  }
+}
 /* line 1, ../scss/_navbar.scss */
 #navbar {
   width: 100%;
@@ -340,8 +352,57 @@
 #homepage .homepagecontent .homeinfo p {
   margin: 10px 0px 15px;
 }
+/* line 34, ../scss/_home.scss */
+#homepage .homepagecontent .post_container .featured_image {
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 
-/* line 6, ../scss/base.scss */
+@media screen and (min-width: 768px) {
+  /* line 44, ../scss/_home.scss */
+  #homepage .homepagecontent {
+    margin-bottom: 30px;
+    width: 33.3%;
+    padding-bottom: 400px;
+    display: inline-block;
+    float: left;
+    vertical-align: top;
+    position: relative;
+  }
+  /* line 52, ../scss/_home.scss */
+  #homepage .homepagecontent#sticky {
+    width: 66.6%;
+  }
+  /* line 55, ../scss/_home.scss */
+  #homepage .homepagecontent#sticky .post_container .featured_image {
+    background-position: top center;
+  }
+  /* line 60, ../scss/_home.scss */
+  #homepage .homepagecontent .post_container {
+    position: absolute;
+    left: 10px;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+  }
+}
+/* line 1, ../scss/_footer.scss */
+#footer {
+  height: auto;
+}
+/* line 3, ../scss/_footer.scss */
+#footer .footerleft {
+  display: inline-block;
+  float: left;
+}
+/* line 7, ../scss/_footer.scss */
+#footer .footerright {
+  display: inline-block;
+  float: right;
+  text-align: right;
+}
+
+/* line 7, ../scss/base.scss */
 body {
   width: 100%;
   height: auto;
@@ -349,11 +410,13 @@ body {
   font-family: 'itc-charter';
   font-size: 16px;
 }
-/* line 13, ../scss/base.scss */
+/* line 14, ../scss/base.scss */
 body h1, body h2, body h3, body h4, body h5 {
   font-family: 'kievit-medium';
 }
-/* line 17, ../scss/base.scss */
+/* line 18, ../scss/base.scss */
 body #wrap {
+  max-width: 1024px;
   padding: 15px 15px 0px;
+  margin: 0 auto;
 }

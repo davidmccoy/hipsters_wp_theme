@@ -1,6 +1,6 @@
 #header {
   margin-bottom: 15px;
-  img{
+  img {
     &#full-logo {
       display: none;
     }
@@ -8,6 +8,21 @@
       display: block;
       width: 100%;
       height: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  #header {
+    img {
+      &#full-logo {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      &#mobile-logo {
+        display: none;
+      }
     }
   }
 }
