@@ -114,108 +114,112 @@
   text-transform: uppercase;
   font-family: 'kievit-regular';
 }
-/* line 9, ../scss/_navbar.scss */
+/* line 7, ../scss/_navbar.scss */
+#navbar i {
+  display: none;
+}
+/* line 11, ../scss/_navbar.scss */
 #navbar .menu {
   float: left;
   margin-bottom: 0px;
   /*** shadows for all but IE6 ***/
 }
-/* line 13, ../scss/_navbar.scss */
+/* line 15, ../scss/_navbar.scss */
 #navbar .menu ul {
   padding: 0px;
 }
-/* line 15, ../scss/_navbar.scss */
+/* line 17, ../scss/_navbar.scss */
 #navbar .menu ul ul {
   position: absolute;
   top: -9999px;
   width: 180px;
   /* left offset of submenus need to match (see below) */
 }
-/* line 19, ../scss/_navbar.scss */
+/* line 21, ../scss/_navbar.scss */
 #navbar .menu ul ul .sf-sub-indicator {
   background-position: -10px 0;
 }
-/* line 25, ../scss/_navbar.scss */
+/* line 27, ../scss/_navbar.scss */
 #navbar .menu ul ul a:focus > .sf-sub-indicator, #navbar .menu ul ul a:hover > .sf-sub-indicator, #navbar .menu ul ul a:active > .sf-sub-indicator {
   background-position: -10px 0;
   /* arrow hovers for modern browsers*/
 }
-/* line 29, ../scss/_navbar.scss */
+/* line 31, ../scss/_navbar.scss */
 #navbar .menu ul ul a > .sf-sub-indicator {
   top: 10px;
   background-position: 0 0;
 }
-/* line 37, ../scss/_navbar.scss */
+/* line 39, ../scss/_navbar.scss */
 #navbar .menu ul ul li:hover a > .sf-sub-indicator, #navbar .menu ul ul li.sfHover a > .sf-sub-indicator {
   background-position: -10px 0;
   /* arrow hovers for modern browsers*/
 }
-/* line 44, ../scss/_navbar.scss */
+/* line 46, ../scss/_navbar.scss */
 #navbar .menu ul li {
   list-style: none;
 }
-/* line 47, ../scss/_navbar.scss */
+/* line 49, ../scss/_navbar.scss */
 #navbar .menu ul li ul li {
   width: 100%;
   border: none;
   margin: 0px 0px 0px 0px;
 }
-/* line 55, ../scss/_navbar.scss */
+/* line 57, ../scss/_navbar.scss */
 #navbar .menu ul.menu {
   margin: 0px;
   padding: 0px;
   list-style: none;
 }
-/* line 60, ../scss/_navbar.scss */
+/* line 62, ../scss/_navbar.scss */
 #navbar .menu ul.menu ul {
   position: absolute;
   top: -9999px;
   width: 180px;
   /* left offset of submenus need to match (see below) */
 }
-/* line 65, ../scss/_navbar.scss */
+/* line 67, ../scss/_navbar.scss */
 #navbar .menu ul.menu ul li {
   background: none;
   width: 100%;
   border: none;
   margin: 0px 0px 0px 0px;
 }
-/* line 71, ../scss/_navbar.scss */
+/* line 73, ../scss/_navbar.scss */
 #navbar .menu ul.menu ul .sf-sub-indicator {
   background-position: -10px 0;
 }
-/* line 74, ../scss/_navbar.scss */
+/* line 76, ../scss/_navbar.scss */
 #navbar .menu ul.menu ul a > .sf-sub-indicator {
   top: 10px;
   background-position: 0 0;
 }
-/* line 82, ../scss/_navbar.scss */
+/* line 84, ../scss/_navbar.scss */
 #navbar .menu ul.menu li:hover li ul, #navbar .menu ul.menu li.sfHover li ul {
   top: -9999px;
 }
-/* line 89, ../scss/_navbar.scss */
+/* line 91, ../scss/_navbar.scss */
 #navbar .menu ul.menu li li:hover ul, #navbar .menu ul.menu li li.sfHover ul {
   left: 180px;
   /* match ul width */
   top: 0;
 }
-/* line 95, ../scss/_navbar.scss */
+/* line 97, ../scss/_navbar.scss */
 #navbar .menu ul.menu li li:hover li:hover ul, #navbar .menu ul.menu li li:hover li.sfHover ul, #navbar .menu ul.menu li li.sfHover li:hover ul, #navbar .menu ul.menu li li.sfHover li.sfHover ul {
   left: 180px;
   /* match ul width */
   top: 0;
 }
-/* line 100, ../scss/_navbar.scss */
+/* line 102, ../scss/_navbar.scss */
 #navbar .menu ul.menu li li:hover li ul, #navbar .menu ul.menu li li.sfHover li ul {
   top: -9999px;
 }
-/* line 108, ../scss/_navbar.scss */
+/* line 110, ../scss/_navbar.scss */
 #navbar .menu li {
   float: left;
   position: relative;
   background: none;
 }
-/* line 112, ../scss/_navbar.scss */
+/* line 114, ../scss/_navbar.scss */
 #navbar .menu li:hover, #navbar .menu li.sfHover {
   visibility: inherit;
   /* fixes IE7 'sticky bug' */
@@ -223,30 +227,30 @@
   border-bottom: none;
   outline: 0;
 }
-/* line 117, ../scss/_navbar.scss */
+/* line 119, ../scss/_navbar.scss */
 #navbar .menu li:hover ul, #navbar .menu li.sfHover ul {
   left: 0;
   top: 45px;
   /* match top ul list item height */
   z-index: 99;
 }
-/* line 122, ../scss/_navbar.scss */
+/* line 124, ../scss/_navbar.scss */
 #navbar .menu li:hover a > .sf-sub-indicator, #navbar .menu li.sfHover a > .sf-sub-indicator {
   background-position: -10px -100px;
   /* arrow hovers for modern browsers*/
 }
-/* line 127, ../scss/_navbar.scss */
+/* line 129, ../scss/_navbar.scss */
 #navbar .menu li .current_page_item a, #navbar .menu li .current_page_item a:hover, #navbar .menu li .current-menu-item a, #navbar .menu li .current-menu-item a:hover, #navbar .menu li .current-cat a, #navbar .menu li .current-cat a:hover {
   color: #FFFFFF !important;
   background: #151515;
   border-bottom: none;
 }
-/* line 133, ../scss/_navbar.scss */
+/* line 135, ../scss/_navbar.scss */
 #navbar .menu li li {
   background: #FFFFFF;
   border: none;
 }
-/* line 136, ../scss/_navbar.scss */
+/* line 138, ../scss/_navbar.scss */
 #navbar .menu li li a, #navbar .menu li li a:visited {
   color: #666666;
   padding: 10px 10px 10px 10px;
@@ -255,19 +259,19 @@
   text-shadow: none;
   border: none;
 }
-/* line 143, ../scss/_navbar.scss */
+/* line 145, ../scss/_navbar.scss */
 #navbar .menu li li a:focus, #navbar .menu li li a:hover, #navbar .menu li li a:active, #navbar .menu li li a:visited:focus, #navbar .menu li li a:visited:hover, #navbar .menu li li a:visited:active {
   background: #151515;
   color: #FFFFFF;
   border-bottom: none;
   outline: 0;
 }
-/* line 150, ../scss/_navbar.scss */
+/* line 152, ../scss/_navbar.scss */
 #navbar .menu li li li {
   background: #FFFFFF;
   border: none;
 }
-/* line 154, ../scss/_navbar.scss */
+/* line 156, ../scss/_navbar.scss */
 #navbar .menu li li:hover, #navbar .menu li li.sfHover {
   background: #151515;
   color: #FFFFFF;
@@ -275,7 +279,7 @@
   outline: 0;
   padding: 0px;
 }
-/* line 164, ../scss/_navbar.scss */
+/* line 166, ../scss/_navbar.scss */
 #navbar .menu a {
   display: block;
   position: relative;
@@ -286,35 +290,35 @@
   line-height: 16px;
   color: #666666;
 }
-/* line 174, ../scss/_navbar.scss */
+/* line 176, ../scss/_navbar.scss */
 #navbar .menu a:visited {
   color: #666666;
 }
-/* line 177, ../scss/_navbar.scss */
+/* line 179, ../scss/_navbar.scss */
 #navbar .menu a:focus, #navbar .menu a:hover, #navbar .menu a:active {
   background: none;
   color: #151515;
   outline: 0;
 }
-/* line 182, ../scss/_navbar.scss */
+/* line 184, ../scss/_navbar.scss */
 #navbar .menu a:focus > .sf-sub-indicator, #navbar .menu a:hover > .sf-sub-indicator, #navbar .menu a:active > .sf-sub-indicator {
   background-position: -10px -100px;
   /* arrow hovers for modern browsers*/
 }
-/* line 187, ../scss/_navbar.scss */
+/* line 189, ../scss/_navbar.scss */
 #navbar .menu a.sf-with-ul {
   padding-right: 25px;
   min-width: 1px;
   /* trigger IE7 hasLayout so spans position accurately */
 }
-/* line 192, ../scss/_navbar.scss */
+/* line 194, ../scss/_navbar.scss */
 #navbar .menu a > .sf-sub-indicator {
   /* give all except IE6 the correct values */
   top: 19px;
   background-position: 0 -100px;
   /* use translucent arrow for modern browsers*/
 }
-/* line 198, ../scss/_navbar.scss */
+/* line 200, ../scss/_navbar.scss */
 #navbar .menu .sf-sub-indicator {
   position: absolute;
   display: block;
@@ -328,23 +332,23 @@
   background: url(../images/arrows-ffffff.png) no-repeat -10px -100px;
   /* 8-bit indexed alpha png. IE6 gets solid image only */
 }
-/* line 211, ../scss/_navbar.scss */
+/* line 213, ../scss/_navbar.scss */
 #navbar .menu .current_page_item a, #navbar .menu .current_page_ancestor a, #navbar .menu .current-menu-item a, #navbar .menu .current-cat a, #navbar .menu .current-menu-ancestor a {
   color: #151515 !important;
 }
-/* line 217, ../scss/_navbar.scss */
+/* line 219, ../scss/_navbar.scss */
 #navbar .menu .current_page_item ul li a, #navbar .menu .current_page_ancestor ul li a, #navbar .menu .current-menu-item ul li a, #navbar .menu .current-cat ul li a, #navbar .menu .current-menu-ancestor ul li a {
   background-color: #FFFFFF;
   color: #151515 !important;
   border-bottom: none;
 }
-/* line 221, ../scss/_navbar.scss */
+/* line 223, ../scss/_navbar.scss */
 #navbar .menu .current_page_item ul li a:hover, #navbar .menu .current_page_ancestor ul li a:hover, #navbar .menu .current-menu-item ul li a:hover, #navbar .menu .current-cat ul li a:hover, #navbar .menu .current-menu-ancestor ul li a:hover {
   background: #151515;
   color: #FFFFFF !important;
   border-bottom: none;
 }
-/* line 234, ../scss/_navbar.scss */
+/* line 236, ../scss/_navbar.scss */
 #navbar .menu .sf-shadow ul ul {
   background: none;
   padding: 0 8px 9px 0;
@@ -353,12 +357,12 @@
   -webkit-border-top-right-radius: 17px;
   -webkit-border-bottom-left-radius: 17px;
 }
-/* line 245, ../scss/_navbar.scss */
+/* line 247, ../scss/_navbar.scss */
 #navbar .menu .sf-shadow ul.sf-shadow-off {
   background: transparent;
 }
 
-/* line 252, ../scss/_navbar.scss */
+/* line 254, ../scss/_navbar.scss */
 #overlay {
   background: 0 0 rgba(0, 0, 0, 0.8);
   display: none;
@@ -375,7 +379,7 @@
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 267, ../scss/_navbar.scss */
+  /* line 269, ../scss/_navbar.scss */
   .responsive-nav-icon,
   .responsive-nav-close {
     display: block;
@@ -383,7 +387,7 @@
     z-index: 1;
   }
 
-  /* line 274, ../scss/_navbar.scss */
+  /* line 276, ../scss/_navbar.scss */
   #navbar {
     height: 100%;
     padding: 20px;
@@ -396,29 +400,30 @@
     transition: all 0.2s linear 0s;
     width: 0;
   }
-  /* line 287, ../scss/_navbar.scss */
+  /* line 289, ../scss/_navbar.scss */
   #navbar.slide-in {
     left: 0;
     width: 250px;
     z-index: 100;
     background: black;
   }
-  /* line 293, ../scss/_navbar.scss */
+  /* line 295, ../scss/_navbar.scss */
   #navbar.slide-in i {
+    display: block;
     color: white;
     float: right;
     padding-top: 14px;
   }
-  /* line 300, ../scss/_navbar.scss */
+  /* line 303, ../scss/_navbar.scss */
   #navbar .menu ul.menu li {
     display: block;
     float: none;
   }
-  /* line 304, ../scss/_navbar.scss */
+  /* line 307, ../scss/_navbar.scss */
   #navbar .menu ul.menu li li:hover ul, #navbar .menu ul.menu li li.sfHover ul {
     left: 0;
   }
-  /* line 308, ../scss/_navbar.scss */
+  /* line 311, ../scss/_navbar.scss */
   #navbar .menu ul.menu li .sub-menu {
     top: 0;
     position: relative;

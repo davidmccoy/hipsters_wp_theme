@@ -4,7 +4,9 @@
   background: none;
   text-transform: uppercase;
   font-family: 'kievit-regular';
-  // display: none;
+  i {
+    display: none;
+  }
 
   .menu {
     float: left;
@@ -291,6 +293,7 @@
       background: black;
 
       i {
+        display: block;
         color: white;
         float: right;
         padding-top: 14px;
