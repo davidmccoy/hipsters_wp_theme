@@ -29,13 +29,11 @@
         	?>
         	<?php if($post_age < 604800) { ?>
 	      		<p>
-	      			<?php _e("By", 'organicthemes'); ?> <?php the_author_posts_link(); ?> <?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago ';  ?> 
-	      			&nbsp;<?php edit_post_link(__("(Edit)", 'organicthemes'), '', ''); ?>
+	      			<?php _e("By", 'organicthemes'); ?> <?php the_author_posts_link(); ?> <?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago ';  ?> <?php edit_post_link(__("(Edit)", 'organicthemes'), '', ''); ?>
 	      		</p>
         	<?php } else { ?>
         		<p>
-        			<?php _e("By", 'organicthemes'); ?> <?php the_author_posts_link(); ?> <?php _e("on", 'organicthemes'); ?> <?php the_time(__("F j, Y", 'organicthemes'));  ?> 
-        			&nbsp;<?php edit_post_link(__("(Edit)", 'organicthemes'), '', ''); ?>
+        			<?php _e("By", 'organicthemes'); ?> <?php the_author_posts_link(); ?> <?php _e("on", 'organicthemes'); ?> <?php the_time(__("F j, Y", 'organicthemes'));  ?> <?php edit_post_link(__("(Edit)", 'organicthemes'), '', ''); ?>
         		</p>
         	<?php } ?>
         </div>
@@ -73,17 +71,11 @@
 
 		</div>
 
-        <div class="postcomments">
-			<?php comments_template('',true); ?>
-        </div>
-
 		<?php endwhile; else: ?>
 		<p><?php _e("Sorry, no posts matched your criteria.", 'organicthemes'); ?></p>
 		<?php endif; ?>
 
 	</div>
-
-<?php include(TEMPLATEPATH."/sidebar.php");?>
 
 </div>
 
