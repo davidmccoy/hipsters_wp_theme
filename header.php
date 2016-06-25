@@ -96,8 +96,9 @@
 
 </div>
 <div id="wrap">
-
-    
+		<div id="spacer">
+			<img src="/assets/hipsters_logo.jpeg" id="full-logo"/>
+    </div>
     <div id="navbar">
     	<i class="fa fa-times fa-lg" aria-hidden="true"></i>
 			<?php if ( function_exists('wp_nav_menu') ) { 
