@@ -28,15 +28,17 @@
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/superfish/superfish.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/superfish/hoverIntent.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.anythingslider.js"></script>
+<!-- 
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.anythingslider.video.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/swfobject.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.masonry.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.masonry.min.js"></script> 
 
 <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
 <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
 <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
 
 <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+-->
 
 <script type="text/javascript"> 
 	var $j = jQuery.noConflict();

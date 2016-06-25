@@ -20,7 +20,8 @@
 				<h1><?php the_title(); ?></h1>
 
 	            <div class="postauthor">
-	        		<p><?php _e("Posted by", 'organicthemes'); ?> <?php the_author_posts_link(); ?> <?php _e("on", 'organicthemes'); ?> <?php the_time(__("F j, Y", 'organicthemes')); ?> <!-- &middot; <a href="<?php the_permalink(); ?>#comments">
+	        		<p><?php _e("Posted by", 'organicthemes'); ?> <?php the_author_posts_link(); ?> <?php _e("on", 'organicthemes'); ?> <?php relative_post_the_date(); ?>
+ <!-- &middot; <a href="<?php the_permalink(); ?>#comments">
  -->
 	        			<!-- <fb:comments-count href="<?php echo get_permalink() ?>"></fb:comments-count> Comments</a> -->&nbsp;<?php edit_post_link(__("(Edit)", 'organicthemes'), '', ''); ?></p>
 	            </div>

@@ -45,11 +45,15 @@
 
       li {
         list-style: none;
+        &:hover {
+          // border-bottom: 1px solid black;
+        }
         ul {
           li {
             width: 100%;
             border: none;
             margin: 0px 0px 0px 0px;
+            background: white;
           }
         }
       }
@@ -65,7 +69,7 @@
         width: 180px; /* left offset of submenus need to match (see below) */
 
         li {
-          background: none;
+          background: white;
           width: 100%;
           border: none;
           margin: 0px 0px 0px 0px;
@@ -127,8 +131,8 @@
       }
       .current_page_item, .current-menu-item, .current-cat {
         a, a:hover {
-          color: #FFFFFF !important;
-          background: #151515;
+          color: black !important;
+          // background: #151515;
           border-bottom: none;
         }
       }
@@ -143,8 +147,8 @@
           text-shadow: none;
           border: none;
           &:focus, &:hover, &:active {
-            background: #151515;
-            color: #FFFFFF;
+            // background: #151515;
+            color: black;
             border-bottom: none;
             outline: 0;
           }
@@ -154,8 +158,8 @@
           border: none;
         }
         &:hover, &.sfHover {
-          background: #151515;
-          color: #FFFFFF;
+          // background: #151515;
+          color: black;
           border: none;
           outline: 0;
           padding: 0px;
@@ -221,8 +225,8 @@
             color: #151515 !important;
             border-bottom: none;
             &:hover {
-              background: #151515;
-              color: #FFFFFF !important;
+              // background: #151515;
+              color: black !important;
               border-bottom: none;
             }
           }
@@ -274,23 +278,23 @@
   }
 
   #navbar {
-      height: 100%;
-      padding: 20px;
-      position: fixed;
-      top: 0; 
-      left: -400px;
-      -moz-transition: all 0.2s linear 0s;
-      -webkit-transition: all 0.2s linear 0s;
-      -ms-transition: all 0.2s linear 0s;
-      transition: all 0.2s linear 0s;
-      width: 0;
-      // overflow: hidden;
+    height: 100%;
+    padding: 20px;
+    position: fixed;
+    top: 0; 
+    left: -400px;
+    -moz-transition: all 0.2s linear 0s;
+    -webkit-transition: all 0.2s linear 0s;
+    -ms-transition: all 0.2s linear 0s;
+    transition: all 0.2s linear 0s;
+    width: 0;
+    // overflow: hidden;
 
-      &.slide-in {
-      left: 0;
-      width: 250px;
-      z-index: 100;
-      background: black;
+    &.slide-in {
+    left: 0;
+    width: 250px;
+    z-index: 100;
+    background: black;
 
       i {
         display: block;
@@ -300,19 +304,40 @@
       }
     }
 
-    .menu ul.menu li {
-      display: block;
-      float: none;
-      li:hover, li.sfHover {
-        ul {
-          left: 0;
+
+    .menu {
+      a {
+        color: white;
+        &:visited {
+          color: white;
+        }
+        .sf-sub-indicator {
+          color: white;
         }
       }
-      .sub-menu {
-        top: 0;
-        position: relative;
+      ul.menu {
         li {
-          ul {
+          color: white;
+          background: none;
+          display: block;
+          float: none;
+          li:hover, li.sfHover {
+            ul {
+              left: 0;
+            }
+          }
+          .sub-menu {
+            top: 0;
+            position: relative;
+            li {
+              ul {
+              }
+            }
+          }
+        }
+        ul {
+          li {
+            background: none;
           }
         }
       }
