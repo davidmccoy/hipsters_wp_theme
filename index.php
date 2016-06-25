@@ -15,18 +15,32 @@
 
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-            <div class="title_page">
+      <div class="title_page">
 
-				<h1><?php the_title(); ?></h1>
+				<h1>
+					<?php the_title(); ?>
+				</h1>
 
-	            <div class="postauthor">
-	        		<p><?php _e("Posted by", 'organicthemes'); ?> <?php the_author_posts_link(); ?> <?php _e("on", 'organicthemes'); ?> <?php relative_post_the_date(); ?>
- <!-- &middot; <a href="<?php the_permalink(); ?>#comments">
- -->
-	        			<!-- <fb:comments-count href="<?php echo get_permalink() ?>"></fb:comments-count> Comments</a> -->&nbsp;<?php edit_post_link(__("(Edit)", 'organicthemes'), '', ''); ?></p>
-	            </div>
+        <div class="postauthor">
+        	<?php
+        		$now = current_time('timestamp');
+        		$posted_at = get_the_time('U');
+        		$post_age = $now - $posted_at
+        	?>
+        	<?php if($post_age < 604800) { ?>
+	      		<p>
+	      			<?php _e("By", 'organicthemes'); ?> <?php the_author_posts_link(); ?> <?php echo human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago ';  ?> 
+	      			&nbsp;<?php edit_post_link(__("(Edit)", 'organicthemes'), '', ''); ?>
+	      		</p>
+        	<?php } else { ?>
+        		<p>
+        			<?php _e("By", 'organicthemes'); ?> <?php the_author_posts_link(); ?> <?php _e("on", 'organicthemes'); ?> <?php the_time(__("F j, Y", 'organicthemes'));  ?> 
+        			&nbsp;<?php edit_post_link(__("(Edit)", 'organicthemes'), '', ''); ?>
+        		</p>
+        	<?php } ?>
+        </div>
 
-            </div>
+      </div>
 
 			<?php the_content(__("Read More", 'organicthemes'));?>
 
