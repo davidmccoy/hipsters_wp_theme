@@ -1,12 +1,22 @@
 #footer {
   height: auto;
-  .footerleft {
-    display: inline-block;
-    float: left;
+  .footerleft, .footerright {
+    display: block;
+    float: none;
+    text-align: center;
   }
-  .footerright {
-    display: inline-block;
-    float: right;
-    text-align: right;
+}
+
+@media screen and (min-width: 480px) {
+  #footer {
+    .footerleft {
+      display: inline-block;
+      float: left;
+    }
+    .footerright {
+      display: inline-block;
+      float: right;
+      text-align: right;
+    }
   }
 }

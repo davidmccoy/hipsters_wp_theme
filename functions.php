@@ -324,6 +324,13 @@ function casthaven_redirect() {
 }  
 add_action( 'wp_enqueue_scripts', 'casthaven_redirect' ); 
 
+function mobile_menu() {  
+  wp_register_script( 'mobile_menu', get_template_directory_uri() . '/js/mobile_menu.js', array( 'jquery' ) );  
+  
+  wp_enqueue_script( 'mobile_menu' );  
+}  
+add_action( 'wp_enqueue_scripts', 'mobile_menu' ); 
+
 function custom_excerpt_length( $length ) {
   return 20;
 } 
@@ -349,4 +356,20 @@ add_action( 'init', 'mytheme_infinite_scroll_init' );
 //     get_template_part( 'homepage_content' );
 //   endwhile;
 // }
+
+/**
+ * Remove WP Admin bar
+ */
+
+add_filter('show_admin_bar', '__return_false');
+
+/**
+ * enqueues our locally supplied font awesome stylesheet
+ */
+
+function enqueue_our_required_stylesheets(){
+  wp_enqueue_style('font-awesome', get_stylesheet_directory_uri() . '/css/font-awesome.css'); 
+}
+add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');
+
 ?>

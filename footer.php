@@ -41,5 +41,8 @@
   ga('send', 'pageview');
 </script>
 
+<div id="overlay">
+</div>
+
 </body>
 </html>

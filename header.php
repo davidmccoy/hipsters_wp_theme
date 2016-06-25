@@ -87,22 +87,26 @@
 
 <body <?php if(function_exists('body_class')) body_class(); ?>>
 
+<div id="header">
+	<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+  <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+  <a href="<?php bloginfo('url'); ?>/" title="Home" id="logo">
+  	<img src="/assets/hipsters_logo.jpeg" id="full-logo"/>
+  </a>
+
+</div>
 <div id="wrap">
 
-    <div id="header">
-        <a href="<?php bloginfo('url'); ?>/" title="Home">
-        	<img src="/assets/hipsters_logo.jpeg" id="full-logo"/>
-        	<img src="/assets/hipsters_logo_mobile.jpeg" id="mobile-logo" />
-        </a>
-
-    </div>
     
     <div id="navbar">
-		<?php if ( function_exists('wp_nav_menu') ) { // Check for 3.0+ menus
-		wp_nav_menu( array( 'title_li' => '', 'depth' => 4, 'container_class' => 'menu' ) ); }
-		else {?>
-		<ul class="menu"><?php wp_list_pages('title_li=&depth=4'); ?></ul>
-		<?php } ?>
+    	<i class="fa fa-times fa-lg" aria-hidden="true"></i>
+			<?php if ( function_exists('wp_nav_menu') ) { 
+				// Check for 3.0+ menus
+				wp_nav_menu( array( 'title_li' => '', 'depth' => 4, 'container_class' => 'menu' ) ); 
+			}
+			else {?>
+				<ul class="menu"><?php wp_list_pages('title_li=&depth=4'); ?></ul>
+			<?php } ?>
     </div>
     
     <div style="clear:both;"></div>
