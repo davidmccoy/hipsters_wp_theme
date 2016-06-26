@@ -18,6 +18,7 @@
       .category {
         text-transform: uppercase;
         margin: 0px;
+        margin-top: 10px;
         a{
           color: #ff82c8;
         }
@@ -43,7 +44,7 @@
         margin: 30px 0px;
         a {
           border-radius: 5px;
-          padding: 5px 10px;
+          padding: 5px 10px 7px;
           margin-right: 10px;
           font-size: 13px;
           text-transform: lowercase;
@@ -56,10 +57,33 @@
           }
         }
       }
+      blockquote {
+        margin-top: 29px;
+        border-left: 3px solid black;
+        padding-left: 20px;
+        padding-bottom: 3px;
+        margin-left: 0px;
+        font-style: italic;
+        p {
+          margin: 0px;
+        }
+      }
       pre {
         white-space: pre; 
         word-wrap: break-word; 
         overflow-x: auto; 
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #container { 
+    #content {
+      .postarea {
+        blockquote {
+          margin-left: -23px;
+        }
       }
     }
   }

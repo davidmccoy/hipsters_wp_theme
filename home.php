@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<div id="container">
+<div id="homepage-container">
 
     <div id="homepage">
 			
