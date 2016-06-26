@@ -1,32 +1,26 @@
 <div style="clear:both;"></div>
 
 <div id="footer">
-
-	<div id="footer">
-    
-    	<div class="footerleft">
-            <div class="footertop">
-                <p><?php _e("Copyright", 'hipsters'); ?> <?php echo date(__("Y", 'hipsters')); ?> <?php bloginfo('name'); ?></p>
-            </div>
-            
-            <div class="footerbottom">
-                <p><a href="<?php bloginfo('rss_url'); ?>" target="_blank"><?php _e("RSS Feed", 'hipsters'); ?></a> &middot; <?php wp_loginout(); ?></p>
-            </div>
-        </div>
-        
-        <div class="footerright">
-            <div class="footertop">
-                <p>Theme by David McCoy</p>
-            </div>
-            <div class="footerbottom">
-                <p><a href="http://www.davidmccoy.com" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/footer_logo.png" alt="<?php _e("Theme by David McCoy",'davidmccoy'); ?>" /></a></p>
-            </div>
-    	</div>
-		
-	</div>
+  
+  	<div class="footerleft">
+          <div class="footertop">
+              <p><?php _e("&copy;", 'hipsters'); ?> <?php echo date(__("Y", 'hipsters')); ?> <?php bloginfo('name'); ?></p>
+          </div>
+          
+          <div class="footerbottom">
+              <p><a href="<?php bloginfo('rss_url'); ?>" target="_blank"><?php _e("RSS Feed", 'hipsters'); ?></a> &middot; <?php wp_loginout(); ?></p>
+          </div>
+      </div>
+      
+      <div class="footerright">
+          <div class="footertop">
+              <p>Theme by David McCoy</p>
+          </div>
+          <div class="footerbottom">
+              <p><a href="http://www.davidmccoy.com" target="_blank"><img src="<?php bloginfo('template_url'); ?>/images/footer_logo.png" alt="<?php _e("Theme by David McCoy",'davidmccoy'); ?>" /></a></p>
+          </div>
+  	</div>
 	
-</div>
-
 </div>
 
 <?php do_action('wp_footer'); ?>

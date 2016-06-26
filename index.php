@@ -4,22 +4,24 @@
 
 	<div id="content" class="left">
 
-		<?php $meta_box = get_post_custom($post->ID); $video = $meta_box['custom_meta_video'][0]; ?>
-		<?php if ( $video ) : ?>
-			<div class="postvid_single"><?php echo $video; ?></div>
-		<?php else: ?>
-			<div class="postimg_single"><?php echo clean_wp_width_height(get_the_post_thumbnail(get_the_ID(),'post-feature')); ?></div>
-		<?php endif; ?>
-
 		<div class="postarea">
-
-			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-
       <div class="title_page">
 
-				<h1>
-					<?php the_title(); ?>
-				</h1>
+			<h4 class="category">
+				<?php the_category(', ') ?>
+			</h4>
+			<h1 class="post-title">
+				<?php the_title(); ?>
+			</h1>
+
+			<?php $meta_box = get_post_custom($post->ID); $video = $meta_box['custom_meta_video'][0]; ?>
+			<?php if ( $video ) : ?>
+				<div class="postvid_single"><?php echo $video; ?></div>
+			<?php else: ?>
+				<div class="postimg_single"><?php echo clean_wp_width_height(get_the_post_thumbnail(get_the_ID(),'post-feature')); ?></div>
+			<?php endif; ?>
+
+			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
         <div class="postauthor">
         	<?php
@@ -66,7 +68,15 @@
 			<?php trackback_rdf(); ?>
 
 			<div class="postmeta">
-				<p><?php _e("Category:", 'organicthemes'); ?> <?php the_category(', ') ?> &middot; <?php _e("Tags:", 'organicthemes'); ?> <?php the_tags('') ?></p>
+				<p>
+					<?php
+					$before = '';
+					$seperator = ''; 
+					$after = '';
+
+					the_tags( $before, $seperator, $after );
+					?>
+				</p>
 			</div>
 
 		</div>
@@ -75,8 +85,8 @@
 		<p><?php _e("Sorry, no posts matched your criteria.", 'organicthemes'); ?></p>
 		<?php endif; ?>
 
+		<?php get_footer(); ?>
 	</div>
 
 </div>
 
-<?php get_footer(); ?>

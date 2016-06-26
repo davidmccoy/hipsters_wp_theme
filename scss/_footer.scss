@@ -1,9 +1,14 @@
 #footer {
   height: auto;
+  margin-top: 50px;
   .footerleft, .footerright {
     display: block;
     float: none;
     text-align: center;
+    a {
+      color: #ff82c8 !important;
+      text-decoration: none;
+    }
   }
 }
 

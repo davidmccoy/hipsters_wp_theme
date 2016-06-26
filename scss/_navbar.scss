@@ -4,13 +4,15 @@
   background: none;
   text-transform: uppercase;
   font-family: 'kievit-regular';
+  font-size: 16px;
   i {
     display: none;
   }
 
   .menu {
-    float: left;
-    margin-bottom: 0px;
+    width: 747px;
+    margin: 0 auto;
+    float: none;
 
     ul {
       padding: 0px;
@@ -140,7 +142,7 @@
         background: #FFFFFF;
         border: none;
         a, a:visited {
-          color: #666666;
+          color: black;
           padding: 10px 10px 10px 10px;
           text-decoration: none;
           text-transform: none;
@@ -176,9 +178,9 @@
       font-style: normal;
       font-weight: bold;
       line-height: 16px;
-      color: #666666;
+      color: black;
       &:visited {
-        color: #666666;
+        color: black;
       }
       &:focus, &:hover, &:active {
         background: none;
@@ -306,6 +308,8 @@
 
 
     .menu {
+      width: auto;
+      float: left;
       a {
         color: white;
         &:visited {
