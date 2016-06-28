@@ -41,6 +41,22 @@
         </div>
 
       </div>
+      <?php 
+        $time_to_read =  ceil(wcount() / 275);
+        if ($time_to_read == 1) {
+      ?>
+        <p>
+          <?php echo $time_to_read . " minute to read" ?>
+        </p>
+      <?php    
+        } else {
+      ?>
+        <p>
+          <?php echo $time_to_read . " minutes to read" ?>
+        </p>
+      <?php 
+        }
+      ?>
 
 			<?php the_content(__("Read More", 'organicthemes'));?>
 
