@@ -372,4 +372,13 @@ function enqueue_our_required_stylesheets(){
 }
 add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');
 
+/**
+ * returns the number of words in a post
+ */
+function wcount(){
+    ob_start();
+    the_content();
+    $content = ob_get_clean();
+    return sizeof(explode(" ", $content));
+}
 ?>
