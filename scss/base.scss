@@ -17,6 +17,10 @@ body {
     font-family: 'kievit-medium';
   }
 
+  h1 {
+    line-height: 1.4;
+  }
+
   #wrap {
     max-width: 1024px;
     padding: 0px 15px;
@@ -35,6 +39,10 @@ body {
   body {
     font-size: 21px;
     line-height: 1.58;
+
+    h1 {
+      line-height: 1.5;
+    }
     #wrap {
       #spacer {
         display: none;

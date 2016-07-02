@@ -6,7 +6,7 @@
   #content {
     max-width: 700px;
     margin: 0 auto;
-    .postarea {
+    .post-area {
       a {
         text-decoration: none;
         color: #ff82c8;
@@ -14,6 +14,44 @@
       .post-title {
         margin-top: 0px;
         margin-bottom: 15px;
+      }
+      .post-author-container {
+        .post-author-image {
+          display: inline-block;
+          vertical-align: middle;
+          background-size: cover;
+          background-position: center;
+          height: 54px;
+          width: 54px;
+        }
+        .post-author-info {
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 5px;
+          .post-author {
+            a[rel="twitter"] {
+              color: black;
+              &:hover {
+                color: #ff82c8;
+              }
+            }
+            p {
+              margin: 0px;
+            }
+          }
+        }
+      }
+      .post-date {
+        font-size: 16px;
+        line-height: 1.9;
+        height: 25px;
+        p {
+          display: inline-block;
+          margin-top: 0px;
+        }
+        div {
+          display: inline-block;
+        }
       }
       .category {
         text-transform: uppercase;
@@ -79,10 +117,21 @@
 
 @media screen and (min-width: 768px) {
   #container { 
+    margin-top: 20px;
     #content {
-      .postarea {
+      .post-area {
         blockquote {
           margin-left: -23px;
+        }
+        .post-author-container {
+          .post-author-image {
+            width: 66px;
+            height: 66px;
+          }
+        }
+        .post-date {
+          height: 32px;
+          font-size: 18px;
         }
       }
     }
