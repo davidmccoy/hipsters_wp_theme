@@ -47,43 +47,6 @@
 	});
 </script>
 
-<script type="text/javascript">
-	var $j = jQuery.noConflict();
-	$j(function(){
-		$j('#slider1').anythingSlider({
-			width           : 620,
-			height          : 440,
-			delay           : <?php echo of_get_option('slider_transition_interval'); ?>,
-			resumeDelay     : 10000,
-			startStopped    : false,
-			autoPlay        : true,
-			autoPlayLocked  : false,
-			easing          : "swing"
-		});
-	});
-</script>
-
-<script type="text/javascript"> 
-	var $j = jQuery.noConflict();
-	$j(document).ready(function () {
-		$j('#homeslider iframe').each(function() {
-			var url = $j(this).attr("src")
-			$j(this).attr("src",url+"&amp;wmode=Opaque")
-		});
-	});
-</script>
-
-<script type="text/javascript"> 
-	var $j = jQuery.noConflict();
-	$j(function(){
-	  $j('#portfolio .postarea').masonry({
-	    // options
-	    itemSelector : '.portfolio',
-	    columnWidth : 320
-	  });
-	});
-</script>
-
 
 </head>
 

@@ -35,6 +35,19 @@
   ga('send', 'pageview');
 </script>
 
+<script type="text/javascript">
+  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  var body = document.getElementsByTagName("BODY")[0];
+
+
+  if( userAgent.match( /iPad/i ) || userAgent.match( /iPhone/i ) || userAgent.match( /iPod/i ) )
+  {
+    body.className += ' ios';
+  } else {
+    body.className += ' not-ios';
+  }
+</script>
+
 <div id="overlay">
 </div>
 

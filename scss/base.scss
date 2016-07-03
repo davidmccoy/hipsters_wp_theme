@@ -20,6 +20,16 @@ body {
   h1 {
     line-height: 1.4;
   }
+  &.ios {
+    h1, h2, h3, h5 {
+      font-weight: normal;
+      -webkit-text-stroke: 0.5px black;
+    }
+    h4 {
+      font-weight: normal;
+      -webkit-text-stroke: 0.5px #ff82c8;
+    }
+  }
 
   #wrap {
     max-width: 1024px;
@@ -30,6 +40,7 @@ body {
       img {
         width: 90%;
         padding: 15px;
+        visibility: collapse;
       }
     }
   }

@@ -381,4 +381,5 @@ function wcount(){
     $content = ob_get_clean();
     return sizeof(explode(" ", $content));
 }
+
 ?>
