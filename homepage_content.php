@@ -15,7 +15,12 @@
     <div class="homeinfo">
       <div class="post-category">
         <h4>
-          <?php the_category() ?>
+          <?php
+          $category = get_the_category();
+          if ($category) {
+            echo '<a href="' . get_category_link( $category[0]->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category[0]->name ) . '" ' . '>' . $category[0]->name.'</a> ';
+          }
+          ?>
         </h4>
       </div>
       <div class="post-title">

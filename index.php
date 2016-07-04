@@ -76,7 +76,9 @@
         </p>
       </div>
 
-			<?php the_content(__("Read More", 'organicthemes'));?>
+      <div class="post-content">
+		    <?php the_content(__("Read More", 'organicthemes'));?>
+      </div>
 
 			<?php if(of_get_option('display_socialpost') == '1') { ?>
 			<div class="social_links">

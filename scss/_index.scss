@@ -7,6 +7,44 @@
     max-width: 700px;
     margin: 0 auto;
     .post-area {
+      .post-content {
+        margin: 1em 0px;
+      }
+      img, div {
+        max-width: 100%;
+      }
+      img {
+        // margin: 0 auto;
+        // display: block;
+        &.aligncenter {
+          display: block; 
+          margin-left: auto; 
+          margin-right: auto;
+        }
+        &.alignright {
+          float: right; 
+          margin: 0 0 1em 1em;
+        }
+        &.alignleft {
+          float: left; 
+          margin: 0 1em 1em 0;
+        }
+      }
+      div {
+        &.aligncenter {
+          margin: 0 auto
+        }
+        &.alignright {
+          margin-left: auto; 
+          margin-right: 0;
+        }
+      }
+      img[class*="align"], img[class*="wp-image-"] {
+        height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+      }
+      img.size-full {
+        width: auto; /* Prevent stretching of full-size images with height and width attributes in IE8 */
+      }
       a {
         text-decoration: none;
         color: #ff82c8;
@@ -112,6 +150,27 @@
         word-wrap: break-word; 
         overflow-x: auto; 
       }
+      .wp-caption {
+        text-align: center;
+      }
+      .wp-caption-text {
+        font-size: 14px;
+        text-align: center;
+        font-family: "kievit-regular";
+      }
+      twitterwidget {
+        margin: 10px auto;
+      }
+      iframe {
+        display: block;
+        margin: 0 auto; 
+        max-width: 100%;
+      }
+      .mtg_deck.mtg_deck_embedded {
+        .card_box {
+          display: none;
+        }
+      } 
     }
   }
 }
@@ -133,6 +192,9 @@
         .post-date {
           height: 32px;
           font-size: 18px;
+        }
+        .mtg_deck.mtg_deck_embedded .card_box {
+          display: block;
         }
       }
     }
