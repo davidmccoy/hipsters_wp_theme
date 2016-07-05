@@ -83,10 +83,10 @@
       .post-date {
         font-size: 16px;
         line-height: 1.9;
-        height: 25px;
+        height: auto;
         p {
           display: inline-block;
-          margin-top: 0px;
+          margin: 0px;
         }
         div {
           display: inline-block;
@@ -118,6 +118,8 @@
         margin: 15px 0px;
       }
       .postmeta {
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
         margin: 30px 0px;
         a {
           border-radius: 5px;
@@ -128,6 +130,8 @@
           letter-spacing: 0.3px;
           color: #ff82c8;
           border: 1px solid #ff82c8;
+          display: inline-block;
+          margin-bottom: 10px;
           &:hover {
             background: #ff82c8 !important;
             color: white;
@@ -147,7 +151,8 @@
       }
       pre {
         white-space: pre; 
-        word-wrap: break-word; 
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
         overflow-x: auto; 
       }
       .wp-caption {

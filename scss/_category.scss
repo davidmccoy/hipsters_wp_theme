@@ -1,0 +1,123 @@
+#container {
+  #content.category {
+    h1 {
+      text-transform: uppercase;
+      margin: 0px;
+      margin-bottom: 15px;
+    }
+    .category-post {
+      margin-bottom: 65px;
+      h2 {
+        margin: 0px;
+        a {
+          color: black;
+        }
+      }
+      .post-title {
+        margin-top: 0px;
+        margin-bottom: 15px;
+      }
+      .post-author-container {
+        .post-author-image {
+          display: inline-block;
+          vertical-align: middle;
+          background-size: cover;
+          background-position: center;
+          height: 54px;
+          width: 54px;
+          border-radius: 50%;
+        }
+        .post-author-info {
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 5px;
+          .post-author {
+            a[rel="twitter"] {
+              color: black;
+              &:hover {
+                color: #ff82c8;
+              }
+            }
+            p {
+              margin: 0px;
+            }
+          }
+        }
+      }
+      .post-date {
+        font-size: 16px;
+        line-height: 1.9;
+        height: auto;
+        margin-bottom: -5px;
+        p {
+          display: inline-block;
+          margin: 0px;
+        }
+        div {
+          display: inline-block;
+        }
+      }
+      .category {
+        text-transform: uppercase;
+        margin: 0px;
+        margin-top: 10px;
+        a{
+          color: #ff82c8;
+        }
+        ul {
+          margin: 0px;
+          padding: 0px;
+          list-style: none;
+          li {
+            list-style: none;
+          }
+        }
+      }
+      .featured_image {
+        width: 100%;
+        background-size: cover; 
+        height: 220px;
+        img {
+          width: 100%;
+        }
+      }
+      .postauthor {
+        margin: 15px 0px;
+      }
+      .postmeta {
+        -ms-word-wrap: break-word;
+        word-wrap: break-word;
+        margin: 30px 0px;
+        a {
+          border-radius: 5px;
+          padding: 5px 10px 7px;
+          margin-right: 10px;
+          font-size: 13px;
+          text-transform: lowercase;
+          letter-spacing: 0.3px;
+          color: #ff82c8;
+          border: 1px solid #ff82c8;
+          display: inline-block;
+          margin-bottom: 10px;
+          &:hover {
+            background: #ff82c8 !important;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #container {
+    #content.category {
+      h1 {
+        text-transform: uppercase;
+        margin-bottom: 35px;
+      }
+      .category-post {
+      }
+    }
+  }
+}

@@ -15,7 +15,12 @@
       <?php endif; ?>
 
 			<h4 class="category">
-				<?php the_category(', ') ?>
+				<?php
+        $category = get_the_category();
+        if ($category) {
+          echo '<a href="' . get_category_link( $category[0]->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category[0]->name ) . '" ' . '>' . $category[0]->name.'</a> ';
+        }
+        ?>
 			</h4>
 			<h1 class="post-title">
 				<?php the_title(); ?>
@@ -60,13 +65,13 @@
           if ($time_to_read == 1) {
         ?>
           <p>
-            <?php echo $time_to_read . " minute to read" ?>
+            <?php echo $time_to_read . " min to read" ?>
           </p>
         <?php    
           } else {
         ?>
           <p>
-            <?php echo $time_to_read . " minutes to read" ?>
+            <?php echo $time_to_read . " min to read" ?>
           </p>
         <?php 
           }
