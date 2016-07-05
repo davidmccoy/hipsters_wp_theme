@@ -88,26 +88,6 @@
 		    <?php the_content(__("Read More", 'organicthemes'));?>
       </div>
 
-			<?php if(of_get_option('display_socialpost') == '1') { ?>
-			<div class="social_links">
-			    <div class="tweet_btn">
-			        <a href="http://twitter.com/share" class="twitter-share-button"
-			        data-url="<?php the_permalink(); ?>"
-			        data-via="<?php echo of_get_option('social_twitter_url'); ?>"
-			        data-text="<?php the_title(); ?>"
-			        data-related=""
-			        data-count="horizontal"><?php _e("Tweet", 'organicthemes'); ?></a>
-			    </div>
-			    <div class="like_btn">
-			        <div class="fb-like" href="<?php the_permalink(); ?>" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
-			    </div>
-			    <div class="plus_btn">
-			    	<g:plusone size="medium"></g:plusone>
-			    </div>
-			</div>
-			<?php } else { ?>
-			<?php } ?>
-
 			<div style="clear:both;"></div>
 			<?php trackback_rdf(); ?>
 
@@ -142,7 +122,12 @@
               <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
             </div>
           </a>
-          <a href="mailto:?subject=<?php urlencode(the_title()); ?>&amp;body=<?php the_excerpt(); ?>%0A%0ARead More:%0A<?php echo get_permalink($post->ID); ?>">
+          <?php
+            $myExcerpt = get_the_excerpt();
+            $tags = array("<p>", "</p>");
+            $myExcerpt = str_replace($tags, "", $myExcerpt);
+            ?>
+          <a href="mailto:?subject=<?php urlencode(the_title()); ?>&amp;body=<?php echo $myExcerpt; ?>%0A%0ARead More:%0A<?php echo get_permalink($post->ID); ?>">
             <div class="social-share">
               <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
             </div>

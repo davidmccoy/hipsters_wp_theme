@@ -33,25 +33,6 @@
       <div class="home_excerpt">
         <?php the_excerpt(); ?>
       </div>
-    </div>
-    <?php if(of_get_option('display_socialhome') == '1') { ?>
-      <div class="social_links">
-          <div class="tweet_btn">
-              <a href="http://twitter.com/share" class="twitter-share-button"
-              data-url="<?php the_permalink(); ?>"
-              data-via="<?php echo of_get_option('social_twitter_url'); ?>"
-              data-text="<?php the_title(); ?>"
-              data-related=""
-              data-count="horizontal"><?php _e("Tweet", 'organicthemes'); ?></a>
-          </div>
-          <div class="like_btn">
-              <div class="fb-like" href="<?php the_permalink(); ?>" data-send="false" data-layout="button_count" data-width="100" data-show-faces="false"></div>
-          </div>
-          <div class="plus_btn">
-            <g:plusone size="medium"></g:plusone>
-          </div>
-      </div>
-    <?php } else { ?>
-    <?php } ?>  
+    </div> 
   </div>
 </div>
