@@ -28,14 +28,6 @@
                   </a>
 	            <?php endif; ?>
 
-              <h4 class="category">
-                <?php
-                $category = get_the_category();
-                if ($category) {
-                  echo '<a href="' . get_category_link( $category[0]->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category[0]->name ) . '" ' . '>' . $category[0]->name.'</a> ';
-                }
-                ?>
-              </h4>
               <h2>
                 <a href="<?php the_permalink() ?>" rel="bookmark">
                   <?php the_title(); ?>
@@ -51,7 +43,9 @@
                       <?php the_author_posts_link(); ?> 
                     </p>
                     <p>
-                      <a href="<?php echo the_author_meta('user_url') ?>" rel="twitter" target="_blank">@<?php the_author_nickname(); ?></a>
+                      <a href="http://www.twitter.com/<?php the_author_meta( 'twitter' ); ?>" rel="twitter" target="_blank">
+                          @<?php the_author_meta( 'twitter' ); ?>
+                      </a>
                     </p>
                   </div>
                 </div>
@@ -99,19 +93,19 @@
 
 	            <?php the_excerpt(); ?><div style="clear:both;"></div>
 
-				<div class="postmeta">
-          <p>
-            <?php
-            $before = '';
-            $seperator = ''; 
-            $after = '';
+      				<div class="postmeta">
+                <p>
+                  <?php
+                  $before = '';
+                  $seperator = ''; 
+                  $after = '';
 
-            the_tags( $before, $seperator, $after );
-            ?>
-          </p>
-        </div>
+                  the_tags( $before, $seperator, $after );
+                  ?>
+                </p>
+              </div>
 
-			</div>
+      			</div>
 
 			<?php endwhile; else: ?>
             <p><?php _e("Sorry, no posts matched your criteria.", 'organicthemes'); ?></p>

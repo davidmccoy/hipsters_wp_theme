@@ -11,7 +11,8 @@
       <?php if ( $video ) : ?>
         <div class="postvid_single"><?php echo $video; ?></div>
       <?php else: ?>
-        <div class="postimg_single"><?php echo clean_wp_width_height(get_the_post_thumbnail(get_the_ID(),'post-feature')); ?></div>
+        <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0]; ?>
+        <div class="postimg_single" style="background-image: url('<?php echo $image ?>');"></div>
       <?php endif; ?>
 
 			<h4 class="category">
@@ -36,7 +37,9 @@
               <?php the_author_posts_link(); ?> 
             </p>
             <p>
-              <a href="<?php echo the_author_meta('user_url') ?>" rel="twitter" target="_blank">@<?php the_author_nickname(); ?></a>
+              <a href="http://www.twitter.com/<?php the_author_meta( 'twitter' ); ?>" rel="twitter" target="_blank">
+                  @<?php the_author_meta( 'twitter' ); ?>
+              </a>
             </p>
           </div>
         </div>

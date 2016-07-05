@@ -1,15 +1,36 @@
 #container {
-  #content.category {
-    h1 {
-      text-transform: uppercase;
-      margin: 0px;
-      margin-bottom: 15px;
+  #content.author {
+    .author-info {
+      margin-bottom: 30px;
+      div {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .author-left {
+        width: 70.8%;
+        h1 {
+          margin: 0;
+        }
+        p {
+          margin: 0;
+        }
+      }
+      .author-right {
+        width: 29.2%;
+        text-align: right;
+        .author-image {
+          height: 80px;
+          width: 80px;
+          border-radius: 50%;
+          background-size: cover;
+        }
+      }
+
     }
-    .category-post {
+    .author-post {
       margin-bottom: 30px;
       h2 {
         margin: 0px;
-        margin-top: 5px;
         a {
           color: black;
         }
@@ -49,6 +70,7 @@
         font-size: 16px;
         line-height: 1.9;
         height: auto;
+        margin-top: 2px;
         margin-bottom: -5px;
         p {
           display: inline-block;
@@ -112,14 +134,24 @@
 
 @media screen and (min-width: 768px) {
   #container {
-    #content.category {
-      h1 {
-        margin-bottom: 35px;
-      }
-      .category-post {
+    #content.author {
+      .author-post {
         margin-bottom: 65px;
-        h2 {
-          margin-top: 10px;
+        .post-date {
+          margin-top: 4px;
+        }
+      }
+      .author-info {
+        margin-bottom: 35px;
+        .author-left {
+          width: 75%;
+        }
+        .author-right {
+          width: 25%;
+          .author-image {
+            height: 120px;
+            width: 120px;
+          }
         }
       }
     }
