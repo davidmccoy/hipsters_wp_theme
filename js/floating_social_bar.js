@@ -43,6 +43,21 @@
           }
         });
 	    }
+
+	    // for mobile touchscreens
+	    var ts;
+	    $(document).bind('touchstart', function(e) {
+	        ts = e.originalEvent.touches[0].clientY;
+	    });
+
+	    $(document).bind('touchmove', function(e) {
+	        var te = e.originalEvent.changedTouches[0].clientY;
+	        if (ts > te) {
+	            $('div.share-bar').removeClass('is-visible');
+	        } else {
+	            $('div.share-bar').addClass('is-visible');
+	        }
+	    });
 		}
 	})
 	 
