@@ -16,21 +16,24 @@
   font-style: italic;
 }
 @font-face {
-  font-family: 'kievit-regular';
+  font-family: 'kievit';
   src: url("../fonts/kievit-regular.eot");
   src: url("../fonts/kievit-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/kievit-regular.woff2") format("woff2"), url("../fonts/kievit-regular.woff") format("woff"), url("../fonts/kievit-regular.ttf") format("truetype"), url("../fonts/kievit-regular.svg#Kievit-Regular") format("svg");
-}
-@font-face {
-  font-family: 'kievit-medium';
-  src: url("../fonts/kievit-medium.eot");
-  src: url("../fonts/kievit-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/kievit-medium.woff2") format("woff2"), url("../fonts/kievit-medium.woff") format("woff"), url("../fonts/kievit-medium.ttf") format("truetype"), url("../fonts/kievit-medium.svg#Kievit-Medium") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'kievit-medium';
+  font-family: 'kievit';
+  src: url("../fonts/kievit-medium.eot");
+  src: url("../fonts/kievit-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/kievit-medium.woff2") format("woff2"), url("../fonts/kievit-medium.woff") format("woff"), url("../fonts/kievit-medium.ttf") format("truetype"), url("../fonts/kievit-medium.svg#Kievit-Medium") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'kievit';
   src: url("../fonts/kievit-medium-italic.eot");
   src: url("../fonts/kievit-medium-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/kievit-medium-italic.woff2") format("woff2"), url("../fonts/kievit-medium-italic.woff") format("woff"), url("../fonts/kievit-medium-italic.ttf") format("truetype"), url("../fonts/kievit-medium-italic.svg#Kievit-MediumItalic") format("svg");
+  font-weight: bold;
   font-style: italic;
 }
 /* line 1, ../scss/_header.scss */
@@ -117,7 +120,7 @@
   height: auto;
   background: none;
   text-transform: uppercase;
-  font-family: 'kievit-regular';
+  font-family: 'kievit';
   font-size: 16px;
 }
 /* line 8, ../scss/_navbar.scss */
@@ -126,7 +129,7 @@
 }
 /* line 12, ../scss/_navbar.scss */
 #navbar .menu {
-  width: 747px;
+  width: 760px;
   margin: 0 auto;
   float: none;
   /*** shadows for all but IE6 ***/
@@ -1207,7 +1210,7 @@ body {
 }
 /* line 18, ../scss/base.scss */
 body h1, body h2, body h3, body h4, body h5 {
-  font-family: 'kievit-medium';
+  font-family: 'kievit';
   -ms-word-wrap: break-word;
   word-wrap: break-word;
 }

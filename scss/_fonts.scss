@@ -31,34 +31,37 @@
 }
 
 @font-face {
-  font-family: 'kievit-regular';
+  font-family: 'kievit';
   src: url('../fonts/kievit-regular.eot');
   src: url('../fonts/kievit-regular.eot?#iefix') format('embedded-opentype'),
        url('../fonts/kievit-regular.woff2') format('woff2'),
        url('../fonts/kievit-regular.woff') format('woff'),
        url('../fonts/kievit-regular.ttf') format('truetype'),
        url('../fonts/kievit-regular.svg#Kievit-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-  font-family: 'kievit-medium';
+  font-family: 'kievit';
   src: url('../fonts/kievit-medium.eot');
   src: url('../fonts/kievit-medium.eot?#iefix') format('embedded-opentype'),
        url('../fonts/kievit-medium.woff2') format('woff2'),
        url('../fonts/kievit-medium.woff') format('woff'),
        url('../fonts/kievit-medium.ttf') format('truetype'),
        url('../fonts/kievit-medium.svg#Kievit-Medium') format('svg');
-  font-weight: normal;
+  font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'kievit-medium';
+  font-family: 'kievit';
   src: url('../fonts/kievit-medium-italic.eot');
   src: url('../fonts/kievit-medium-italic.eot?#iefix') format('embedded-opentype'),
        url('../fonts/kievit-medium-italic.woff2') format('woff2'),
        url('../fonts/kievit-medium-italic.woff') format('woff'),
        url('../fonts/kievit-medium-italic.ttf') format('truetype'),
        url('../fonts/kievit-medium-italic.svg#Kievit-MediumItalic') format('svg');
+  font-weight: bold;
   font-style: italic;
 }
