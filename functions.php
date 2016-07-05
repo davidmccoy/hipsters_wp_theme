@@ -310,12 +310,12 @@ function full_comment_count() {
   return $realCount;  
 }  
 
-function floating_sidebar() {  
-  wp_register_script( 'custom-script', get_template_directory_uri() . '/js/floating_sidebar.js', array( 'jquery' ) );  
+function floating_social_bar() {  
+  wp_register_script( 'custom-script', get_template_directory_uri() . '/js/floating_social_bar.js', array( 'jquery' ) );  
   
   wp_enqueue_script( 'custom-script' );  
 }  
-add_action( 'wp_enqueue_scripts', 'floating_sidebar' );  
+add_action( 'wp_enqueue_scripts', 'floating_social_bar' );  
 
 function casthaven_redirect() {  
   wp_register_script( 'custom-script', get_template_directory_uri() . '/js/casthaven_redirect.js', array( 'jquery' ) );  
