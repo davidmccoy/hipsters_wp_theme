@@ -707,21 +707,17 @@
   padding-bottom: 65%;
   background-size: cover;
 }
-/* line 115, ../scss/_index.scss */
-#container #content .post-area .postimg_single img {
-  width: 100%;
-}
-/* line 119, ../scss/_index.scss */
+/* line 116, ../scss/_index.scss */
 #container #content .post-area .postauthor {
   margin: 15px 0px;
 }
-/* line 122, ../scss/_index.scss */
+/* line 119, ../scss/_index.scss */
 #container #content .post-area .postmeta {
   -ms-word-wrap: break-word;
   word-wrap: break-word;
   margin: 30px 0px;
 }
-/* line 126, ../scss/_index.scss */
+/* line 123, ../scss/_index.scss */
 #container #content .post-area .postmeta a {
   border-radius: 5px;
   padding: 5px 10px 7px;
@@ -734,12 +730,12 @@
   display: inline-block;
   margin-bottom: 10px;
 }
-/* line 137, ../scss/_index.scss */
+/* line 134, ../scss/_index.scss */
 #container #content .post-area .postmeta a:hover {
   background: #ff82c8 !important;
   color: white;
 }
-/* line 143, ../scss/_index.scss */
+/* line 140, ../scss/_index.scss */
 #container #content .post-area blockquote {
   margin-top: 29px;
   border-left: 3px solid black;
@@ -748,62 +744,132 @@
   margin-left: 0px;
   font-style: italic;
 }
-/* line 150, ../scss/_index.scss */
+/* line 147, ../scss/_index.scss */
 #container #content .post-area blockquote p {
   margin: 0px;
 }
-/* line 154, ../scss/_index.scss */
+/* line 151, ../scss/_index.scss */
 #container #content .post-area pre {
   white-space: pre;
   -ms-word-wrap: break-word;
   word-wrap: break-word;
   overflow-x: auto;
 }
-/* line 160, ../scss/_index.scss */
+/* line 157, ../scss/_index.scss */
 #container #content .post-area .wp-caption {
   text-align: center;
 }
-/* line 163, ../scss/_index.scss */
+/* line 160, ../scss/_index.scss */
 #container #content .post-area .wp-caption-text {
   font-size: 14px;
   text-align: center;
   font-family: "kievit-regular";
 }
-/* line 168, ../scss/_index.scss */
+/* line 165, ../scss/_index.scss */
 #container #content .post-area twitterwidget {
   margin: 10px auto;
 }
-/* line 171, ../scss/_index.scss */
+/* line 168, ../scss/_index.scss */
 #container #content .post-area iframe {
   display: block;
   margin: 0 auto;
   max-width: 100%;
 }
-/* line 177, ../scss/_index.scss */
+/* line 174, ../scss/_index.scss */
 #container #content .post-area .mtg_deck.mtg_deck_embedded .card_box {
   display: none;
 }
+/* line 179, ../scss/_index.scss */
+#container #content .share-bar {
+  font-size: 0;
+  visibility: hidden;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 0;
+  z-index: 500;
+  transition: visibility 0s linear .3s;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+/* line 192, ../scss/_index.scss */
+#container #content .share-bar.is-visible {
+  visibility: visible;
+  transition-delay: 0s;
+}
+/* line 196, ../scss/_index.scss */
+#container #content .share-bar.is-visible .share-bar-container .share-bar-content {
+  transform: translateY(0);
+}
+/* line 201, ../scss/_index.scss */
+#container #content .share-bar .share-bar-container {
+  position: relative;
+  height: 0;
+  transform: translateZ(0);
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+  max-width: 700px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+/* line 214, ../scss/_index.scss */
+#container #content .share-bar .share-bar-container .share-bar-content {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background: #fff;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.44);
+  border-radius: 3px 3px 0 0;
+  transform: translateY(100%);
+  transition: transform .3s;
+  margin-right: -20px;
+  margin-left: -20px;
+  padding: 5px;
+}
+/* line 227, ../scss/_index.scss */
+#container #content .share-bar .share-bar-container .share-bar-content a {
+  color: black;
+}
+/* line 230, ../scss/_index.scss */
+#container #content .share-bar .share-bar-container .share-bar-content .social-share {
+  width: 33.3%;
+  display: inline-block;
+  font-size: 16px;
+}
+/* line 234, ../scss/_index.scss */
+#container #content .share-bar .share-bar-container .share-bar-content .social-share.mid {
+  border-left: 1px solid rgba(0, 0, 0, 0.14);
+  border-right: 1px solid rgba(0, 0, 0, 0.14);
+  box-sizing: border-box;
+}
 
 @media screen and (min-width: 768px) {
-  /* line 186, ../scss/_index.scss */
+  /* line 247, ../scss/_index.scss */
   #container {
     margin-top: 20px;
   }
-  /* line 190, ../scss/_index.scss */
+  /* line 251, ../scss/_index.scss */
   #container #content .post-area blockquote {
     margin-left: -23px;
   }
-  /* line 194, ../scss/_index.scss */
+  /* line 255, ../scss/_index.scss */
   #container #content .post-area .post-author-container .post-author-image {
     width: 66px;
     height: 66px;
   }
-  /* line 199, ../scss/_index.scss */
+  /* line 260, ../scss/_index.scss */
   #container #content .post-area .post-date {
     height: 32px;
     font-size: 18px;
   }
-  /* line 203, ../scss/_index.scss */
+  /* line 264, ../scss/_index.scss */
   #container #content .post-area .mtg_deck.mtg_deck_embedded .card_box {
     display: block;
   }

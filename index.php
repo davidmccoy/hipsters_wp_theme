@@ -129,6 +129,28 @@
 		<p><?php _e("Sorry, no posts matched your criteria.", 'organicthemes'); ?></p>
 		<?php endif; ?>
 
+    <div class="share-bar">
+      <div class="share-bar-container">
+        <div class="share-bar-content">
+          <a href="https://twitter.com/intent/tweet?url=<?php echo urlencode(get_permalink($post->ID)); ?>&text=<?php the_title(); ?> via @hotcblog" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')" target="_blank">
+            <div class="social-share">
+              <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
+            </div>
+          </a>
+          <a href="https://www.facebook.com/sharer.php?u=<?php echo urlencode(get_permalink($post->ID)); ?>" onclick="return !window.open(this.href, 'Facebook', 'width=500,height=500')" target="_blank">
+            <div class="social-share mid">
+              <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
+            </div>
+          </a>
+          <a href="mailto:?subject=<?php urlencode(the_title()); ?>&amp;body=<?php the_excerpt(); ?>%0A%0ARead More:%0A<?php echo get_permalink($post->ID); ?>">
+            <div class="social-share">
+              <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
 		<?php get_footer(); ?>
 	</div>
 
