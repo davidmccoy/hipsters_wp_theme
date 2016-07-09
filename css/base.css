@@ -1199,7 +1199,64 @@
     width: 120px;
   }
 }
-/* line 10, ../scss/base.scss */
+/* line 4, ../scss/_masthead.scss */
+#container #content.masthead h1 span {
+  font-size: 21px;
+  font-weight: normal;
+  vertical-align: middle;
+}
+/* line 10, ../scss/_masthead.scss */
+#container #content.masthead .mobile-masthead {
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 14, ../scss/_masthead.scss */
+#container #content.masthead .mobile-masthead span {
+  text-transform: none;
+  font-weight: normal;
+  font-style: italic;
+}
+/* line 20, ../scss/_masthead.scss */
+#container #content.masthead table {
+  display: none;
+  width: 100%;
+  text-align: center;
+}
+/* line 24, ../scss/_masthead.scss */
+#container #content.masthead table td {
+  text-transform: uppercase;
+  font-weight: bold;
+  width: 33.3%;
+  padding-bottom: 25px;
+}
+/* line 30, ../scss/_masthead.scss */
+#container #content.masthead table span {
+  text-transform: none;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  /* line 44, ../scss/_masthead.scss */
+  body #container #content.masthead h1 {
+    text-align: center;
+  }
+  /* line 47, ../scss/_masthead.scss */
+  body #container #content.masthead .masthead-edit {
+    text-align: center;
+  }
+  /* line 50, ../scss/_masthead.scss */
+  body #container #content.masthead .mobile-masthead {
+    display: none;
+  }
+  /* line 53, ../scss/_masthead.scss */
+  body #container #content.masthead table {
+    display: table;
+  }
+}
+/* line 11, ../scss/base.scss */
 body {
   width: 100%;
   height: auto;
@@ -1208,34 +1265,38 @@ body {
   font-size: 18px;
   line-height: 1.5;
 }
-/* line 18, ../scss/base.scss */
+/* line 19, ../scss/base.scss */
 body h1, body h2, body h3, body h4, body h5 {
   font-family: 'kievit';
   -ms-word-wrap: break-word;
   word-wrap: break-word;
 }
-/* line 24, ../scss/base.scss */
+/* line 25, ../scss/base.scss */
 body h1 {
   line-height: 1.4;
 }
-/* line 28, ../scss/base.scss */
+/* line 29, ../scss/base.scss */
 body.ios h1, body.ios h2, body.ios h3, body.ios h5 {
   font-weight: normal;
   -webkit-text-stroke: 0.5px black;
 }
-/* line 32, ../scss/base.scss */
+/* line 33, ../scss/base.scss */
 body.ios h4 {
   font-weight: normal;
   -webkit-text-stroke: 0.5px #ff82c8;
 }
-/* line 38, ../scss/base.scss */
+/* line 39, ../scss/base.scss */
+body .centered {
+  text-align: center;
+}
+/* line 43, ../scss/base.scss */
 body #wrap {
   max-width: 1024px;
   padding: 0px 15px;
   margin: 0 auto;
   letter-spacing: .05px;
 }
-/* line 44, ../scss/base.scss */
+/* line 49, ../scss/base.scss */
 body #wrap #spacer img {
   width: 90%;
   padding: 15px;
@@ -1243,16 +1304,16 @@ body #wrap #spacer img {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 54, ../scss/base.scss */
+  /* line 59, ../scss/base.scss */
   body {
     font-size: 21px;
     line-height: 1.58;
   }
-  /* line 58, ../scss/base.scss */
+  /* line 63, ../scss/base.scss */
   body h1 {
     line-height: 1.5;
   }
-  /* line 62, ../scss/base.scss */
+  /* line 67, ../scss/base.scss */
   body #wrap #spacer {
     display: none;
   }

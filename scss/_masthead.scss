@@ -1,0 +1,59 @@
+#container {
+  #content.masthead {
+    h1 {
+      span {
+        font-size: 21px;
+        font-weight: normal;
+        vertical-align: middle;
+      }
+    }
+    .mobile-masthead {
+      display: block;
+      text-transform: uppercase;
+      font-weight: bold;
+      span {
+        text-transform: none;
+        font-weight: normal;
+        font-style: italic;
+      }
+    }
+    table {
+      display: none;
+      width: 100%;
+      text-align: center;
+      td {
+        text-transform: uppercase;
+        font-weight: bold;
+        width: 33.3%;
+        padding-bottom: 25px;
+      }
+      span {
+        text-transform: none;
+        font-weight: normal;
+        font-style: italic;
+        font-size: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    #container {
+      #content.masthead {
+        h1 {
+          text-align: center;
+        }
+        .masthead-edit {
+          text-align: center;
+        }
+        .mobile-masthead {
+          display: none;
+        }
+        table {
+          display: table;
+        }
+      }
+    }
+  }
+}
