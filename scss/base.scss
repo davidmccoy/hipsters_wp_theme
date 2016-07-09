@@ -37,10 +37,6 @@ body {
     }
   }
 
-  .centered {
-    text-align: center;
-  }
-
   #wrap {
     max-width: 1024px;
     padding: 0px 15px;
@@ -51,6 +47,16 @@ body {
         width: 90%;
         padding: 15px;
         visibility: collapse;
+      }
+    }
+    #container {
+      #content {
+        #pagination {
+          text-align: center;
+          a {
+            margin: 0 5px;
+          }
+        }
       }
     }
   }

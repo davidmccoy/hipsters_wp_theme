@@ -1,15 +1,14 @@
 #container {
-  #content.category {
+  #content.category, #content.tag {
     h1 {
       text-transform: uppercase;
       margin: 0px;
       margin-bottom: 15px;
     }
-    .category-post {
+    .category-post, .tag-post {
       margin-bottom: 30px;
       h2 {
         margin: 0px;
-        margin-top: 5px;
         a {
           color: black;
         }
@@ -76,7 +75,7 @@
       }
       .featured_image {
         width: 100%;
-        background-size: cover; 
+        background-size: cover;
         height: 220px;
         img {
           width: 100%;
@@ -107,12 +106,22 @@
         }
       }
     }
+    .category-post {
+      h2 {
+        margin-top: 5px;
+      }
+    }
+    .tag-post {
+      h4.category {
+        margin-top: 15px;
+      }
+    }
   }
 }
 
 @media screen and (min-width: 768px) {
   #container {
-    #content.category {
+    #content.category, #content.tag {
       h1 {
         margin-bottom: 35px;
       }
@@ -120,6 +129,12 @@
         margin-bottom: 65px;
         h2 {
           margin-top: 10px;
+        }
+      }
+      .tag-post {
+        margin-bottom: 65px;
+        h4.category {
+          margin-top: 20px;
         }
       }
     }
