@@ -3,15 +3,15 @@
 <div id="container">
 
 	<div id="content" class="author">
-        
+
         <?php
-        
+
             if(isset($_GET['author_name'])) :
             $curauth = get_userdatabylogin($author_name);
             else :
             $curauth = get_userdata(intval($author));
             endif;
-            
+
         ?>
 
         <div class="author-info">
@@ -32,11 +32,11 @@
                 </div>
             </div>
         </div>
-        
-        
-        
+
+
+
         <div class="postarea author_column">
-            
+
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <div class="author-post">
 
@@ -68,7 +68,7 @@
                     <?php
                       $now = current_time('timestamp');
                       $posted_at = get_the_time('U');
-                      $post_age = $now - $posted_at              
+                      $post_age = $now - $posted_at
                     ?>
 
                     <?php if($post_age < 604800) { ?>
@@ -77,26 +77,26 @@
                       </p>
                     <?php } else { ?>
                       <p>
-                        <?php the_time(__("F j, Y", 'organicthemes'));  ?> 
+                        <?php the_time(__("F j, Y", 'organicthemes'));  ?>
                       </p>
                     <?php } ?>
                     <div class="middot-spacer">
-                      &middot; 
+                      &middot;
                     </div>
-                    <?php 
+                    <?php
                       $time_to_read =  ceil(wcount() / 275);
                       if ($time_to_read == 1) {
                     ?>
                       <p>
                         <?php echo $time_to_read . " min to read" ?>
                       </p>
-                    <?php    
+                    <?php
                       } else {
                     ?>
                       <p>
                         <?php echo $time_to_read . " min to read" ?>
                       </p>
-                    <?php 
+                    <?php
                       }
                     ?>
                     <p>
@@ -111,7 +111,7 @@
                     <p>
                       <?php
                       $before = '';
-                      $seperator = ''; 
+                      $seperator = '';
                       $after = '';
 
                       the_tags( $before, $seperator, $after );
@@ -126,9 +126,9 @@
                     <?php _e("No posts by this author.", 'organicthemes'); ?>
                 </p>
             <?php endif; ?>
-        
+
         </div>
-        
+
 	</div>
 
 </div>

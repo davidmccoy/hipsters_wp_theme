@@ -28,10 +28,10 @@
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/superfish/superfish.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/superfish/hoverIntent.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.anythingslider.js"></script>
-<!-- 
+<!--
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.anythingslider.video.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/swfobject.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.masonry.min.js"></script> 
+<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.masonry.min.js"></script>
 
 <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
 <script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
@@ -40,10 +40,10 @@
 <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 -->
 
-<script type="text/javascript"> 
+<script type="text/javascript">
 	var $j = jQuery.noConflict();
-	$j(document).ready(function() { 
-		$j('.menu').superfish(); 
+	$j(document).ready(function() {
+		$j('.menu').superfish();
 	});
 </script>
 
@@ -66,13 +66,14 @@
     </div>
     <div id="navbar">
     	<i class="fa fa-times fa-lg" aria-hidden="true"></i>
-			<?php if ( function_exists('wp_nav_menu') ) { 
+			<?php if ( function_exists('wp_nav_menu') ) {
 				// Check for 3.0+ menus
-				wp_nav_menu( array( 'title_li' => '', 'depth' => 4, 'container_class' => 'menu' ) ); 
+				wp_nav_menu( array( 'title_li' => '', 'depth' => 4, 'container_class' => 'menu' ) );
+				// get_search_form();
 			}
 			else {?>
 				<ul class="menu"><?php wp_list_pages('title_li=&depth=4'); ?></ul>
 			<?php } ?>
     </div>
-    
+
     <div style="clear:both;"></div>

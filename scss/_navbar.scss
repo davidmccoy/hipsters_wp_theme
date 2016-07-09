@@ -10,10 +10,10 @@
   }
 
   .menu {
-    width: 760px;
+    width: auto;
     margin: 0 auto;
     float: none;
-
+    text-align: center;
     ul {
       padding: 0px;
       ul {
@@ -21,7 +21,7 @@
         top: -9999px;
         width: 180px; /* left offset of submenus need to match (see below) */
         .sf-sub-indicator {
-          background-position:  -10px 0; 
+          background-position:  -10px 0;
         }
 
         a {
@@ -32,7 +32,7 @@
           }
           > .sf-sub-indicator {
             top: 10px;
-            background-position:  0 0; 
+            background-position:  0 0;
           }
         }
 
@@ -58,34 +58,93 @@
             background: white;
           }
         }
+        form {
+          div {
+            width: 105px;
+          }
+          input[type="text"] {
+            font-size: 16px;
+            border: none;
+            text-transform: uppercase;
+            font-weight: 100;
+            text-align: center;
+            width: 75px;
+            text-align: left;
+            padding: 3px 5px;
+            margin-left: 20px;
+            &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+              color: #ff82c8;
+            }
+            &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+              color: #ff82c8;
+              opacity: 1;
+            }
+            &::-moz-placeholder { /* Mozilla Firefox 19+ */
+              color: #ff82c8;
+              opacity: 1;
+            }
+            &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+              color: #ff82c8;
+            }
+            &:focus {
+              outline: none;
+              width: auto;
+              border: none;
+            }
+            &:active {
+              // width: auto;
+            }
+          }
+          input[type="submit"] {
+            display: none;
+          }
+          i {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            display: block;
+            width: 15px;
+            height: 16px;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
       }
     }
     ul.menu {
       margin: 0px;
       padding: 0px;
       list-style: none;
-
       ul {
         position: absolute;
         top: -9999px;
         width: 180px; /* left offset of submenus need to match (see below) */
-
         li {
           background: white;
           width: 100%;
           border: none;
           margin: 0px 0px 0px 0px;
+          &:hover {
+            border: none;
+            a {
+              color: #ff82c8;
+            }
+          }
         }
         .sf-sub-indicator {
-          background-position:  -10px 0; 
+          background-position:  -10px 0;
         }
         a > .sf-sub-indicator {
           top: 10px;
-          background-position:  0 0; 
+          background-position:  0 0;
         }
       }
       li {
+        // border-bottom: 2px solid white;
         &:hover, &.sfHover {
+          // border-bottom: 2px solid black;
           li {
             ul {
               top: -9999px;
@@ -114,7 +173,7 @@
       }
     }
     li {
-      float: left;
+      display: inline-block;
       position: relative;
       background: none;
       &:hover, &.sfHover {
@@ -124,8 +183,10 @@
         outline: 0;
         ul {
           left: 0;
-          top: 45px; /* match top ul list item height */
+          top: 35px; /* match top ul list item height */
           z-index: 99;
+          padding-top: 10px;
+          text-align: left;
         }
         a > .sf-sub-indicator {
           background-position: -10px -100px; /* arrow hovers for modern browsers*/
@@ -283,7 +344,7 @@
     height: 100%;
     padding: 20px;
     position: fixed;
-    top: 0; 
+    top: 0;
     left: -400px;
     -moz-transition: all 0.2s linear 0s;
     -webkit-transition: all 0.2s linear 0s;
@@ -303,13 +364,20 @@
         color: white;
         float: right;
         padding-top: 14px;
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
 
 
     .menu {
       width: auto;
-      float: left;
+      text-align: left;
+      margin-right: 20px;
+      li {
+        display: block;
+      }
       a {
         color: white;
         &:visited {
@@ -321,10 +389,13 @@
       }
       ul.menu {
         li {
-          color: white;
+          color: black;
           background: none;
           display: block;
           float: none;
+          a:hover {
+            color: #ff82c8;
+          }
           li:hover, li.sfHover {
             ul {
               left: 0;
@@ -332,16 +403,44 @@
           }
           .sub-menu {
             top: 0;
+            left: 20px;
             position: relative;
+            display: none;
             li {
               ul {
               }
             }
           }
+          &:hover {
+            .sub-menu {
+              display: block;
+            }
+          }
+          form {
+            padding: 7px 10px 7px;
+            div {
+              i {
+                padding: 0;
+              }
+              input[type="text"] {
+                background: black;
+                color: white;
+                &:focus {
+                  width: 180px;
+                }
+              }
+            }
+          }
         }
-        ul {
+        ul.sub-menu {
           li {
             background: none;
+            a {
+              color: white;
+              &:hover {
+                color: #ff82c8;
+              }
+            }
           }
         }
       }
