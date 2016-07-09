@@ -1,3 +1,9 @@
+<?php
+/*
+Template Name: Masthead
+*/
+?>
+
 <?php get_header(); ?>
 
 <div id="container">
@@ -6,7 +12,7 @@
                 <?php echo clean_wp_width_height(get_the_post_thumbnail(get_the_ID(),'page-feature')); ?>
         </div>
 
-	<div id="content" class="page">
+	<div id="content" class="masthead">
 
                 <div class="postarea">
 
@@ -15,7 +21,7 @@
                                 <h1 class="title_page">
                                         <?php the_title(); ?>
                                 </h1>
-                                <p class="edit">
+                                <p class="masthead-edit">
                                         <?php edit_post_link(__("(Edit)", 'organicthemes'), '', ''); ?>
                                 </p>
 
