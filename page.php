@@ -2,13 +2,12 @@
 
 <div id="container">
 
-        <div id="featureimg">
-                <?php echo clean_wp_width_height(get_the_post_thumbnail(get_the_ID(),'page-feature')); ?>
-        </div>
-
 	<div id="content" class="page">
 
                 <div class="postarea">
+                        <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0]; ?>
+                        <div class="featureimg" style="background-image: url('<?php echo $image ?>');">
+                        </div>
 
                         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

@@ -1256,7 +1256,14 @@
     display: table;
   }
 }
-/* line 11, ../scss/base.scss */
+/* line 4, ../scss/_page.scss */
+#container #content.page .postarea .featureimg {
+  width: 100%;
+  padding-bottom: 65%;
+  background-size: cover;
+}
+
+/* line 12, ../scss/base.scss */
 body {
   width: 100%;
   height: auto;
@@ -1265,38 +1272,38 @@ body {
   font-size: 18px;
   line-height: 1.5;
 }
-/* line 19, ../scss/base.scss */
+/* line 20, ../scss/base.scss */
 body h1, body h2, body h3, body h4, body h5 {
   font-family: 'kievit';
   -ms-word-wrap: break-word;
   word-wrap: break-word;
 }
-/* line 25, ../scss/base.scss */
+/* line 26, ../scss/base.scss */
 body h1 {
   line-height: 1.4;
 }
-/* line 29, ../scss/base.scss */
+/* line 30, ../scss/base.scss */
 body.ios h1, body.ios h2, body.ios h3, body.ios h5 {
   font-weight: normal;
   -webkit-text-stroke: 0.5px black;
 }
-/* line 33, ../scss/base.scss */
+/* line 34, ../scss/base.scss */
 body.ios h4 {
   font-weight: normal;
   -webkit-text-stroke: 0.5px #ff82c8;
 }
-/* line 39, ../scss/base.scss */
+/* line 40, ../scss/base.scss */
 body .centered {
   text-align: center;
 }
-/* line 43, ../scss/base.scss */
+/* line 44, ../scss/base.scss */
 body #wrap {
   max-width: 1024px;
   padding: 0px 15px;
   margin: 0 auto;
   letter-spacing: .05px;
 }
-/* line 49, ../scss/base.scss */
+/* line 50, ../scss/base.scss */
 body #wrap #spacer img {
   width: 90%;
   padding: 15px;
@@ -1304,16 +1311,16 @@ body #wrap #spacer img {
 }
 
 @media screen and (min-width: 768px) {
-  /* line 59, ../scss/base.scss */
+  /* line 60, ../scss/base.scss */
   body {
     font-size: 21px;
     line-height: 1.58;
   }
-  /* line 63, ../scss/base.scss */
+  /* line 64, ../scss/base.scss */
   body h1 {
     line-height: 1.5;
   }
-  /* line 67, ../scss/base.scss */
+  /* line 68, ../scss/base.scss */
   body #wrap #spacer {
     display: none;
   }
