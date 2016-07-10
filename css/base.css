@@ -199,7 +199,7 @@
   width: 75px;
   text-align: left;
   padding: 3px 5px;
-  margin-left: 20px;
+  margin-left: 23px;
 }
 /* line 81, ../scss/_navbar.scss */
 #navbar .menu ul li form input[type="text"]::-webkit-input-placeholder {
