@@ -48,6 +48,11 @@
       li {
         list-style: none;
         border-bottom: 2px solid white;
+        &.my-nav-menu-search {
+          &:hover {
+            border-bottom: 2px solid white;
+          }
+        }
         &:hover {
           border-bottom: 2px solid black;
         }
