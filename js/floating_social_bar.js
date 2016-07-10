@@ -24,10 +24,10 @@
         $(window).on('scroll', function() {
           st = $(this).scrollTop();
           if(st < lastScrollTop) {
-          	$('div.share-bar').removeClass('is-visible');
+						$('div.share-bar').addClass('is-visible');
           }
           else if(st > lastScrollTop) {
-          	$('div.share-bar').addClass('is-visible');
+						$('div.share-bar').removeClass('is-visible');
           }
           lastScrollTop = st;
         });
@@ -36,10 +36,10 @@
 	    else {
         $('body').on('mousewheel', function(e){
           if(e.originalEvent.wheelDelta > 0) {
-          	$('div.share-bar').removeClass('is-visible');
+						$('div.share-bar').addClass('is-visible');
           }
           else if(e.originalEvent.wheelDelta < 0) {
-          	$('div.share-bar').addClass('is-visible');
+						$('div.share-bar').removeClass('is-visible');
           }
         });
 	    }
@@ -53,12 +53,12 @@
 	    $(document).bind('touchmove', function(e) {
 	        var te = e.originalEvent.changedTouches[0].clientY;
 	        if (ts > te) {
-	            $('div.share-bar').removeClass('is-visible');
+						$('div.share-bar').addClass('is-visible');
 	        } else {
-	            $('div.share-bar').addClass('is-visible');
+						$('div.share-bar').removeClass('is-visible');
 	        }
 	    });
 		}
-	})
-	 
+	});
+
 })(jQuery);
