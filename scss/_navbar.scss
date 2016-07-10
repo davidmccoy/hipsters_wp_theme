@@ -351,13 +351,13 @@
     -ms-transition: all 0.2s linear 0s;
     transition: all 0.2s linear 0s;
     width: 0;
-    // overflow: hidden;
 
     &.slide-in {
     left: 0;
     width: 250px;
     z-index: 100;
     background: black;
+    overflow: auto;
 
       i {
         display: block;
@@ -393,6 +393,9 @@
           background: none;
           display: block;
           float: none;
+          &.my-nav-menu-search {
+            margin-bottom: 45px;
+          }
           a:hover {
             color: #ff82c8;
           }

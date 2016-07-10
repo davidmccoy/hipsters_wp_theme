@@ -480,12 +480,13 @@
     transition: all 0.2s linear 0s;
     width: 0;
   }
-  /* line 356, ../scss/_navbar.scss */
+  /* line 355, ../scss/_navbar.scss */
   #navbar.slide-in {
     left: 0;
     width: 250px;
     z-index: 100;
     background: black;
+    overflow: auto;
   }
   /* line 362, ../scss/_navbar.scss */
   #navbar.slide-in i {
@@ -528,50 +529,54 @@
     float: none;
   }
   /* line 396, ../scss/_navbar.scss */
+  #navbar .menu ul.menu li.my-nav-menu-search {
+    margin-bottom: 45px;
+  }
+  /* line 399, ../scss/_navbar.scss */
   #navbar .menu ul.menu li a:hover {
     color: #ff82c8;
   }
-  /* line 400, ../scss/_navbar.scss */
+  /* line 403, ../scss/_navbar.scss */
   #navbar .menu ul.menu li li:hover ul, #navbar .menu ul.menu li li.sfHover ul {
     left: 0;
   }
-  /* line 404, ../scss/_navbar.scss */
+  /* line 407, ../scss/_navbar.scss */
   #navbar .menu ul.menu li .sub-menu {
     top: 0;
     left: 20px;
     position: relative;
     display: none;
   }
-  /* line 415, ../scss/_navbar.scss */
+  /* line 418, ../scss/_navbar.scss */
   #navbar .menu ul.menu li:hover .sub-menu {
     display: block;
   }
-  /* line 419, ../scss/_navbar.scss */
+  /* line 422, ../scss/_navbar.scss */
   #navbar .menu ul.menu li form {
     padding: 7px 10px 7px;
   }
-  /* line 422, ../scss/_navbar.scss */
+  /* line 425, ../scss/_navbar.scss */
   #navbar .menu ul.menu li form div i {
     padding: 0;
   }
-  /* line 425, ../scss/_navbar.scss */
+  /* line 428, ../scss/_navbar.scss */
   #navbar .menu ul.menu li form div input[type="text"] {
     background: black;
     color: white;
   }
-  /* line 428, ../scss/_navbar.scss */
+  /* line 431, ../scss/_navbar.scss */
   #navbar .menu ul.menu li form div input[type="text"]:focus {
     width: 180px;
   }
-  /* line 436, ../scss/_navbar.scss */
+  /* line 439, ../scss/_navbar.scss */
   #navbar .menu ul.menu ul.sub-menu li {
     background: none;
   }
-  /* line 438, ../scss/_navbar.scss */
+  /* line 441, ../scss/_navbar.scss */
   #navbar .menu ul.menu ul.sub-menu li a {
     color: white;
   }
-  /* line 440, ../scss/_navbar.scss */
+  /* line 443, ../scss/_navbar.scss */
   #navbar .menu ul.menu ul.sub-menu li a:hover {
     color: #ff82c8;
   }
