@@ -5,6 +5,12 @@
 	<div id="content" class="search">
 
 		<div class="postarea">
+      <h4 class="search-query">
+        Results for
+      </h4>
+      <h1>
+        <?php the_search_query(); ?>
+      </h1>
 
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 				<?php $meta_box = get_post_custom($post->ID); $video = $meta_box['custom_meta_video'][0]; ?>

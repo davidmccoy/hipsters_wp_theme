@@ -5,7 +5,7 @@
       margin: 0px;
       margin-bottom: 15px;
     }
-    h4.tag {
+    h4.tag, h4.search-query {
       margin: 0;
       text-transform: uppercase;
       color: #ff82c8;
@@ -126,7 +126,7 @@
 
 @media screen and (min-width: 768px) {
   #container {
-    #content.category, #content.tag {
+    #content.category, #content.tag, #content.search {
       h1 {
         margin-bottom: 35px;
       }

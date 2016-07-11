@@ -1015,7 +1015,7 @@
   margin-bottom: 15px;
 }
 /* line 8, ../scss/_category.scss */
-#container #content.category h4.tag, #container #content.tag h4.tag, #container #content.search h4.tag {
+#container #content.category h4.tag, #container #content.category h4.search-query, #container #content.tag h4.tag, #container #content.tag h4.search-query, #container #content.search h4.tag, #container #content.search h4.search-query {
   margin: 0;
   text-transform: uppercase;
   color: #ff82c8;
@@ -1150,23 +1150,23 @@
 
 @media screen and (min-width: 768px) {
   /* line 130, ../scss/_category.scss */
-  #container #content.category h1, #container #content.tag h1 {
+  #container #content.category h1, #container #content.tag h1, #container #content.search h1 {
     margin-bottom: 35px;
   }
   /* line 133, ../scss/_category.scss */
-  #container #content.category .category-post, #container #content.tag .category-post {
+  #container #content.category .category-post, #container #content.tag .category-post, #container #content.search .category-post {
     margin-bottom: 65px;
   }
   /* line 135, ../scss/_category.scss */
-  #container #content.category .category-post h2, #container #content.tag .category-post h2 {
+  #container #content.category .category-post h2, #container #content.tag .category-post h2, #container #content.search .category-post h2 {
     margin-top: 10px;
   }
   /* line 139, ../scss/_category.scss */
-  #container #content.category .tag-post, #container #content.tag .tag-post {
+  #container #content.category .tag-post, #container #content.tag .tag-post, #container #content.search .tag-post {
     margin-bottom: 65px;
   }
   /* line 141, ../scss/_category.scss */
-  #container #content.category .tag-post h4.category, #container #content.tag .tag-post h4.category {
+  #container #content.category .tag-post h4.category, #container #content.tag .tag-post h4.category, #container #content.search .tag-post h4.category {
     margin-top: 20px;
   }
 }
