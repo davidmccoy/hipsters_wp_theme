@@ -16,25 +16,39 @@
   font-style: italic;
 }
 @font-face {
-  font-family: 'kievit';
-  src: url("../fonts/kievit-regular.eot");
-  src: url("../fonts/kievit-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/kievit-regular.woff2") format("woff2"), url("../fonts/kievit-regular.woff") format("woff"), url("../fonts/kievit-regular.ttf") format("truetype"), url("../fonts/kievit-regular.svg#Kievit-Regular") format("svg");
+  font-family: 'whitney';
+  src: url("../fonts/Whitney-Book.eot");
+  src: url("../fonts/Whitney-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/Whitney-Book.woff2") format("woff2"), url("../fonts/Whitney-Book.woff") format("woff"), url("../fonts/Whitney-Book.ttf") format("truetype"), url("../fonts/Whitney-Book.svg#Whitney-Book") format("svg");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: 'kievit';
-  src: url("../fonts/kievit-medium.eot");
-  src: url("../fonts/kievit-medium.eot?#iefix") format("embedded-opentype"), url("../fonts/kievit-medium.woff2") format("woff2"), url("../fonts/kievit-medium.woff") format("woff"), url("../fonts/kievit-medium.ttf") format("truetype"), url("../fonts/kievit-medium.svg#Kievit-Medium") format("svg");
+  font-family: 'whitney';
+  src: url("../fonts/Whitney-BookItalic.eot");
+  src: url("../fonts/Whitney-BookItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Whitney-BookItalic.woff2") format("woff2"), url("../fonts/Whitney-BookItalic.woff") format("woff"), url("../fonts/Whitney-BookItalic.ttf") format("truetype"), url("../fonts/Whitney-BookItalic.svg#Whitney-BookItalic") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'whitney';
+  src: url("../fonts/Whitney-Medium.eot");
+  src: url("../fonts/Whitney-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Whitney-Medium.woff2") format("woff2"), url("../fonts/Whitney-Medium.woff") format("woff"), url("../fonts/Whitney-Medium.ttf") format("truetype"), url("../fonts/Whitney-Medium.svg#Whitney-Medium") format("svg");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
-  font-family: 'kievit';
-  src: url("../fonts/kievit-medium-italic.eot");
-  src: url("../fonts/kievit-medium-italic.eot?#iefix") format("embedded-opentype"), url("../fonts/kievit-medium-italic.woff2") format("woff2"), url("../fonts/kievit-medium-italic.woff") format("woff"), url("../fonts/kievit-medium-italic.ttf") format("truetype"), url("../fonts/kievit-medium-italic.svg#Kievit-MediumItalic") format("svg");
+  font-family: 'whitney';
+  src: url("../fonts/Whitney-MediumItalic.eot");
+  src: url("../fonts/Whitney-MediumItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/Whitney-MediumItalic.woff2") format("woff2"), url("../fonts/Whitney-MediumItalic.woff") format("woff"), url("../fonts/Whitney-MediumItalic.ttf") format("truetype"), url("../fonts/Whitney-MediumItalic.svg#Whitney-MediumItalic") format("svg");
   font-weight: bold;
   font-style: italic;
+}
+@font-face {
+  font-family: 'whitney-semibold';
+  src: url("../fonts/Whitney-Semibold.eot");
+  src: url("../fonts/Whitney-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Whitney-Semibold.woff2") format("woff2"), url("../fonts/Whitney-Semibold.woff") format("woff"), url("../fonts/Whitney-Semibold.ttf") format("truetype"), url("../fonts/Whitney-Semibold.svg#Whitney-Semibold") format("svg");
+  font-weight: bold;
+  font-style: normal;
 }
 /* line 1, ../scss/_header.scss */
 #header {
@@ -120,7 +134,7 @@
   height: auto;
   background: none;
   text-transform: uppercase;
-  font-family: 'kievit';
+  font-family: 'whitney';
   font-size: 16px;
 }
 /* line 8, ../scss/_navbar.scss */
@@ -610,41 +624,42 @@
 }
 /* line 16, ../scss/_home.scss */
 #homepage .homepagecontent .homeinfo h3 {
+  font-family: "whitney-semibold";
   text-transform: uppercase;
   font-size: 20px;
   margin: 0px;
 }
-/* line 20, ../scss/_home.scss */
+/* line 21, ../scss/_home.scss */
 #homepage .homepagecontent .homeinfo h3 a {
   color: black;
 }
-/* line 24, ../scss/_home.scss */
+/* line 25, ../scss/_home.scss */
 #homepage .homepagecontent .homeinfo h4 {
   text-transform: uppercase;
   font-size: 14px;
   margin: 15px 0px 5px;
 }
-/* line 28, ../scss/_home.scss */
+/* line 29, ../scss/_home.scss */
 #homepage .homepagecontent .homeinfo h4 a {
   color: #ff82c8;
 }
-/* line 32, ../scss/_home.scss */
+/* line 33, ../scss/_home.scss */
 #homepage .homepagecontent .homeinfo p {
   margin: 10px 0px 15px;
 }
-/* line 37, ../scss/_home.scss */
+/* line 38, ../scss/_home.scss */
 #homepage .homepagecontent .post_container .featured_image {
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 46, ../scss/_home.scss */
+  /* line 47, ../scss/_home.scss */
   #homepage {
     font-size: 18px;
     line-height: 1.5;
   }
-  /* line 49, ../scss/_home.scss */
+  /* line 50, ../scss/_home.scss */
   #homepage .homepagecontent {
     margin-bottom: 0px;
     width: 33.3%;
@@ -654,20 +669,20 @@
     vertical-align: top;
     position: relative;
   }
-  /* line 57, ../scss/_home.scss */
+  /* line 58, ../scss/_home.scss */
   #homepage .homepagecontent#sticky {
     width: 66.6%;
   }
-  /* line 60, ../scss/_home.scss */
+  /* line 61, ../scss/_home.scss */
   #homepage .homepagecontent#sticky .post_container h3 {
     font-size: 28px;
     margin: 5px 0px;
   }
-  /* line 64, ../scss/_home.scss */
+  /* line 65, ../scss/_home.scss */
   #homepage .homepagecontent#sticky .post_container .featured_image {
     background-position: top center;
   }
-  /* line 69, ../scss/_home.scss */
+  /* line 70, ../scss/_home.scss */
   #homepage .homepagecontent .post_container {
     position: absolute;
     left: 10px;
@@ -1489,7 +1504,7 @@ body {
 }
 /* line 22, ../scss/base.scss */
 body h1, body h2, body h3, body h4, body h5 {
-  font-family: 'kievit';
+  font-family: 'whitney';
   -ms-word-wrap: break-word;
   word-wrap: break-word;
 }
@@ -1502,44 +1517,48 @@ body.ios h1, body.ios h2, body.ios h3, body.ios h5 {
   font-weight: normal;
   -webkit-text-stroke: 0.5px black;
 }
-/* line 36, ../scss/base.scss */
+/* line 35, ../scss/base.scss */
+body.ios h1 a, body.ios h2 a, body.ios h3 a, body.ios h5 a {
+  -webkit-text-stroke: 0.5px #ff82c8;
+}
+/* line 39, ../scss/base.scss */
 body.ios h4 {
   font-weight: normal;
   -webkit-text-stroke: 0.5px #ff82c8;
 }
-/* line 42, ../scss/base.scss */
+/* line 45, ../scss/base.scss */
 body #wrap {
   max-width: 1024px;
   padding: 0px 15px;
   margin: 0 auto;
   letter-spacing: .05px;
 }
-/* line 48, ../scss/base.scss */
+/* line 51, ../scss/base.scss */
 body #wrap #spacer img {
   width: 90%;
   padding: 15px;
   visibility: collapse;
 }
-/* line 56, ../scss/base.scss */
+/* line 59, ../scss/base.scss */
 body #wrap #container #content #pagination {
   text-align: center;
 }
-/* line 58, ../scss/base.scss */
+/* line 61, ../scss/base.scss */
 body #wrap #container #content #pagination a {
   margin: 0 5px;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 68, ../scss/base.scss */
+  /* line 71, ../scss/base.scss */
   body {
     font-size: 21px;
     line-height: 1.58;
   }
-  /* line 72, ../scss/base.scss */
+  /* line 75, ../scss/base.scss */
   body h1 {
     line-height: 1.5;
   }
-  /* line 76, ../scss/base.scss */
+  /* line 79, ../scss/base.scss */
   body #wrap #spacer {
     display: none;
   }
