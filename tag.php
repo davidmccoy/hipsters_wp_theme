@@ -98,7 +98,8 @@
               </div>
 
 
-	            <?php the_excerpt(); ?><div style="clear:both;"></div>
+	            <?php the_excerpt(); ?>
+              <div style="clear:both;"></div>
 
       				<div class="postmeta">
                 <p>

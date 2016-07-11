@@ -1,5 +1,5 @@
 #container {
-  #content.category, #content.tag {
+  #content.category, #content.tag, #content.search {
     h1 {
       text-transform: uppercase;
       margin: 0px;
@@ -10,7 +10,7 @@
       text-transform: uppercase;
       color: #ff82c8;
     }
-    .category-post, .tag-post {
+    .category-post, .tag-post, .search-post {
       margin-bottom: 30px;
       h2 {
         margin: 0px;
