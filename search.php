@@ -13,13 +13,15 @@
 						<?php if ( $video ) : ?>
 				      <div class="postvid_archive"><?php echo $video; ?></div>
 				    <?php else: ?>
-			        <?php
-								$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0];
-							?>
-              <a href="<?php the_permalink() ?>">
-                <div class="featured_image" style="background-image: url('<?php echo $image ?>');">
-                </div>
-              </a>
+              <?php if (has_post_thumbnail()) { ?>
+  			        <?php
+  								$image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0];
+  							?>
+                <a href="<?php the_permalink() ?>">
+                  <div class="featured_image" style="background-image: url('<?php echo $image ?>');">
+                  </div>
+                </a>
+              <?php } ?>
 				    <?php endif; ?>
 
 						<h4 class="category">
