@@ -1460,6 +1460,19 @@
   background-size: cover;
   background-position: center;
 }
+/* line 11, ../scss/_page.scss */
+#container #content.page .post-area .error-container div {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 15, ../scss/_page.scss */
+#container #content.page .post-area .error-container .error-left {
+  width: 66.6%;
+}
+/* line 18, ../scss/_page.scss */
+#container #content.page .post-area .error-container .error-right {
+  width: 33.3%;
+}
 
 /* line 3, ../scss/_newsletter.scss */
 .boxzilla-center-container .boxzilla-center .boxzilla-content {

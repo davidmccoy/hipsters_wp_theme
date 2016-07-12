@@ -2,19 +2,28 @@
 
 <div id="container">
 
-	<div id="content" class="left">
+	<div id="content" class="page">
 
-        <div class="post-area">
+    <div class="post-area">
 
-            <h1><?php _e("Not Found, Error 404", 'organicthemes'); ?></h1>
-            <p><?php _e("The page you are looking for no longer exists.", 'organicthemes'); ?></p>
-
+      <div class="error-container">
+        <div class="error-left">
+          <h1>
+            Page Not Found
+          </h1>
+          <p>
+            The page you are looking for seems to have gone missing.
+          </p>
+        </div><div class="error-right">
+          <img src="<?php bloginfo('template_url'); ?>/images/fblthp-smaller.png" />
         </div>
 
+      </div>
+
+
+    </div>
+
+    <?php get_footer(); ?>
 	</div>
 
-	<?php include(TEMPLATEPATH."/sidebar.php");?>
-
 </div>
-
-<?php get_footer(); ?>
