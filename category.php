@@ -30,7 +30,16 @@
 
               <h2>
                 <a href="<?php the_permalink() ?>" rel="bookmark">
-                  <?php the_title(); ?>
+                        <?php
+                           $title = get_the_title();
+                           $split_title = explode("—", $title);
+
+                           if (count($split_title) > 1 && strcmp($category[0]->name, $split_title[0]) == 0) {
+                                 echo $split_title[1];
+                           } else {
+                                 echo the_title();
+                           }
+                        ?>
                 </a>
               </h2>
 

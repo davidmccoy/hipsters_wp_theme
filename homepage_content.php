@@ -1,11 +1,11 @@
-     
-<div class="homepagecontent" <?php if (is_sticky()) echo 'id="sticky"' ?>> 
+
+<div class="homepagecontent" <?php if (is_sticky()) echo 'id="sticky"' ?>>
   <?php
     $post_image_id = get_post_thumbnail_id($post_to_use->ID);
     if ($post_image_id) {
       $thumbnail = wp_get_attachment_image_src( $post_image_id, 'post-thumbnail', false);
       if ($thumbnail) (string)$thumbnail = $thumbnail[0];
-    } 
+    }
   ?>
   <div class="post_container">
     <a href="<?php the_permalink() ?>">
@@ -26,13 +26,22 @@
       <div class="post-title">
        <h3>
           <a href="<?php the_permalink() ?>" rel="bookmark">
-            <?php the_title(); ?>
+            <?php
+              $title = get_the_title();
+              $split_title = explode("—", $title);
+
+              if (count($split_title) > 1 && strcmp($category[0]->name, $split_title[0]) == 0) {
+                    echo $split_title[1];
+              } else {
+                    echo the_title();
+              }
+            ?>
           </a>
         </h3>
       </div>
       <div class="home_excerpt">
         <?php the_excerpt(); ?>
       </div>
-    </div> 
+    </div>
   </div>
 </div>
