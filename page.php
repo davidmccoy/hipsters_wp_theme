@@ -4,7 +4,7 @@
 
 	<div id="content" class="page">
 
-                <div class="postarea">
+                <div class="post-area">
                         <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'single-post-thumbnail' )[0]; ?>
                         <div class="featureimg" style="background-image: url('<?php echo $image ?>');">
                         </div>

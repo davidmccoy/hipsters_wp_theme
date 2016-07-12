@@ -4,7 +4,7 @@
 
 	<div id="content" class="tag">
 
-		<div class="postarea">
+		<div class="post-area">
 
         <h4 class="tag">
             Tagged in

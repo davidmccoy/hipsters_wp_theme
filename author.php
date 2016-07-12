@@ -35,7 +35,7 @@
 
 
 
-        <div class="postarea author_column">
+        <div class="post-area author_column">
 
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
                 <div class="author-post">

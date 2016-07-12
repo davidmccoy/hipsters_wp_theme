@@ -4,7 +4,7 @@
 
 	<div id="content" class="category">
 
-		<div class="postarea">
+		<div class="post-area">
 
         <h1>
           <?php

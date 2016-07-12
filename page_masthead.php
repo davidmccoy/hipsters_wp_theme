@@ -14,7 +14,7 @@ Template Name: Masthead
 
 	<div id="content" class="masthead">
 
-                <div class="postarea">
+                <div class="post-area">
 
                         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

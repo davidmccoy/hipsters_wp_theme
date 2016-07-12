@@ -4,7 +4,7 @@
 
 	<div id="content" class="search">
 
-		<div class="postarea">
+		<div class="post-area">
       <h4 class="search-query">
         Results for
       </h4>
