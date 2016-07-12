@@ -24,7 +24,17 @@
         ?>
 			</h4>
 			<h1 class="post-title">
-				<?php the_title(); ?>
+                        <?php
+                              $title = get_the_title();
+                              $split_title = explode("—", $title);
+
+                              if (count($split_title) > 1 && strcmp($category[0]->name, $split_title[0]) == 0) {
+                                    echo $split_title[1];
+                              } else {
+                                    echo the_title();
+                              }
+                        ?>
+
 			</h1>
 			<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
@@ -34,7 +44,7 @@
         <div class="post-author-info">
           <div class="post-author">
             <p>
-              <?php the_author_posts_link(); ?> 
+              <?php the_author_posts_link(); ?>
             </p>
             <p>
               <a href="http://www.twitter.com/<?php the_author_meta( 'twitter' ); ?>" rel="twitter" target="_blank">
@@ -48,7 +58,7 @@
         <?php
           $now = current_time('timestamp');
           $posted_at = get_the_time('U');
-          $post_age = $now - $posted_at              
+          $post_age = $now - $posted_at
         ?>
 
         <?php if($post_age < 604800) { ?>
@@ -57,26 +67,26 @@
           </p>
         <?php } else { ?>
           <p>
-            <?php the_time(__("F j, Y", 'organicthemes'));  ?> 
+            <?php the_time(__("F j, Y", 'organicthemes'));  ?>
       		</p>
         <?php } ?>
         <div class="middot-spacer">
-          &middot; 
+          &middot;
         </div>
-        <?php 
+        <?php
           $time_to_read =  ceil(wcount() / 275);
           if ($time_to_read == 1) {
         ?>
           <p>
             <?php echo $time_to_read . " min to read" ?>
           </p>
-        <?php    
+        <?php
           } else {
         ?>
           <p>
             <?php echo $time_to_read . " min to read" ?>
           </p>
-        <?php 
+        <?php
           }
         ?>
         <p>
@@ -95,7 +105,7 @@
 				<p>
 					<?php
 					$before = '';
-					$seperator = ''; 
+					$seperator = '';
 					$after = '';
 
 					the_tags( $before, $seperator, $after );
@@ -140,4 +150,3 @@
 	</div>
 
 </div>
-

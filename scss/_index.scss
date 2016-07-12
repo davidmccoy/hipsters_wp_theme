@@ -1,4 +1,4 @@
-#container { 
+#container {
   a {
     text-decoration: none;
     color: #ff82c8;
@@ -17,16 +17,16 @@
         // margin: 0 auto;
         // display: block;
         &.aligncenter {
-          display: block; 
-          margin-left: auto; 
+          display: block;
+          margin-left: auto;
           margin-right: auto;
         }
         &.alignright {
-          float: right; 
+          float: right;
           margin: 0 0 1em 1em;
         }
         &.alignleft {
-          float: left; 
+          float: left;
           margin: 0 1em 1em 0;
         }
       }
@@ -35,7 +35,7 @@
           margin: 0 auto
         }
         &.alignright {
-          margin-left: auto; 
+          margin-left: auto;
           margin-right: 0;
         }
       }
@@ -112,6 +112,7 @@
         width: 100%;
         padding-bottom: 65%;
         background-size: cover;
+        background-position: center;
       }
       .postauthor {
         margin: 15px 0px;
@@ -149,10 +150,10 @@
         }
       }
       pre {
-        white-space: pre; 
+        white-space: pre;
         -ms-word-wrap: break-word;
         word-wrap: break-word;
-        overflow-x: auto; 
+        overflow-x: auto;
       }
       .wp-caption {
         text-align: center;
@@ -167,14 +168,14 @@
       }
       iframe {
         display: block;
-        margin: 0 auto; 
+        margin: 0 auto;
         max-width: 100%;
       }
       .mtg_deck.mtg_deck_embedded {
         .card_box {
           display: none;
         }
-      } 
+      }
     }
     .share-bar {
       font-size: 0;
@@ -244,7 +245,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  #container { 
+  #container {
     margin-top: 20px;
     #content {
       .post-area {

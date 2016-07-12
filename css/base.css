@@ -855,18 +855,19 @@
   width: 100%;
   padding-bottom: 65%;
   background-size: cover;
+  background-position: center;
 }
-/* line 116, ../scss/_index.scss */
+/* line 117, ../scss/_index.scss */
 #container #content .post-area .postauthor {
   margin: 15px 0px;
 }
-/* line 119, ../scss/_index.scss */
+/* line 120, ../scss/_index.scss */
 #container #content .post-area .postmeta {
   -ms-word-wrap: break-word;
   word-wrap: break-word;
   margin: 30px 0px;
 }
-/* line 123, ../scss/_index.scss */
+/* line 124, ../scss/_index.scss */
 #container #content .post-area .postmeta a {
   border-radius: 5px;
   padding: 5px 10px 7px;
@@ -879,12 +880,12 @@
   display: inline-block;
   margin-bottom: 10px;
 }
-/* line 134, ../scss/_index.scss */
+/* line 135, ../scss/_index.scss */
 #container #content .post-area .postmeta a:hover {
   background: #ff82c8 !important;
   color: white;
 }
-/* line 140, ../scss/_index.scss */
+/* line 141, ../scss/_index.scss */
 #container #content .post-area blockquote {
   margin-top: 29px;
   border-left: 3px solid black;
@@ -893,42 +894,42 @@
   margin-left: 0px;
   font-style: italic;
 }
-/* line 147, ../scss/_index.scss */
+/* line 148, ../scss/_index.scss */
 #container #content .post-area blockquote p {
   margin: 0px;
 }
-/* line 151, ../scss/_index.scss */
+/* line 152, ../scss/_index.scss */
 #container #content .post-area pre {
   white-space: pre;
   -ms-word-wrap: break-word;
   word-wrap: break-word;
   overflow-x: auto;
 }
-/* line 157, ../scss/_index.scss */
+/* line 158, ../scss/_index.scss */
 #container #content .post-area .wp-caption {
   text-align: center;
 }
-/* line 160, ../scss/_index.scss */
+/* line 161, ../scss/_index.scss */
 #container #content .post-area .wp-caption-text {
   font-size: 14px;
   text-align: center;
   font-family: "kievit-regular";
 }
-/* line 165, ../scss/_index.scss */
+/* line 166, ../scss/_index.scss */
 #container #content .post-area twitterwidget {
   margin: 10px auto;
 }
-/* line 168, ../scss/_index.scss */
+/* line 169, ../scss/_index.scss */
 #container #content .post-area iframe {
   display: block;
   margin: 0 auto;
   max-width: 100%;
 }
-/* line 174, ../scss/_index.scss */
+/* line 175, ../scss/_index.scss */
 #container #content .post-area .mtg_deck.mtg_deck_embedded .card_box {
   display: none;
 }
-/* line 179, ../scss/_index.scss */
+/* line 180, ../scss/_index.scss */
 #container #content .share-bar {
   font-size: 0;
   visibility: hidden;
@@ -943,16 +944,16 @@
   margin: 0 auto;
   text-align: center;
 }
-/* line 192, ../scss/_index.scss */
+/* line 193, ../scss/_index.scss */
 #container #content .share-bar.is-visible {
   visibility: visible;
   transition-delay: 0s;
 }
-/* line 196, ../scss/_index.scss */
+/* line 197, ../scss/_index.scss */
 #container #content .share-bar.is-visible .share-bar-container .share-bar-content {
   transform: translateY(0);
 }
-/* line 201, ../scss/_index.scss */
+/* line 202, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container {
   position: relative;
   height: 0;
@@ -967,7 +968,7 @@
   flex-direction: row;
   align-items: stretch;
 }
-/* line 214, ../scss/_index.scss */
+/* line 215, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content {
   box-sizing: border-box;
   position: absolute;
@@ -982,17 +983,17 @@
   margin-left: -20px;
   padding: 5px;
 }
-/* line 227, ../scss/_index.scss */
+/* line 228, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content a {
   color: black;
 }
-/* line 230, ../scss/_index.scss */
+/* line 231, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share {
   width: 33.3%;
   display: inline-block;
   font-size: 16px;
 }
-/* line 234, ../scss/_index.scss */
+/* line 235, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share.mid {
   border-left: 1px solid rgba(0, 0, 0, 0.14);
   border-right: 1px solid rgba(0, 0, 0, 0.14);
@@ -1000,25 +1001,25 @@
 }
 
 @media screen and (min-width: 768px) {
-  /* line 247, ../scss/_index.scss */
+  /* line 248, ../scss/_index.scss */
   #container {
     margin-top: 20px;
   }
-  /* line 251, ../scss/_index.scss */
+  /* line 252, ../scss/_index.scss */
   #container #content .post-area blockquote {
     margin-left: -23px;
   }
-  /* line 255, ../scss/_index.scss */
+  /* line 256, ../scss/_index.scss */
   #container #content .post-area .post-author-container .post-author-image {
     width: 66px;
     height: 66px;
   }
-  /* line 260, ../scss/_index.scss */
+  /* line 261, ../scss/_index.scss */
   #container #content .post-area .post-date {
     height: 32px;
     font-size: 18px;
   }
-  /* line 264, ../scss/_index.scss */
+  /* line 265, ../scss/_index.scss */
   #container #content .post-area .mtg_deck.mtg_deck_embedded .card_box {
     display: block;
   }
@@ -1428,6 +1429,7 @@
   width: 100%;
   padding-bottom: 65%;
   background-size: cover;
+  background-position: center;
 }
 
 /* line 3, ../scss/_newsletter.scss */
@@ -1513,52 +1515,38 @@ body h1 {
   line-height: 1.4;
 }
 /* line 32, ../scss/base.scss */
-body.ios h1, body.ios h2, body.ios h3, body.ios h5 {
-  font-weight: normal;
-  -webkit-text-stroke: 0.5px black;
-}
-/* line 35, ../scss/base.scss */
-body.ios h1 a, body.ios h2 a, body.ios h3 a, body.ios h5 a {
-  -webkit-text-stroke: 0.5px #ff82c8;
-}
-/* line 39, ../scss/base.scss */
-body.ios h4 {
-  font-weight: normal;
-  -webkit-text-stroke: 0.5px #ff82c8;
-}
-/* line 45, ../scss/base.scss */
 body #wrap {
   max-width: 1024px;
   padding: 0px 15px;
   margin: 0 auto;
   letter-spacing: .05px;
 }
-/* line 51, ../scss/base.scss */
+/* line 38, ../scss/base.scss */
 body #wrap #spacer img {
   width: 90%;
   padding: 15px;
   visibility: collapse;
 }
-/* line 59, ../scss/base.scss */
+/* line 46, ../scss/base.scss */
 body #wrap #container #content #pagination {
   text-align: center;
 }
-/* line 61, ../scss/base.scss */
+/* line 48, ../scss/base.scss */
 body #wrap #container #content #pagination a {
   margin: 0 5px;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 71, ../scss/base.scss */
+  /* line 58, ../scss/base.scss */
   body {
     font-size: 21px;
     line-height: 1.58;
   }
-  /* line 75, ../scss/base.scss */
+  /* line 62, ../scss/base.scss */
   body h1 {
     line-height: 1.5;
   }
-  /* line 79, ../scss/base.scss */
+  /* line 66, ../scss/base.scss */
   body #wrap #spacer {
     display: none;
   }
