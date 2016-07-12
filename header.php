@@ -14,39 +14,14 @@
 
 <!-- style -->
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/base.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/font-awesome.min.css" type="text/css" media="screen" />
 
 <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> <?php _e("RSS Feed", 'organicthemes'); ?>" href="<?php bloginfo('rss2_url'); ?>" />
 <link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> <?php _e("Atom Feed", 'organicthemes'); ?>" href="<?php bloginfo('atom_url'); ?>" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
-<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 <?php wp_enqueue_script("jquery"); ?>
 <?php wp_head(); ?>
-
-<?php get_template_part( 'style', 'options' ); ?>
-
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/superfish/superfish.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/superfish/hoverIntent.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.anythingslider.js"></script>
-<!--
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.anythingslider.video.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/swfobject.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/jquery.masonry.min.js"></script>
-
-<script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
-<script src="http://connect.facebook.net/en_US/all.js#xfbml=1"></script>
-<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
-
-<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
--->
-
-<script type="text/javascript">
-	var $j = jQuery.noConflict();
-	$j(document).ready(function() {
-		$j('.menu').superfish();
-	});
-</script>
-
 
 </head>
 

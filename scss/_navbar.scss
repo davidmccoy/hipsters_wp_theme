@@ -404,6 +404,13 @@
           display: block;
           float: none;
           border: none;
+          a {
+            color: white !important;
+            background: black;
+            &:visited {
+              color: white;
+            }
+          }
           &.my-nav-menu-search {
             margin-bottom: 45px;
             &:hover, &:focus {
@@ -458,8 +465,9 @@
           li {
             background: none;
             a {
-              color: white;
-              &:hover, &:focus {
+              color: white !important;
+              background: black;
+              &:hover, &:focus, &:visited {
                 color: white;
               }
             }

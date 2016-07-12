@@ -553,73 +553,83 @@
     border: none;
   }
   /* line 407, ../scss/_navbar.scss */
+  #navbar .menu ul.menu li a {
+    color: white !important;
+    background: black;
+  }
+  /* line 410, ../scss/_navbar.scss */
+  #navbar .menu ul.menu li a:visited {
+    color: white;
+  }
+  /* line 414, ../scss/_navbar.scss */
   #navbar .menu ul.menu li.my-nav-menu-search {
     margin-bottom: 45px;
   }
-  /* line 409, ../scss/_navbar.scss */
+  /* line 416, ../scss/_navbar.scss */
   #navbar .menu ul.menu li.my-nav-menu-search:hover, #navbar .menu ul.menu li.my-nav-menu-search:focus {
     border: none;
   }
-  /* line 413, ../scss/_navbar.scss */
+  /* line 420, ../scss/_navbar.scss */
   #navbar .menu ul.menu li .sub-menu {
     top: 0;
     left: 20px;
     position: relative;
     display: none;
   }
-  /* line 418, ../scss/_navbar.scss */
+  /* line 425, ../scss/_navbar.scss */
   #navbar .menu ul.menu li .sub-menu.open {
     display: block;
   }
-  /* line 427, ../scss/_navbar.scss */
+  /* line 434, ../scss/_navbar.scss */
   #navbar .menu ul.menu li form {
     padding: 10px;
   }
-  /* line 430, ../scss/_navbar.scss */
+  /* line 437, ../scss/_navbar.scss */
   #navbar .menu ul.menu li form div i {
     padding: 0;
   }
-  /* line 433, ../scss/_navbar.scss */
+  /* line 440, ../scss/_navbar.scss */
   #navbar .menu ul.menu li form div input[type="text"] {
     background: black;
     color: white;
   }
-  /* line 436, ../scss/_navbar.scss */
+  /* line 443, ../scss/_navbar.scss */
   #navbar .menu ul.menu li form div input[type="text"]:focus {
     width: 180px;
   }
-  /* line 439, ../scss/_navbar.scss */
+  /* line 446, ../scss/_navbar.scss */
   #navbar .menu ul.menu li form div input[type="text"]::-webkit-input-placeholder {
     /* WebKit, Blink, Edge */
     color: white;
   }
-  /* line 442, ../scss/_navbar.scss */
+  /* line 449, ../scss/_navbar.scss */
   #navbar .menu ul.menu li form div input[type="text"]:-moz-placeholder {
     /* Mozilla Firefox 4 to 18 */
     color: white;
     opacity: 1;
   }
-  /* line 446, ../scss/_navbar.scss */
+  /* line 453, ../scss/_navbar.scss */
   #navbar .menu ul.menu li form div input[type="text"]::-moz-placeholder {
     /* Mozilla Firefox 19+ */
     color: white;
     opacity: 1;
   }
-  /* line 450, ../scss/_navbar.scss */
+  /* line 457, ../scss/_navbar.scss */
   #navbar .menu ul.menu li form div input[type="text"]:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     color: white;
   }
-  /* line 458, ../scss/_navbar.scss */
+  /* line 465, ../scss/_navbar.scss */
   #navbar .menu ul.menu ul.sub-menu li {
     background: none;
   }
-  /* line 460, ../scss/_navbar.scss */
+  /* line 467, ../scss/_navbar.scss */
   #navbar .menu ul.menu ul.sub-menu li a {
-    color: white;
+    color: white !important;
+    background: black;
   }
-  /* line 462, ../scss/_navbar.scss */
-  #navbar .menu ul.menu ul.sub-menu li a:hover, #navbar .menu ul.menu ul.sub-menu li a:focus {
+  /* line 470, ../scss/_navbar.scss */
+  #navbar .menu ul.menu ul.sub-menu li a:hover, #navbar .menu ul.menu ul.sub-menu li a:focus, #navbar .menu ul.menu ul.sub-menu li a:visited {
     color: white;
   }
 }

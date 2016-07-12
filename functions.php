@@ -367,10 +367,11 @@ add_filter('show_admin_bar', '__return_false');
  * enqueues our locally supplied font awesome stylesheet
  */
 
-function enqueue_our_required_stylesheets(){
-  wp_enqueue_style('font-awesome', get_stylesheet_directory_uri() . '/css/font-awesome.css');
-}
-add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');
+// function enqueue_our_required_stylesheets(){
+//   wp_enqueue_style('font-awesome', get_stylesheet_directory_uri() . '/css/font-awesome.css');
+// 	wp_enqueue_style('font-awesome-min', get_stylesheet_directory_uri() . '/css/font-awesome.min.css');
+// }
+// add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');
 
 /**
  * returns the number of words in a post
