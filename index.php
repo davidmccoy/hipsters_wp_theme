@@ -47,7 +47,7 @@
             </p>
             <p>
               <a href="http://www.twitter.com/<?php the_author_meta( 'twitter' ); ?>" rel="twitter" target="_blank">
-                  @<?php the_author_meta( 'twitter' ); ?>
+                  <?php the_author_meta( 'twitter' ); ?>
               </a>
             </p>
           </div>

@@ -410,7 +410,7 @@ function my_show_extra_profile_fields( $user ) { ?>
 
       <td>
         <input type="text" name="twitter" id="twitter" value="<?php echo esc_attr( get_the_author_meta( 'twitter', $user->ID ) ); ?>" class="regular-text" /><br />
-        <span class="description">Please enter your Twitter username.</span>
+        <span class="description">Please enter your Twitter username (including the @).</span>
       </td>
     </tr>
   </table>
