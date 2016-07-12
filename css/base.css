@@ -478,7 +478,7 @@
   -ms-transition: all 0.2s linear 0s;
   transition: all 0.2s linear 0s;
   width: 100%;
-  z-index: 90;
+  z-index: 998;
 }
 
 @media only screen and (max-width: 767px) {
@@ -507,7 +507,7 @@
   #navbar.slide-in {
     left: 0;
     width: 250px;
-    z-index: 100;
+    z-index: 999;
     background: black;
     overflow: auto;
   }
@@ -519,7 +519,7 @@
     padding-top: 14px;
   }
   /* line 373, ../scss/_navbar.scss */
-  #navbar.slide-in i:hover {
+  #navbar.slide-in i:hover, #navbar.slide-in i:focus {
     cursor: pointer;
   }
   /* line 380, ../scss/_navbar.scss */
@@ -529,39 +529,36 @@
     margin-right: 20px;
   }
   /* line 384, ../scss/_navbar.scss */
-  #navbar .menu li {
-    display: block;
-  }
-  /* line 387, ../scss/_navbar.scss */
   #navbar .menu a {
     color: white;
   }
-  /* line 389, ../scss/_navbar.scss */
+  /* line 386, ../scss/_navbar.scss */
   #navbar .menu a:visited {
     color: white;
   }
-  /* line 392, ../scss/_navbar.scss */
-  #navbar .menu a .sf-sub-indicator {
+  /* line 389, ../scss/_navbar.scss */
+  #navbar .menu a:hover, #navbar .menu a:focus {
     color: white;
   }
-  /* line 397, ../scss/_navbar.scss */
+  /* line 395, ../scss/_navbar.scss */
+  #navbar .menu li:hover ul {
+    padding-top: 0px;
+  }
+  /* line 401, ../scss/_navbar.scss */
   #navbar .menu ul.menu li {
     color: black;
     background: none;
     display: block;
     float: none;
+    border: none;
   }
-  /* line 402, ../scss/_navbar.scss */
+  /* line 407, ../scss/_navbar.scss */
   #navbar .menu ul.menu li.my-nav-menu-search {
     margin-bottom: 45px;
   }
-  /* line 405, ../scss/_navbar.scss */
-  #navbar .menu ul.menu li a:hover {
-    color: #ff82c8;
-  }
   /* line 409, ../scss/_navbar.scss */
-  #navbar .menu ul.menu li li:hover ul, #navbar .menu ul.menu li li.sfHover ul {
-    left: 0;
+  #navbar .menu ul.menu li.my-nav-menu-search:hover, #navbar .menu ul.menu li.my-nav-menu-search:focus {
+    border: none;
   }
   /* line 413, ../scss/_navbar.scss */
   #navbar .menu ul.menu li .sub-menu {
@@ -570,38 +567,60 @@
     position: relative;
     display: none;
   }
-  /* line 424, ../scss/_navbar.scss */
-  #navbar .menu ul.menu li:hover .sub-menu {
+  /* line 418, ../scss/_navbar.scss */
+  #navbar .menu ul.menu li .sub-menu.open {
     display: block;
   }
-  /* line 428, ../scss/_navbar.scss */
+  /* line 427, ../scss/_navbar.scss */
   #navbar .menu ul.menu li form {
-    padding: 7px 10px 7px;
+    padding: 10px;
   }
-  /* line 431, ../scss/_navbar.scss */
+  /* line 430, ../scss/_navbar.scss */
   #navbar .menu ul.menu li form div i {
     padding: 0;
   }
-  /* line 434, ../scss/_navbar.scss */
+  /* line 433, ../scss/_navbar.scss */
   #navbar .menu ul.menu li form div input[type="text"] {
     background: black;
     color: white;
   }
-  /* line 437, ../scss/_navbar.scss */
+  /* line 436, ../scss/_navbar.scss */
   #navbar .menu ul.menu li form div input[type="text"]:focus {
     width: 180px;
   }
-  /* line 445, ../scss/_navbar.scss */
+  /* line 439, ../scss/_navbar.scss */
+  #navbar .menu ul.menu li form div input[type="text"]::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: white;
+  }
+  /* line 442, ../scss/_navbar.scss */
+  #navbar .menu ul.menu li form div input[type="text"]:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    color: white;
+    opacity: 1;
+  }
+  /* line 446, ../scss/_navbar.scss */
+  #navbar .menu ul.menu li form div input[type="text"]::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    color: white;
+    opacity: 1;
+  }
+  /* line 450, ../scss/_navbar.scss */
+  #navbar .menu ul.menu li form div input[type="text"]:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: white;
+  }
+  /* line 458, ../scss/_navbar.scss */
   #navbar .menu ul.menu ul.sub-menu li {
     background: none;
   }
-  /* line 447, ../scss/_navbar.scss */
+  /* line 460, ../scss/_navbar.scss */
   #navbar .menu ul.menu ul.sub-menu li a {
     color: white;
   }
-  /* line 449, ../scss/_navbar.scss */
-  #navbar .menu ul.menu ul.sub-menu li a:hover {
-    color: #ff82c8;
+  /* line 462, ../scss/_navbar.scss */
+  #navbar .menu ul.menu ul.sub-menu li a:hover, #navbar .menu ul.menu ul.sub-menu li a:focus {
+    color: white;
   }
 }
 /* line 2, ../scss/_home.scss */

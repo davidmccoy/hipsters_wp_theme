@@ -335,7 +335,7 @@
     -ms-transition: all 0.2s linear 0s;
     transition: all 0.2s linear 0s;
     width: 100%;
-    z-index: 90;
+    z-index: 998;
 }
 
 @media only screen and (max-width: 767px) {
@@ -361,7 +361,7 @@
     &.slide-in {
     left: 0;
     width: 250px;
-    z-index: 100;
+    z-index: 999;
     background: black;
     overflow: auto;
 
@@ -370,7 +370,7 @@
         color: white;
         float: right;
         padding-top: 14px;
-        &:hover {
+        &:hover, &:focus {
           cursor: pointer;
         }
       }
@@ -381,16 +381,20 @@
       width: auto;
       text-align: left;
       margin-right: 20px;
-      li {
-        display: block;
-      }
       a {
         color: white;
         &:visited {
           color: white;
         }
-        .sf-sub-indicator {
+        &:hover, &:focus {
           color: white;
+        }
+      }
+      li {
+        &:hover {
+          ul {
+            padding-top: 0px;
+          }
         }
       }
       ul.menu {
@@ -399,15 +403,11 @@
           background: none;
           display: block;
           float: none;
+          border: none;
           &.my-nav-menu-search {
             margin-bottom: 45px;
-          }
-          a:hover {
-            color: #ff82c8;
-          }
-          li:hover, li.sfHover {
-            ul {
-              left: 0;
+            &:hover, &:focus {
+              border: none;
             }
           }
           .sub-menu {
@@ -415,18 +415,17 @@
             left: 20px;
             position: relative;
             display: none;
-            li {
-              ul {
-              }
-            }
-          }
-          &:hover {
-            .sub-menu {
+            &.open {
               display: block;
             }
           }
+          &:hover, &:focus {
+            .sub-menu {
+              // display: block;
+            }
+          }
           form {
-            padding: 7px 10px 7px;
+            padding: 10px;
             div {
               i {
                 padding: 0;
@@ -437,6 +436,20 @@
                 &:focus {
                   width: 180px;
                 }
+                &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+                  color: white;
+                }
+                &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+                  color: white;
+                  opacity: 1;
+                }
+                &::-moz-placeholder { /* Mozilla Firefox 19+ */
+                  color: white;
+                  opacity: 1;
+                }
+                &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+                  color: white;
+                }
               }
             }
           }
@@ -446,8 +459,8 @@
             background: none;
             a {
               color: white;
-              &:hover {
-                color: #ff82c8;
+              &:hover, &:focus {
+                color: white;
               }
             }
           }

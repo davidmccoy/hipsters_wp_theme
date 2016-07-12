@@ -28,4 +28,20 @@ jQuery(document).ready(function($){
     $('html').css("overflow", "visible");
     $('#overlay').hide();
   });
-}); 
+
+  $('#navbar li').on('click mousedown mouseup touchstart touchmove', function () {
+    if ( $(this).find('ul').hasClass('open') && !$(this).closest('ul').hasClass('open')) {
+        $('.open').removeClass('open');
+        return false;
+    }
+    $('.open').not($(this).closest('ul')).removeClass('open');
+    $(this).find('ul').addClass('open');
+    return false;
+  });
+  $(document).on('click', function() {
+    if( $('.open').length > 0 ) {
+        $('.open').removeClass('open');
+        return false;
+    }
+  });
+});
