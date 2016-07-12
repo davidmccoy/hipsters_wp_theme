@@ -15,12 +15,12 @@
       <div class="footerright">
           <div class="footertop">
               <p>
-                Questions? <a href="mailto:info@hipstersofthecoast.com">Email us.</a>
+                Questions? <a href="mailto:info@hipstersofthecoast.com">Email us</a>.
               </p>
           </div>
           <div class="footerbottom">
             <p>
-              Theme by <a href="http://www.davidmccoy.com" target="_blank">David McCoy</a>
+              Problems? Blame <a href="http://www.davidmccoy.com" target="_blank">David</a>.
             </p>
           </div>
   	</div>
