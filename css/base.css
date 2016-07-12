@@ -1527,26 +1527,26 @@ body #wrap #spacer img {
   padding: 15px;
   visibility: collapse;
 }
-/* line 46, ../scss/base.scss */
-body #wrap #container #content #pagination {
+/* line 44, ../scss/base.scss */
+body #wrap #pagination {
   text-align: center;
 }
-/* line 48, ../scss/base.scss */
-body #wrap #container #content #pagination a {
+/* line 46, ../scss/base.scss */
+body #wrap #pagination a {
   margin: 0 5px;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 58, ../scss/base.scss */
+  /* line 54, ../scss/base.scss */
   body {
     font-size: 21px;
     line-height: 1.58;
   }
-  /* line 62, ../scss/base.scss */
+  /* line 58, ../scss/base.scss */
   body h1 {
     line-height: 1.5;
   }
-  /* line 66, ../scss/base.scss */
+  /* line 62, ../scss/base.scss */
   body #wrap #spacer {
     display: none;
   }

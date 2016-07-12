@@ -120,12 +120,15 @@
                   </div>
 
                 </div>
-
             <?php endwhile; else: ?>
                 <p>
                     <?php _e("No posts by this author.", 'organicthemes'); ?>
                 </p>
             <?php endif; ?>
+
+            <div id="pagination">
+                <?php if (function_exists("number_paginate")) { number_paginate(); } ?>
+            </div>
 
         </div>
 

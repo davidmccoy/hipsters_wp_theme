@@ -41,14 +41,10 @@ body {
         visibility: collapse;
       }
     }
-    #container {
-      #content {
-        #pagination {
-          text-align: center;
-          a {
-            margin: 0 5px;
-          }
-        }
+    #pagination {
+      text-align: center;
+      a {
+        margin: 0 5px;
       }
     }
   }
