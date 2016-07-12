@@ -1462,18 +1462,41 @@
 }
 /* line 11, ../scss/_page.scss */
 #container #content.page .post-area .error-container div {
-  display: inline-block;
+  display: block;
   vertical-align: middle;
 }
-/* line 15, ../scss/_page.scss */
-#container #content.page .post-area .error-container .error-left {
-  width: 66.6%;
+/* line 16, ../scss/_page.scss */
+#container #content.page .post-area .error-container .error-left p {
+  display: none;
 }
-/* line 18, ../scss/_page.scss */
+/* line 20, ../scss/_page.scss */
 #container #content.page .post-area .error-container .error-right {
-  width: 33.3%;
+  width: 50%;
+  margin: 0 auto;
 }
 
+@media screen and (min-width: 480px) {
+  /* line 34, ../scss/_page.scss */
+  #container #content.page .post-area .error-container div {
+    display: inline-block;
+  }
+  /* line 37, ../scss/_page.scss */
+  #container #content.page .post-area .error-container .error-left {
+    width: 66.6%;
+  }
+  /* line 39, ../scss/_page.scss */
+  #container #content.page .post-area .error-container .error-left p {
+    display: block;
+  }
+  /* line 43, ../scss/_page.scss */
+  #container #content.page .post-area .error-container .error-right {
+    width: 33.3%;
+  }
+  /* line 46, ../scss/_page.scss */
+  #container #content.page .post-area .error-container .error-mobile {
+    display: none;
+  }
+}
 /* line 3, ../scss/_newsletter.scss */
 .boxzilla-center-container .boxzilla-center .boxzilla-content {
   line-height: 1.5;

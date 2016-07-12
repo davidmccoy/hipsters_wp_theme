@@ -17,13 +17,18 @@
         </div><div class="error-right">
           <img src="<?php bloginfo('template_url'); ?>/images/fblthp-smaller.png" />
         </div>
-
+        <div class="error-mobile">
+          <p>
+            The page you are looking for seems to have gone missing.
+          </p>
+        </div>
       </div>
 
 
     </div>
 
     <?php get_footer(); ?>
+
 	</div>
 
 </div>
