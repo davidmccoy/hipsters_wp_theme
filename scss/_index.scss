@@ -176,6 +176,31 @@
           display: none;
         }
       }
+      .hipsters-sponsor {
+        text-align: center;
+        border-top: 1px solid rgba(0, 0, 0, 0.14);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+        padding: 10px 0px;
+        div {
+          display: inline-block;
+          vertical-align: middle;
+          font-family: 'whitney';
+          font-size: 16px;
+        }
+        .sponsor-left {
+          margin-right: 10px;
+          p {
+            margin: 0px;
+          }
+        }
+        .sponsor-right {
+          width: 90px;
+          img {
+              width: 75px;
+              height: 72px;
+          }
+        }
+      }
     }
     .share-bar {
       font-size: 0;

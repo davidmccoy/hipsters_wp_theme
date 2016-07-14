@@ -958,7 +958,38 @@
 #container #content .post-area .mtg_deck.mtg_deck_embedded .card_box {
   display: none;
 }
-/* line 180, ../scss/_index.scss */
+/* line 179, ../scss/_index.scss */
+#container #content .post-area .hipsters-sponsor {
+  text-align: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.14);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+  padding: 10px 0px;
+}
+/* line 184, ../scss/_index.scss */
+#container #content .post-area .hipsters-sponsor div {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: 'whitney';
+  font-size: 16px;
+}
+/* line 190, ../scss/_index.scss */
+#container #content .post-area .hipsters-sponsor .sponsor-left {
+  margin-right: 10px;
+}
+/* line 192, ../scss/_index.scss */
+#container #content .post-area .hipsters-sponsor .sponsor-left p {
+  margin: 0px;
+}
+/* line 196, ../scss/_index.scss */
+#container #content .post-area .hipsters-sponsor .sponsor-right {
+  width: 90px;
+}
+/* line 198, ../scss/_index.scss */
+#container #content .post-area .hipsters-sponsor .sponsor-right img {
+  width: 75px;
+  height: 72px;
+}
+/* line 205, ../scss/_index.scss */
 #container #content .share-bar {
   font-size: 0;
   visibility: hidden;
@@ -973,16 +1004,16 @@
   margin: 0 auto;
   text-align: center;
 }
-/* line 193, ../scss/_index.scss */
+/* line 218, ../scss/_index.scss */
 #container #content .share-bar.is-visible {
   visibility: visible;
   transition-delay: 0s;
 }
-/* line 197, ../scss/_index.scss */
+/* line 222, ../scss/_index.scss */
 #container #content .share-bar.is-visible .share-bar-container .share-bar-content {
   transform: translateY(0);
 }
-/* line 202, ../scss/_index.scss */
+/* line 227, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container {
   position: relative;
   height: 0;
@@ -997,7 +1028,7 @@
   flex-direction: row;
   align-items: stretch;
 }
-/* line 215, ../scss/_index.scss */
+/* line 240, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content {
   box-sizing: border-box;
   position: absolute;
@@ -1012,17 +1043,17 @@
   margin-left: -20px;
   padding: 5px;
 }
-/* line 228, ../scss/_index.scss */
+/* line 253, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content a {
   color: black;
 }
-/* line 231, ../scss/_index.scss */
+/* line 256, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share {
   width: 33.3%;
   display: inline-block;
   font-size: 16px;
 }
-/* line 235, ../scss/_index.scss */
+/* line 260, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share.mid {
   border-left: 1px solid rgba(0, 0, 0, 0.14);
   border-right: 1px solid rgba(0, 0, 0, 0.14);
@@ -1030,25 +1061,25 @@
 }
 
 @media screen and (min-width: 768px) {
-  /* line 248, ../scss/_index.scss */
+  /* line 273, ../scss/_index.scss */
   #container {
     margin-top: 20px;
   }
-  /* line 252, ../scss/_index.scss */
+  /* line 277, ../scss/_index.scss */
   #container #content .post-area blockquote {
     margin-left: -23px;
   }
-  /* line 256, ../scss/_index.scss */
+  /* line 281, ../scss/_index.scss */
   #container #content .post-area .post-author-container .post-author-image {
     width: 66px;
     height: 66px;
   }
-  /* line 261, ../scss/_index.scss */
+  /* line 286, ../scss/_index.scss */
   #container #content .post-area .post-date {
     height: 32px;
     font-size: 18px;
   }
-  /* line 265, ../scss/_index.scss */
+  /* line 290, ../scss/_index.scss */
   #container #content .post-area .mtg_deck.mtg_deck_embedded .card_box {
     display: block;
   }
