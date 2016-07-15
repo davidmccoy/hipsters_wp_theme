@@ -437,4 +437,8 @@ function add_search_form_to_menu($items, $args) {
   return $items . '<li class="my-nav-menu-search">' . get_search_form(false) . '</li>';
 }
 
+// disable related posts from appending to post content
+add_filter( 'rp4wp_append_content', '__return_false' );
+
+
 ?>

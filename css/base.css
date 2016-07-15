@@ -900,21 +900,20 @@
 #container #content .post-area .postmeta a {
   border-radius: 5px;
   padding: 5px 10px 7px;
-  margin-right: 10px;
+  margin: 5px 10px 5px 0px;
   font-size: 13px;
   text-transform: lowercase;
   letter-spacing: 0.3px;
   color: #ff82c8;
   border: 1px solid #ff82c8;
   display: inline-block;
-  margin-bottom: 10px;
 }
-/* line 135, ../scss/_index.scss */
+/* line 134, ../scss/_index.scss */
 #container #content .post-area .postmeta a:hover {
   background: #ff82c8 !important;
   color: white;
 }
-/* line 141, ../scss/_index.scss */
+/* line 140, ../scss/_index.scss */
 #container #content .post-area blockquote {
   margin-top: 29px;
   border-left: 3px solid black;
@@ -923,73 +922,120 @@
   margin-left: 0px;
   font-style: italic;
 }
-/* line 148, ../scss/_index.scss */
+/* line 147, ../scss/_index.scss */
 #container #content .post-area blockquote p {
   margin: 0px;
 }
-/* line 152, ../scss/_index.scss */
+/* line 151, ../scss/_index.scss */
 #container #content .post-area pre {
   white-space: pre;
   -ms-word-wrap: break-word;
   word-wrap: break-word;
   overflow-x: auto;
 }
-/* line 158, ../scss/_index.scss */
+/* line 157, ../scss/_index.scss */
 #container #content .post-area .wp-caption {
   text-align: center;
 }
-/* line 161, ../scss/_index.scss */
+/* line 160, ../scss/_index.scss */
 #container #content .post-area .wp-caption-text {
   font-size: 14px;
   text-align: center;
   font-family: "whitney";
 }
-/* line 166, ../scss/_index.scss */
+/* line 165, ../scss/_index.scss */
 #container #content .post-area twitterwidget {
   margin: 10px auto;
 }
-/* line 169, ../scss/_index.scss */
+/* line 168, ../scss/_index.scss */
 #container #content .post-area iframe {
   display: block;
   margin: 0 auto;
   max-width: 100%;
 }
-/* line 175, ../scss/_index.scss */
+/* line 174, ../scss/_index.scss */
 #container #content .post-area .mtg_deck.mtg_deck_embedded .card_box {
   display: none;
 }
-/* line 179, ../scss/_index.scss */
+/* line 178, ../scss/_index.scss */
 #container #content .post-area .hipsters-sponsor {
   text-align: center;
   border-top: 1px solid rgba(0, 0, 0, 0.14);
   border-bottom: 1px solid rgba(0, 0, 0, 0.14);
   padding: 10px 0px;
 }
-/* line 184, ../scss/_index.scss */
+/* line 183, ../scss/_index.scss */
 #container #content .post-area .hipsters-sponsor div {
   display: inline-block;
   vertical-align: middle;
   font-family: 'whitney';
   font-size: 16px;
 }
-/* line 190, ../scss/_index.scss */
+/* line 189, ../scss/_index.scss */
 #container #content .post-area .hipsters-sponsor .sponsor-left {
   margin-right: 10px;
 }
-/* line 192, ../scss/_index.scss */
+/* line 191, ../scss/_index.scss */
 #container #content .post-area .hipsters-sponsor .sponsor-left p {
   margin: 0px;
 }
-/* line 196, ../scss/_index.scss */
+/* line 195, ../scss/_index.scss */
 #container #content .post-area .hipsters-sponsor .sponsor-right {
   width: 90px;
 }
-/* line 198, ../scss/_index.scss */
+/* line 197, ../scss/_index.scss */
 #container #content .post-area .hipsters-sponsor .sponsor-right img {
   width: 75px;
   height: 72px;
 }
-/* line 205, ../scss/_index.scss */
+/* line 204, ../scss/_index.scss */
+#container #content .post-area .rp4wp-related-posts .related-posts-list, #container #content .post-area .rp4wp-related-post .related-posts-list {
+  padding: 0px;
+  margin: 0px;
+}
+/* line 207, ../scss/_index.scss */
+#container #content .post-area .rp4wp-related-posts .related-posts-list .related-post, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post {
+  padding: 25px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+}
+/* line 210, ../scss/_index.scss */
+#container #content .post-area .rp4wp-related-posts .related-posts-list .related-post.first, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post.first {
+  border-top: 1px solid rgba(0, 0, 0, 0.14);
+}
+/* line 213, ../scss/_index.scss */
+#container #content .post-area .rp4wp-related-posts .related-posts-list .related-post div, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post div {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 217, ../scss/_index.scss */
+#container #content .post-area .rp4wp-related-posts .related-posts-list .related-post .related-post-info, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post .related-post-info {
+  width: 75%;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+/* line 221, ../scss/_index.scss */
+#container #content .post-area .rp4wp-related-posts .related-posts-list .related-post .related-post-info h4.related, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post .related-post-info h4.related {
+  margin: 0px;
+  font-size: 14px;
+}
+/* line 225, ../scss/_index.scss */
+#container #content .post-area .rp4wp-related-posts .related-posts-list .related-post .related-post-info h3.related, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post .related-post-info h3.related {
+  margin: 0px;
+}
+/* line 227, ../scss/_index.scss */
+#container #content .post-area .rp4wp-related-posts .related-posts-list .related-post .related-post-info h3.related a, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post .related-post-info h3.related a {
+  color: black;
+}
+/* line 231, ../scss/_index.scss */
+#container #content .post-area .rp4wp-related-posts .related-posts-list .related-post .related-post-info p, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post .related-post-info p {
+  margin: 0px;
+  font-size: 18px;
+}
+/* line 236, ../scss/_index.scss */
+#container #content .post-area .rp4wp-related-posts .related-posts-list .related-post .related-post-image, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post .related-post-image {
+  width: 25%;
+}
+/* line 243, ../scss/_index.scss */
 #container #content .share-bar {
   font-size: 0;
   visibility: hidden;
@@ -1004,16 +1050,16 @@
   margin: 0 auto;
   text-align: center;
 }
-/* line 218, ../scss/_index.scss */
+/* line 256, ../scss/_index.scss */
 #container #content .share-bar.is-visible {
   visibility: visible;
   transition-delay: 0s;
 }
-/* line 222, ../scss/_index.scss */
+/* line 260, ../scss/_index.scss */
 #container #content .share-bar.is-visible .share-bar-container .share-bar-content {
   transform: translateY(0);
 }
-/* line 227, ../scss/_index.scss */
+/* line 265, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container {
   position: relative;
   height: 0;
@@ -1028,7 +1074,7 @@
   flex-direction: row;
   align-items: stretch;
 }
-/* line 240, ../scss/_index.scss */
+/* line 278, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content {
   box-sizing: border-box;
   position: absolute;
@@ -1043,17 +1089,17 @@
   margin-left: -20px;
   padding: 5px;
 }
-/* line 253, ../scss/_index.scss */
+/* line 291, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content a {
   color: black;
 }
-/* line 256, ../scss/_index.scss */
+/* line 294, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share {
   width: 33.3%;
   display: inline-block;
   font-size: 16px;
 }
-/* line 260, ../scss/_index.scss */
+/* line 298, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share.mid {
   border-left: 1px solid rgba(0, 0, 0, 0.14);
   border-right: 1px solid rgba(0, 0, 0, 0.14);
@@ -1061,25 +1107,25 @@
 }
 
 @media screen and (min-width: 768px) {
-  /* line 273, ../scss/_index.scss */
+  /* line 311, ../scss/_index.scss */
   #container {
     margin-top: 20px;
   }
-  /* line 277, ../scss/_index.scss */
+  /* line 315, ../scss/_index.scss */
   #container #content .post-area blockquote {
     margin-left: -23px;
   }
-  /* line 281, ../scss/_index.scss */
+  /* line 319, ../scss/_index.scss */
   #container #content .post-area .post-author-container .post-author-image {
     width: 66px;
     height: 66px;
   }
-  /* line 286, ../scss/_index.scss */
+  /* line 324, ../scss/_index.scss */
   #container #content .post-area .post-date {
     height: 32px;
     font-size: 18px;
   }
-  /* line 290, ../scss/_index.scss */
+  /* line 328, ../scss/_index.scss */
   #container #content .post-area .mtg_deck.mtg_deck_embedded .card_box {
     display: block;
   }

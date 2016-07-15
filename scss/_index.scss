@@ -124,14 +124,13 @@
         a {
           border-radius: 5px;
           padding: 5px 10px 7px;
-          margin-right: 10px;
+          margin: 5px 10px 5px 0px;
           font-size: 13px;
           text-transform: lowercase;
           letter-spacing: 0.3px;
           color: #ff82c8;
           border: 1px solid #ff82c8;
           display: inline-block;
-          margin-bottom: 10px;
           &:hover {
             background: #ff82c8 !important;
             color: white;
@@ -198,6 +197,45 @@
           img {
               width: 75px;
               height: 72px;
+          }
+        }
+      }
+      .rp4wp-related-posts, .rp4wp-related-post {
+        .related-posts-list {
+          padding: 0px;
+          margin: 0px;
+          .related-post {
+            padding: 25px 0px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+            &.first {
+              border-top: 1px solid rgba(0, 0, 0, 0.14);
+            }
+            div {
+              display: inline-block;
+              vertical-align: middle;
+            }
+            .related-post-info {
+              width: 75%;
+              padding-right: 15px;
+              box-sizing: border-box;
+              h4.related {
+                margin: 0px;
+                font-size: 14px;
+              }
+              h3.related {
+                margin: 0px;
+                a {
+                  color: black;
+                }
+              }
+              p {
+                margin: 0px;
+                font-size: 18px;
+              }
+            }
+            .related-post-image {
+              width: 25%;
+            }
           }
         }
       }

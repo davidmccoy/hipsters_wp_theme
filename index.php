@@ -112,6 +112,11 @@
 				</p>
 			</div>
 
+                  <?php
+                        // Display related posts of current post
+                        rp4wp_children();
+                  ?>
+
 		</div>
 
 		<?php endwhile; else: ?>
