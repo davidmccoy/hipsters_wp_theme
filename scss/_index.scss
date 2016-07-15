@@ -287,7 +287,6 @@
           transition: transform .3s;
           margin-right: -20px;
           margin-left: -20px;
-          padding: 5px;
           a {
             color: black;
           }
@@ -295,10 +294,47 @@
             width: 33.3%;
             display: inline-block;
             font-size: 16px;
+            box-sizing: border-box;
+            padding: 5px;
+            -moz-transition: background-color 200ms;
+    	      -o-transition: background-color 200ms;
+    	      -webkit-transition: background-color 200ms;
+    	      transition: background-color 200ms;
             &.mid {
               border-left: 1px solid rgba(0,0,0,.14);
               border-right: 1px solid rgba(0,0,0,.14);
               box-sizing: border-box;
+            }
+            &.twitter {
+              &:hover {
+                background: #32CCFE;
+                i {
+                  color: white;
+                }
+              }
+            }
+            &.facebook {
+              &:hover {
+                background: #3c5a9e;
+                i {
+                  color: white;
+                }
+              }
+            }
+            &.email {
+              &:hover {
+                background: #ff82c8;
+                i {
+                  color: white;
+                }
+              }
+            }
+            i {
+              padding: 0px;
+              -moz-transition: color 200ms;
+      	      -o-transition: color 200ms;
+      	      -webkit-transition: color 200ms;
+      	      transition: color 200ms;
             }
           }
         }

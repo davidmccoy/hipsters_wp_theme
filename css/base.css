@@ -1087,45 +1087,82 @@
   transition: transform .3s;
   margin-right: -20px;
   margin-left: -20px;
-  padding: 5px;
 }
-/* line 291, ../scss/_index.scss */
+/* line 290, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content a {
   color: black;
 }
-/* line 294, ../scss/_index.scss */
+/* line 293, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share {
   width: 33.3%;
   display: inline-block;
   font-size: 16px;
+  box-sizing: border-box;
+  padding: 5px;
+  -moz-transition: background-color 200ms;
+  -o-transition: background-color 200ms;
+  -webkit-transition: background-color 200ms;
+  transition: background-color 200ms;
 }
-/* line 298, ../scss/_index.scss */
+/* line 303, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share.mid {
   border-left: 1px solid rgba(0, 0, 0, 0.14);
   border-right: 1px solid rgba(0, 0, 0, 0.14);
   box-sizing: border-box;
 }
+/* line 309, ../scss/_index.scss */
+#container #content .share-bar .share-bar-container .share-bar-content .social-share.twitter:hover {
+  background: #32CCFE;
+}
+/* line 311, ../scss/_index.scss */
+#container #content .share-bar .share-bar-container .share-bar-content .social-share.twitter:hover i {
+  color: white;
+}
+/* line 317, ../scss/_index.scss */
+#container #content .share-bar .share-bar-container .share-bar-content .social-share.facebook:hover {
+  background: #3c5a9e;
+}
+/* line 319, ../scss/_index.scss */
+#container #content .share-bar .share-bar-container .share-bar-content .social-share.facebook:hover i {
+  color: white;
+}
+/* line 325, ../scss/_index.scss */
+#container #content .share-bar .share-bar-container .share-bar-content .social-share.email:hover {
+  background: #ff82c8;
+}
+/* line 327, ../scss/_index.scss */
+#container #content .share-bar .share-bar-container .share-bar-content .social-share.email:hover i {
+  color: white;
+}
+/* line 332, ../scss/_index.scss */
+#container #content .share-bar .share-bar-container .share-bar-content .social-share i {
+  padding: 0px;
+  -moz-transition: color 200ms;
+  -o-transition: color 200ms;
+  -webkit-transition: color 200ms;
+  transition: color 200ms;
+}
 
 @media screen and (min-width: 768px) {
-  /* line 311, ../scss/_index.scss */
+  /* line 347, ../scss/_index.scss */
   #container {
     margin-top: 20px;
   }
-  /* line 315, ../scss/_index.scss */
+  /* line 351, ../scss/_index.scss */
   #container #content .post-area blockquote {
     margin-left: -23px;
   }
-  /* line 319, ../scss/_index.scss */
+  /* line 355, ../scss/_index.scss */
   #container #content .post-area .post-author-container .post-author-image {
     width: 66px;
     height: 66px;
   }
-  /* line 324, ../scss/_index.scss */
+  /* line 360, ../scss/_index.scss */
   #container #content .post-area .post-date {
     height: 32px;
     font-size: 18px;
   }
-  /* line 328, ../scss/_index.scss */
+  /* line 364, ../scss/_index.scss */
   #container #content .post-area .mtg_deck.mtg_deck_embedded .card_box {
     display: block;
   }
@@ -1678,18 +1715,92 @@ body #wrap #pagination {
 body #wrap #pagination a {
   margin: 0 5px;
 }
+/* line 53, ../scss/base.scss */
+body .highlight-and-share-wrapper div {
+  margin: 0px;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+}
+/* line 58, ../scss/base.scss */
+body .highlight-and-share-wrapper div.has_twitter a {
+  color: black;
+}
+/* line 61, ../scss/base.scss */
+body .highlight-and-share-wrapper div.has_twitter:hover {
+  background: #32CCFE;
+}
+/* line 63, ../scss/base.scss */
+body .highlight-and-share-wrapper div.has_twitter:hover a {
+  color: white;
+}
+/* line 68, ../scss/base.scss */
+body .highlight-and-share-wrapper div.has_facebook {
+  background: white;
+  border-left: none;
+}
+/* line 71, ../scss/base.scss */
+body .highlight-and-share-wrapper div.has_facebook a {
+  color: black;
+}
+/* line 74, ../scss/base.scss */
+body .highlight-and-share-wrapper div.has_facebook:hover {
+  background: #3c5a9e;
+}
+/* line 76, ../scss/base.scss */
+body .highlight-and-share-wrapper div.has_facebook:hover a {
+  color: white;
+}
+/* line 81, ../scss/base.scss */
+body .highlight-and-share-wrapper div.has_email {
+  background: white;
+  border-left: none;
+}
+/* line 84, ../scss/base.scss */
+body .highlight-and-share-wrapper div.has_email a {
+  color: black;
+}
+/* line 87, ../scss/base.scss */
+body .highlight-and-share-wrapper div.has_email:hover {
+  background: #ff82c8;
+}
+/* line 89, ../scss/base.scss */
+body .highlight-and-share-wrapper div.has_email:hover a {
+  color: white;
+}
+/* line 94, ../scss/base.scss */
+body .highlight-and-share-wrapper div a {
+  padding: 0px;
+  -moz-transition: color 200ms;
+  -o-transition: color 200ms;
+  -webkit-transition: color 200ms;
+  transition: color 200ms;
+}
+/* line 100, ../scss/base.scss */
+body .highlight-and-share-wrapper div a:hover {
+  padding: 0px;
+}
+/* line 103, ../scss/base.scss */
+body .highlight-and-share-wrapper div a i {
+  width: 31px;
+  height: 28px;
+  text-align: center;
+}
+/* line 110, ../scss/base.scss */
+body .highlight-and-share-wrapper .fa {
+  font-size: 2em;
+}
 
 @media screen and (min-width: 768px) {
-  /* line 55, ../scss/base.scss */
+  /* line 117, ../scss/base.scss */
   body {
     font-size: 21px;
     line-height: 1.58;
   }
-  /* line 59, ../scss/base.scss */
+  /* line 121, ../scss/base.scss */
   body h1 {
     line-height: 1.5;
   }
-  /* line 63, ../scss/base.scss */
+  /* line 125, ../scss/base.scss */
   body #wrap #spacer {
     display: none;
   }
