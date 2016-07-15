@@ -1671,24 +1671,25 @@ body #wrap #spacer img {
 }
 /* line 44, ../scss/base.scss */
 body #wrap #pagination {
+  display: none;
   text-align: center;
 }
-/* line 46, ../scss/base.scss */
+/* line 47, ../scss/base.scss */
 body #wrap #pagination a {
   margin: 0 5px;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 54, ../scss/base.scss */
+  /* line 55, ../scss/base.scss */
   body {
     font-size: 21px;
     line-height: 1.58;
   }
-  /* line 58, ../scss/base.scss */
+  /* line 59, ../scss/base.scss */
   body h1 {
     line-height: 1.5;
   }
-  /* line 62, ../scss/base.scss */
+  /* line 63, ../scss/base.scss */
   body #wrap #spacer {
     display: none;
   }

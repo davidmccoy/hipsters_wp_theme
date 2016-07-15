@@ -344,34 +344,24 @@ function mytheme_infinite_scroll_init() {
   add_theme_support( 'infinite-scroll', array(
     'type' => 'scroll',
     'container' => 'homepage',
-    // 'render' => 'mytheme_infinite_scroll_render',
+    'render' => 'mytheme_infinite_scroll_render',
     'posts_per_page' => 12,
     'footer' => false,
   ) );
 }
 add_action( 'init', 'mytheme_infinite_scroll_init' );
 
-// function mytheme_infinite_scroll_render() {
-//   while ( have_posts() ) : the_post();
-//     get_template_part( 'homepage_content' );
-//   endwhile;
-// }
+function mytheme_infinite_scroll_render() {
+  while ( have_posts() ) : the_post();
+    get_template_part( 'homepage_content' );
+  endwhile;
+}
 
 /**
  * Remove WP Admin bar
  */
 
 add_filter('show_admin_bar', '__return_false');
-
-/**
- * enqueues our locally supplied font awesome stylesheet
- */
-
-// function enqueue_our_required_stylesheets(){
-//   wp_enqueue_style('font-awesome', get_stylesheet_directory_uri() . '/css/font-awesome.css');
-// 	wp_enqueue_style('font-awesome-min', get_stylesheet_directory_uri() . '/css/font-awesome.min.css');
-// }
-// add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');
 
 /**
  * returns the number of words in a post
