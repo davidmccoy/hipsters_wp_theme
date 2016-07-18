@@ -1710,66 +1710,65 @@ body #wrap #spacer img {
 }
 /* line 44, ../scss/base.scss */
 body #wrap #pagination {
-  display: none;
   text-align: center;
 }
-/* line 47, ../scss/base.scss */
+/* line 46, ../scss/base.scss */
 body #wrap #pagination a {
   margin: 0 5px;
 }
-/* line 53, ../scss/base.scss */
+/* line 52, ../scss/base.scss */
 body .highlight-and-share-wrapper div {
   margin: 0px;
   background: white;
   border: 1px solid rgba(0, 0, 0, 0.14);
 }
-/* line 58, ../scss/base.scss */
+/* line 57, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_twitter a {
   color: black;
 }
-/* line 61, ../scss/base.scss */
+/* line 60, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_twitter:hover {
   background: #32CCFE;
 }
-/* line 63, ../scss/base.scss */
+/* line 62, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_twitter:hover a {
   color: white;
 }
-/* line 68, ../scss/base.scss */
+/* line 67, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_facebook {
   background: white;
   border-left: none;
 }
-/* line 71, ../scss/base.scss */
+/* line 70, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_facebook a {
   color: black;
 }
-/* line 74, ../scss/base.scss */
+/* line 73, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_facebook:hover {
   background: #3c5a9e;
 }
-/* line 76, ../scss/base.scss */
+/* line 75, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_facebook:hover a {
   color: white;
 }
-/* line 81, ../scss/base.scss */
+/* line 80, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_email {
   background: white;
   border-left: none;
 }
-/* line 84, ../scss/base.scss */
+/* line 83, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_email a {
   color: black;
 }
-/* line 87, ../scss/base.scss */
+/* line 86, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_email:hover {
   background: #ff82c8;
 }
-/* line 89, ../scss/base.scss */
+/* line 88, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_email:hover a {
   color: white;
 }
-/* line 94, ../scss/base.scss */
+/* line 93, ../scss/base.scss */
 body .highlight-and-share-wrapper div a {
   padding: 0px;
   -moz-transition: color 200ms;
@@ -1777,32 +1776,32 @@ body .highlight-and-share-wrapper div a {
   -webkit-transition: color 200ms;
   transition: color 200ms;
 }
-/* line 100, ../scss/base.scss */
+/* line 99, ../scss/base.scss */
 body .highlight-and-share-wrapper div a:hover {
   padding: 0px;
 }
-/* line 103, ../scss/base.scss */
+/* line 102, ../scss/base.scss */
 body .highlight-and-share-wrapper div a i {
   width: 31px;
   height: 28px;
   text-align: center;
 }
-/* line 110, ../scss/base.scss */
+/* line 109, ../scss/base.scss */
 body .highlight-and-share-wrapper .fa {
   font-size: 2em;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 117, ../scss/base.scss */
+  /* line 116, ../scss/base.scss */
   body {
     font-size: 21px;
     line-height: 1.58;
   }
-  /* line 121, ../scss/base.scss */
+  /* line 120, ../scss/base.scss */
   body h1 {
     line-height: 1.5;
   }
-  /* line 125, ../scss/base.scss */
+  /* line 124, ../scss/base.scss */
   body #wrap #spacer {
     display: none;
   }

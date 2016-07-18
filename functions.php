@@ -288,7 +288,7 @@ if ( function_exists('add_theme_support') )
 add_theme_support('post-thumbnails');
 add_image_size( 'page-feature', 960, 460, true ); // Page Feature Image
 add_image_size( 'post-feature', 640, 420, true ); // Post Feature Image
-add_image_size( 'home-feature', 620, 350, true ); // Homepage Feature Image
+add_image_size( 'home-feature', 700, 480 ); // Homepage Feature Image
 add_image_size( 'home-thumbnail', 450, 450 ); // Homepage Mid Thumbnail
 add_image_size( 'home-side', 180, 180, true ); // Homepage Sidebar Thumbnail
 add_image_size( 'portfolio-3', 300, 500 ); // Portfolio Page 3 Column Images
@@ -357,89 +357,89 @@ function mytheme_infinite_scroll_render() {
   endwhile;
 }
 
-/**
- * Add infinite scroll to categories
- */
-
-function category_infinite_scroll_init() {
-  add_theme_support( 'infinite-scroll', array(
-    'type' => 'scroll',
-    'container' => 'category-post-area',
-    'render' => 'category_infinite_scroll_render',
-    'posts_per_page' => 10,
-    'footer' => false,
-  ) );
-}
-add_action( 'init', 'category_infinite_scroll_init' );
-
-function category_infinite_scroll_render() {
-  while ( have_posts() ) : the_post();
-    get_template_part( 'category_content' );
-  endwhile;
-}
-
-/**
- * Add infinite scroll to authors
- */
-
-function author_infinite_scroll_init() {
-  add_theme_support( 'infinite-scroll', array(
-    'type' => 'scroll',
-    'container' => 'author-post-area',
-    'render' => 'author_infinite_scroll_render',
-    'posts_per_page' => 10,
-    'footer' => false,
-  ) );
-}
-add_action( 'init', 'author_infinite_scroll_init' );
-
-function author_infinite_scroll_render() {
-  while ( have_posts() ) : the_post();
-    get_template_part( 'author_content' );
-  endwhile;
-}
-
-/**
- * Add infinite scroll to search
- */
-
-function search_infinite_scroll_init() {
-  add_theme_support( 'infinite-scroll', array(
-    'type' => 'scroll',
-    'container' => 'search-post-area',
-    'render' => 'search_infinite_scroll_render',
-    'posts_per_page' => 10,
-    'footer' => false,
-  ) );
-}
-add_action( 'init', 'search_infinite_scroll_init' );
-
-function search_infinite_scroll_render() {
-  while ( have_posts() ) : the_post();
-    get_template_part( 'search_content' );
-  endwhile;
-}
-
-/**
- * Add infinite scroll to tag
- */
-
-function tag_infinite_scroll_init() {
-  add_theme_support( 'infinite-scroll', array(
-    'type' => 'scroll',
-    'container' => 'tag-post-area',
-    'render' => 'tag_infinite_scroll_render',
-    'posts_per_page' => 10,
-    'footer' => false,
-  ) );
-}
-add_action( 'init', 'tag_infinite_scroll_init' );
-
-function tag_infinite_scroll_render() {
-  while ( have_posts() ) : the_post();
-    get_template_part( 'tag_content' );
-  endwhile;
-}
+// /**
+//  * Add infinite scroll to categories
+//  */
+//
+// function category_infinite_scroll_init() {
+//   add_theme_support( 'infinite-scroll', array(
+//     'type' => 'scroll',
+//     'container' => 'category-post-area',
+//     'render' => 'category_infinite_scroll_render',
+//     'posts_per_page' => 10,
+//     'footer' => false,
+//   ) );
+// }
+// add_action( 'init', 'category_infinite_scroll_init' );
+//
+// function category_infinite_scroll_render() {
+//   while ( have_posts() ) : the_post();
+//     get_template_part( 'category_content' );
+//   endwhile;
+// }
+//
+// /**
+//  * Add infinite scroll to authors
+//  */
+//
+// function author_infinite_scroll_init() {
+//   add_theme_support( 'infinite-scroll', array(
+//     'type' => 'scroll',
+//     'container' => 'author-post-area',
+//     'render' => 'author_infinite_scroll_render',
+//     'posts_per_page' => 10,
+//     'footer' => false,
+//   ) );
+// }
+// add_action( 'init', 'author_infinite_scroll_init' );
+//
+// function author_infinite_scroll_render() {
+//   while ( have_posts() ) : the_post();
+//     get_template_part( 'author_content' );
+//   endwhile;
+// }
+//
+// /**
+//  * Add infinite scroll to search
+//  */
+//
+// function search_infinite_scroll_init() {
+//   add_theme_support( 'infinite-scroll', array(
+//     'type' => 'scroll',
+//     'container' => 'search-post-area',
+//     'render' => 'search_infinite_scroll_render',
+//     'posts_per_page' => 10,
+//     'footer' => false,
+//   ) );
+// }
+// add_action( 'init', 'search_infinite_scroll_init' );
+//
+// function search_infinite_scroll_render() {
+//   while ( have_posts() ) : the_post();
+//     get_template_part( 'search_content' );
+//   endwhile;
+// }
+//
+// /**
+//  * Add infinite scroll to tag
+//  */
+//
+// function tag_infinite_scroll_init() {
+//   add_theme_support( 'infinite-scroll', array(
+//     'type' => 'scroll',
+//     'container' => 'tag-post-area',
+//     'render' => 'tag_infinite_scroll_render',
+//     'posts_per_page' => 10,
+//     'footer' => false,
+//   ) );
+// }
+// add_action( 'init', 'tag_infinite_scroll_init' );
+//
+// function tag_infinite_scroll_render() {
+//   while ( have_posts() ) : the_post();
+//     get_template_part( 'tag_content' );
+//   endwhile;
+// }
 
 /**
  * Remove WP Admin bar

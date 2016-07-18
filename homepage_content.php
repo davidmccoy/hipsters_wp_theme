@@ -3,7 +3,11 @@
   <?php
     $post_image_id = get_post_thumbnail_id($post_to_use->ID);
     if ($post_image_id) {
-      $thumbnail = wp_get_attachment_image_src( $post_image_id, 'post-thumbnail', false);
+      if (is_sticky()) {
+        $thumbnail = wp_get_attachment_image_src( $post_image_id, 'large', false);
+      } else {
+        $thumbnail = wp_get_attachment_image_src( $post_image_id, 'home-feature', false);
+      }
       if ($thumbnail) (string)$thumbnail = $thumbnail[0];
     }
   ?>
