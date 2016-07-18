@@ -337,7 +337,7 @@ function custom_excerpt_length( $length ) {
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 /**
- * Add infinite scroll.
+ * Add infinite scroll to homepage
  */
 
 function mytheme_infinite_scroll_init() {
@@ -354,6 +354,90 @@ add_action( 'init', 'mytheme_infinite_scroll_init' );
 function mytheme_infinite_scroll_render() {
   while ( have_posts() ) : the_post();
     get_template_part( 'homepage_content' );
+  endwhile;
+}
+
+/**
+ * Add infinite scroll to categories
+ */
+
+function category_infinite_scroll_init() {
+  add_theme_support( 'infinite-scroll', array(
+    'type' => 'scroll',
+    'container' => 'category-post-area',
+    'render' => 'category_infinite_scroll_render',
+    'posts_per_page' => 10,
+    'footer' => false,
+  ) );
+}
+add_action( 'init', 'category_infinite_scroll_init' );
+
+function category_infinite_scroll_render() {
+  while ( have_posts() ) : the_post();
+    get_template_part( 'category_content' );
+  endwhile;
+}
+
+/**
+ * Add infinite scroll to authors
+ */
+
+function author_infinite_scroll_init() {
+  add_theme_support( 'infinite-scroll', array(
+    'type' => 'scroll',
+    'container' => 'author-post-area',
+    'render' => 'author_infinite_scroll_render',
+    'posts_per_page' => 10,
+    'footer' => false,
+  ) );
+}
+add_action( 'init', 'author_infinite_scroll_init' );
+
+function author_infinite_scroll_render() {
+  while ( have_posts() ) : the_post();
+    get_template_part( 'author_content' );
+  endwhile;
+}
+
+/**
+ * Add infinite scroll to search
+ */
+
+function search_infinite_scroll_init() {
+  add_theme_support( 'infinite-scroll', array(
+    'type' => 'scroll',
+    'container' => 'search-post-area',
+    'render' => 'search_infinite_scroll_render',
+    'posts_per_page' => 10,
+    'footer' => false,
+  ) );
+}
+add_action( 'init', 'search_infinite_scroll_init' );
+
+function search_infinite_scroll_render() {
+  while ( have_posts() ) : the_post();
+    get_template_part( 'search_content' );
+  endwhile;
+}
+
+/**
+ * Add infinite scroll to tag
+ */
+
+function tag_infinite_scroll_init() {
+  add_theme_support( 'infinite-scroll', array(
+    'type' => 'scroll',
+    'container' => 'tag-post-area',
+    'render' => 'tag_infinite_scroll_render',
+    'posts_per_page' => 10,
+    'footer' => false,
+  ) );
+}
+add_action( 'init', 'tag_infinite_scroll_init' );
+
+function tag_infinite_scroll_render() {
+  while ( have_posts() ) : the_post();
+    get_template_part( 'tag_content' );
   endwhile;
 }
 
