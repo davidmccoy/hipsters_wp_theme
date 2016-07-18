@@ -345,7 +345,7 @@ function mytheme_infinite_scroll_init() {
     'type' => 'scroll',
     'container' => 'homepage',
     'render' => 'mytheme_infinite_scroll_render',
-    'posts_per_page' => 12,
+    'posts_per_page' => 15,
     'footer' => false,
   ) );
 }

@@ -1,6 +1,7 @@
 #homepage {
   .homepagecontent {
     margin-bottom: 30px;
+    overflow: hidden;
     .homeinfo {
       a {
         text-decoration: none;
@@ -45,14 +46,14 @@
 
 @media screen and (min-width: 768px) {
   #homepage {
-    font-size: 18px;
     line-height: 1.5;
+    font-size: 0px;
     .homepagecontent {
+      font-size: 18px;
       margin-bottom: 0px;
       width: 33.3%;
       padding-bottom: 480px;
       display: inline-block;
-      float: left;
       vertical-align: top;
       position: relative;
       &#sticky {
