@@ -1,3 +1,6 @@
+<?php
+$category = get_the_category();
+?>
 <div class="category-post">
 
           <?php if ( $video ) : ?>
