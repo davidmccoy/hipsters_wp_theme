@@ -677,19 +677,42 @@
 #homepage .homepagecontent .homeinfo p {
   margin: 10px 0px 15px;
 }
-/* line 39, ../scss/_home.scss */
+/* line 40, ../scss/_home.scss */
+#homepage .homepagecontent .post_container.ad_container h4 {
+  color: #ff82c8;
+}
+/* line 43, ../scss/_home.scss */
+#homepage .homepagecontent .post_container.ad_container img {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
+/* line 53, ../scss/_home.scss */
+#homepage .homepagecontent .post_container.ad_container .featured_image {
+  background: black;
+  text-align: center;
+  position: relative;
+}
+/* line 59, ../scss/_home.scss */
 #homepage .homepagecontent .post_container .featured_image {
+  height: 220px;
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 48, ../scss/_home.scss */
+  /* line 70, ../scss/_home.scss */
   #homepage {
     line-height: 1.5;
     font-size: 0px;
   }
-  /* line 51, ../scss/_home.scss */
+  /* line 73, ../scss/_home.scss */
   #homepage .homepagecontent {
     font-size: 18px;
     margin-bottom: 0px;
@@ -699,20 +722,20 @@
     vertical-align: top;
     position: relative;
   }
-  /* line 59, ../scss/_home.scss */
+  /* line 81, ../scss/_home.scss */
   #homepage .homepagecontent#sticky {
     width: 66.6%;
   }
-  /* line 62, ../scss/_home.scss */
+  /* line 84, ../scss/_home.scss */
   #homepage .homepagecontent#sticky .post_container h3 {
     font-size: 28px;
     margin: 5px 0px;
   }
-  /* line 66, ../scss/_home.scss */
+  /* line 88, ../scss/_home.scss */
   #homepage .homepagecontent#sticky .post_container .featured_image {
     background-position: top center;
   }
-  /* line 71, ../scss/_home.scss */
+  /* line 93, ../scss/_home.scss */
   #homepage .homepagecontent .post_container {
     position: absolute;
     left: 10px;
@@ -1265,24 +1288,25 @@
 /* line 81, ../scss/_category.scss */
 #container #content.category .category-post .featured_image, #container #content.category .tag-post .featured_image, #container #content.category .search-post .featured_image, #container #content.tag .category-post .featured_image, #container #content.tag .tag-post .featured_image, #container #content.tag .search-post .featured_image, #container #content.search .category-post .featured_image, #container #content.search .tag-post .featured_image, #container #content.search .search-post .featured_image {
   width: 100%;
+  background-position: center;
   background-size: cover;
   height: 220px;
 }
-/* line 85, ../scss/_category.scss */
+/* line 86, ../scss/_category.scss */
 #container #content.category .category-post .featured_image img, #container #content.category .tag-post .featured_image img, #container #content.category .search-post .featured_image img, #container #content.tag .category-post .featured_image img, #container #content.tag .tag-post .featured_image img, #container #content.tag .search-post .featured_image img, #container #content.search .category-post .featured_image img, #container #content.search .tag-post .featured_image img, #container #content.search .search-post .featured_image img {
   width: 100%;
 }
-/* line 89, ../scss/_category.scss */
+/* line 90, ../scss/_category.scss */
 #container #content.category .category-post .postauthor, #container #content.category .tag-post .postauthor, #container #content.category .search-post .postauthor, #container #content.tag .category-post .postauthor, #container #content.tag .tag-post .postauthor, #container #content.tag .search-post .postauthor, #container #content.search .category-post .postauthor, #container #content.search .tag-post .postauthor, #container #content.search .search-post .postauthor {
   margin: 15px 0px;
 }
-/* line 92, ../scss/_category.scss */
+/* line 93, ../scss/_category.scss */
 #container #content.category .category-post .postmeta, #container #content.category .tag-post .postmeta, #container #content.category .search-post .postmeta, #container #content.tag .category-post .postmeta, #container #content.tag .tag-post .postmeta, #container #content.tag .search-post .postmeta, #container #content.search .category-post .postmeta, #container #content.search .tag-post .postmeta, #container #content.search .search-post .postmeta {
   -ms-word-wrap: break-word;
   word-wrap: break-word;
   margin: 30px 0px;
 }
-/* line 96, ../scss/_category.scss */
+/* line 97, ../scss/_category.scss */
 #container #content.category .category-post .postmeta a, #container #content.category .tag-post .postmeta a, #container #content.category .search-post .postmeta a, #container #content.tag .category-post .postmeta a, #container #content.tag .tag-post .postmeta a, #container #content.tag .search-post .postmeta a, #container #content.search .category-post .postmeta a, #container #content.search .tag-post .postmeta a, #container #content.search .search-post .postmeta a {
   border-radius: 5px;
   padding: 5px 10px 7px;
@@ -1295,38 +1319,38 @@
   display: inline-block;
   margin-bottom: 10px;
 }
-/* line 107, ../scss/_category.scss */
+/* line 108, ../scss/_category.scss */
 #container #content.category .category-post .postmeta a:hover, #container #content.category .tag-post .postmeta a:hover, #container #content.category .search-post .postmeta a:hover, #container #content.tag .category-post .postmeta a:hover, #container #content.tag .tag-post .postmeta a:hover, #container #content.tag .search-post .postmeta a:hover, #container #content.search .category-post .postmeta a:hover, #container #content.search .tag-post .postmeta a:hover, #container #content.search .search-post .postmeta a:hover {
   background: #ff82c8 !important;
   color: white;
 }
-/* line 115, ../scss/_category.scss */
+/* line 116, ../scss/_category.scss */
 #container #content.category .category-post h2, #container #content.tag .category-post h2, #container #content.search .category-post h2 {
   margin-top: 5px;
 }
-/* line 120, ../scss/_category.scss */
+/* line 121, ../scss/_category.scss */
 #container #content.category .tag-post h4.category, #container #content.tag .tag-post h4.category, #container #content.search .tag-post h4.category {
   margin-top: 15px;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 130, ../scss/_category.scss */
+  /* line 131, ../scss/_category.scss */
   #container #content.category h1, #container #content.tag h1, #container #content.search h1 {
     margin-bottom: 35px;
   }
-  /* line 133, ../scss/_category.scss */
+  /* line 134, ../scss/_category.scss */
   #container #content.category .category-post, #container #content.tag .category-post, #container #content.search .category-post {
     margin-bottom: 65px;
   }
-  /* line 135, ../scss/_category.scss */
+  /* line 136, ../scss/_category.scss */
   #container #content.category .category-post h2, #container #content.tag .category-post h2, #container #content.search .category-post h2 {
     margin-top: 10px;
   }
-  /* line 139, ../scss/_category.scss */
+  /* line 140, ../scss/_category.scss */
   #container #content.category .tag-post, #container #content.tag .tag-post, #container #content.search .tag-post {
     margin-bottom: 65px;
   }
-  /* line 141, ../scss/_category.scss */
+  /* line 142, ../scss/_category.scss */
   #container #content.category .tag-post h4.category, #container #content.tag .tag-post h4.category, #container #content.search .tag-post h4.category {
     margin-top: 20px;
   }
@@ -1449,24 +1473,25 @@
 /* line 99, ../scss/_author.scss */
 #container #content.author .author-post .featured_image {
   width: 100%;
+  background-position: center;
   background-size: cover;
   height: 220px;
 }
-/* line 103, ../scss/_author.scss */
+/* line 104, ../scss/_author.scss */
 #container #content.author .author-post .featured_image img {
   width: 100%;
 }
-/* line 107, ../scss/_author.scss */
+/* line 108, ../scss/_author.scss */
 #container #content.author .author-post .postauthor {
   margin: 15px 0px;
 }
-/* line 110, ../scss/_author.scss */
+/* line 111, ../scss/_author.scss */
 #container #content.author .author-post .postmeta {
   -ms-word-wrap: break-word;
   word-wrap: break-word;
   margin: 30px 0px;
 }
-/* line 114, ../scss/_author.scss */
+/* line 115, ../scss/_author.scss */
 #container #content.author .author-post .postmeta a {
   border-radius: 5px;
   padding: 5px 10px 7px;
@@ -1479,34 +1504,34 @@
   display: inline-block;
   margin-bottom: 10px;
 }
-/* line 125, ../scss/_author.scss */
+/* line 126, ../scss/_author.scss */
 #container #content.author .author-post .postmeta a:hover {
   background: #ff82c8 !important;
   color: white;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 138, ../scss/_author.scss */
+  /* line 139, ../scss/_author.scss */
   #container #content.author .author-post {
     margin-bottom: 65px;
   }
-  /* line 140, ../scss/_author.scss */
+  /* line 141, ../scss/_author.scss */
   #container #content.author .author-post .post-date {
     margin-top: 4px;
   }
-  /* line 144, ../scss/_author.scss */
+  /* line 145, ../scss/_author.scss */
   #container #content.author .author-info {
     margin-bottom: 35px;
   }
-  /* line 146, ../scss/_author.scss */
+  /* line 147, ../scss/_author.scss */
   #container #content.author .author-info .author-left {
     width: 75%;
   }
-  /* line 149, ../scss/_author.scss */
+  /* line 150, ../scss/_author.scss */
   #container #content.author .author-info .author-right {
     width: 25%;
   }
-  /* line 151, ../scss/_author.scss */
+  /* line 152, ../scss/_author.scss */
   #container #content.author .author-info .author-right .author-image {
     height: 120px;
     width: 120px;
@@ -1711,64 +1736,66 @@ body #wrap #spacer img {
 /* line 44, ../scss/base.scss */
 body #wrap #pagination {
   text-align: center;
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
 }
-/* line 46, ../scss/base.scss */
+/* line 48, ../scss/base.scss */
 body #wrap #pagination a {
   margin: 0 5px;
 }
-/* line 52, ../scss/base.scss */
+/* line 54, ../scss/base.scss */
 body .highlight-and-share-wrapper div {
   margin: 0px;
   background: white;
   border: 1px solid rgba(0, 0, 0, 0.14);
 }
-/* line 57, ../scss/base.scss */
+/* line 59, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_twitter a {
   color: black;
 }
-/* line 60, ../scss/base.scss */
+/* line 62, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_twitter:hover {
   background: #32CCFE;
 }
-/* line 62, ../scss/base.scss */
+/* line 64, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_twitter:hover a {
   color: white;
 }
-/* line 67, ../scss/base.scss */
+/* line 69, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_facebook {
   background: white;
   border-left: none;
 }
-/* line 70, ../scss/base.scss */
+/* line 72, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_facebook a {
   color: black;
 }
-/* line 73, ../scss/base.scss */
+/* line 75, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_facebook:hover {
   background: #3c5a9e;
 }
-/* line 75, ../scss/base.scss */
+/* line 77, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_facebook:hover a {
   color: white;
 }
-/* line 80, ../scss/base.scss */
+/* line 82, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_email {
   background: white;
   border-left: none;
 }
-/* line 83, ../scss/base.scss */
+/* line 85, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_email a {
   color: black;
 }
-/* line 86, ../scss/base.scss */
+/* line 88, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_email:hover {
   background: #ff82c8;
 }
-/* line 88, ../scss/base.scss */
+/* line 90, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_email:hover a {
   color: white;
 }
-/* line 93, ../scss/base.scss */
+/* line 95, ../scss/base.scss */
 body .highlight-and-share-wrapper div a {
   padding: 0px;
   -moz-transition: color 200ms;
@@ -1776,32 +1803,32 @@ body .highlight-and-share-wrapper div a {
   -webkit-transition: color 200ms;
   transition: color 200ms;
 }
-/* line 99, ../scss/base.scss */
+/* line 101, ../scss/base.scss */
 body .highlight-and-share-wrapper div a:hover {
   padding: 0px;
 }
-/* line 102, ../scss/base.scss */
+/* line 104, ../scss/base.scss */
 body .highlight-and-share-wrapper div a i {
   width: 31px;
   height: 28px;
   text-align: center;
 }
-/* line 109, ../scss/base.scss */
+/* line 111, ../scss/base.scss */
 body .highlight-and-share-wrapper .fa {
   font-size: 2em;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 116, ../scss/base.scss */
+  /* line 118, ../scss/base.scss */
   body {
     font-size: 21px;
     line-height: 1.58;
   }
-  /* line 120, ../scss/base.scss */
+  /* line 122, ../scss/base.scss */
   body h1 {
     line-height: 1.5;
   }
-  /* line 124, ../scss/base.scss */
+  /* line 126, ../scss/base.scss */
   body #wrap #spacer {
     display: none;
   }

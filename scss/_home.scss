@@ -36,7 +36,29 @@
       }
     }
     .post_container {
+      &.ad_container {
+        h4 {
+          color: #ff82c8;
+        }
+        img {
+          height: 200px;
+          width: 200px;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          margin: auto;
+        }
+        .featured_image {
+          background: black;
+          text-align: center;
+          position: relative;
+        }
+      }
       .featured_image {
+        height: 220px;
+        background-size: cover;
         background-position: center center;
         background-repeat: no-repeat;
       }

@@ -345,7 +345,7 @@ function mytheme_infinite_scroll_init() {
     'type' => 'scroll',
     'container' => 'homepage',
     'render' => 'mytheme_infinite_scroll_render',
-    'posts_per_page' => 15,
+    'posts_per_page' => 11,
     'footer' => false,
   ) );
 }
@@ -514,5 +514,42 @@ function add_search_form_to_menu($items, $args) {
 // disable related posts from appending to post content
 add_filter( 'rp4wp_append_content', '__return_false' );
 
+// inject ads into the homepage
+add_action( 'the_post', 'ad_injection' );
+function ad_injection() {
+	if( is_home() || is_archive() ) {
+		global $wp_query;
+		if( $wp_query->current_post%4 == 0 && $wp_query->current_post >0 && $wp_query->current_post < 8 ) {
+			echo '<div class="homepagecontent">
+			<div class="post_container ad_container">
+		    <a href="http://www.casthaven.com" target="_blank">
+		      <div class="featured_image">
+						<img src="/assets/casthaven-ad.png" />
+		      </div>
+		    </a>
+		    <div class="homeinfo">
+		      <div class="post-category">
+		        <h4>
+		          ADVERTISEMENT
+		        </h4>
+		      </div>
+		      <div class="post-title">
+		       <h3>
+		          <a href="http://www.casthaven.com" target="_blank" rel="bookmark">
+		            Hipsters is Brought to You by Casthaven
+		          </a>
+		        </h3>
+		      </div>
+		      <div class="home_excerpt">
+		        <p>
+							Build your Magic collection like a pro with Casthaven.
+						</p>
+		      </div>
+		    </div>
+		  </div>
+			</div>';
+		}
+	}
+}
 
 ?>

@@ -4,7 +4,7 @@
     $post_image_id = get_post_thumbnail_id($post_to_use->ID);
     if ($post_image_id) {
       if (is_sticky()) {
-        $thumbnail = wp_get_attachment_image_src( $post_image_id, 'large', false);
+        $thumbnail = wp_get_attachment_image_src( $post_image_id, 'page-feature', false);
       } else {
         $thumbnail = wp_get_attachment_image_src( $post_image_id, 'home-feature', false);
       }
@@ -13,7 +13,7 @@
   ?>
   <div class="post_container">
     <a href="<?php the_permalink() ?>">
-      <div class="featured_image" style="background-image: url('<?php echo $thumbnail; ?>'); background-size: cover; height: 220px;">
+      <div class="featured_image" style="background-image: url('<?php echo $thumbnail; ?>');">
       </div>
     </a>
     <div class="homeinfo">
