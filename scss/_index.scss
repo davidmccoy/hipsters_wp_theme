@@ -12,6 +12,9 @@
       }
       img, div {
         max-width: 100%;
+        &.hcfw-overlay {
+          max-width: none;
+        }
       }
       img {
         // margin: 0 auto;

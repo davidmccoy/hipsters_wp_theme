@@ -1,5 +1,5 @@
-
-<div class="homepagecontent" <?php if (is_sticky()) echo 'id="sticky"' ?>>
+<?php global $wp_query; ?>
+<div class="homepagecontent <?php echo $wp_query->current_post ?>" <?php if (is_sticky()) echo 'id="sticky"' ?>>
   <?php
     $post_image_id = get_post_thumbnail_id($post_to_use->ID);
     if ($post_image_id) {

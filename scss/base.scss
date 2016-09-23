@@ -23,6 +23,9 @@ body {
     font-family: 'whitney';
     -ms-word-wrap: break-word;
     word-wrap: break-word;
+    &.mtg_deck_title {
+      text-decoration: none;
+    }
   }
 
   h1 {
