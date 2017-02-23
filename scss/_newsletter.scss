@@ -1,5 +1,8 @@
-.boxzilla-center-container {
-  .boxzilla-center {
+.boxzilla-center-container, .boxzilla-bottom-right-container {
+  .boxzilla-bottom-right {
+      box-shadow: 10px 10px 500px black;
+  }
+  .boxzilla-center, .boxzilla-bottom-right {
     .boxzilla-content {
       line-height: 1.5;
       table {
@@ -39,8 +42,11 @@
 }
 
 @media screen and (min-width: 480px) {
-  .boxzilla-center-container {
-    .boxzilla-center {
+  .boxzilla-center-container, .boxzilla-bottom-right-container {
+    .boxzilla-bottom-right {
+        box-shadow: 10px 10px 100px black;
+    }
+    .boxzilla-center, .boxzilla-bottom-right {
       .boxzilla-content {
         table {
           td {
@@ -60,8 +66,8 @@
 }
 
 @media screen and (min-width: 768px) {
-  .boxzilla-center-container {
-    .boxzilla-center {
+  .boxzilla-center-container, .boxzilla-bottom-right-container {
+    .boxzilla-center, .boxzilla-bottom-right {
       .boxzilla-content {
         table {
           td {

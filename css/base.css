@@ -1642,20 +1642,24 @@
     display: none;
   }
 }
-/* line 3, ../scss/_newsletter.scss */
-.boxzilla-center-container .boxzilla-center .boxzilla-content {
+/* line 2, ../scss/_newsletter.scss */
+.boxzilla-center-container .boxzilla-bottom-right, .boxzilla-bottom-right-container .boxzilla-bottom-right {
+  box-shadow: 10px 10px 500px black;
+}
+/* line 6, ../scss/_newsletter.scss */
+.boxzilla-center-container .boxzilla-center .boxzilla-content, .boxzilla-center-container .boxzilla-bottom-right .boxzilla-content, .boxzilla-bottom-right-container .boxzilla-center .boxzilla-content, .boxzilla-bottom-right-container .boxzilla-bottom-right .boxzilla-content {
   line-height: 1.5;
 }
-/* line 5, ../scss/_newsletter.scss */
-.boxzilla-center-container .boxzilla-center .boxzilla-content table {
+/* line 8, ../scss/_newsletter.scss */
+.boxzilla-center-container .boxzilla-center .boxzilla-content table, .boxzilla-center-container .boxzilla-bottom-right .boxzilla-content table, .boxzilla-bottom-right-container .boxzilla-center .boxzilla-content table, .boxzilla-bottom-right-container .boxzilla-bottom-right .boxzilla-content table {
   width: 100%;
 }
-/* line 7, ../scss/_newsletter.scss */
-.boxzilla-center-container .boxzilla-center .boxzilla-content table td {
+/* line 10, ../scss/_newsletter.scss */
+.boxzilla-center-container .boxzilla-center .boxzilla-content table td, .boxzilla-center-container .boxzilla-bottom-right .boxzilla-content table td, .boxzilla-bottom-right-container .boxzilla-center .boxzilla-content table td, .boxzilla-bottom-right-container .boxzilla-bottom-right .boxzilla-content table td {
   display: block;
 }
-/* line 10, ../scss/_newsletter.scss */
-.boxzilla-center-container .boxzilla-center .boxzilla-content table input[type="email"] {
+/* line 13, ../scss/_newsletter.scss */
+.boxzilla-center-container .boxzilla-center .boxzilla-content table input[type="email"], .boxzilla-center-container .boxzilla-bottom-right .boxzilla-content table input[type="email"], .boxzilla-bottom-right-container .boxzilla-center .boxzilla-content table input[type="email"], .boxzilla-bottom-right-container .boxzilla-bottom-right .boxzilla-content table input[type="email"] {
   font-size: 16px;
   font-weight: 100;
   margin: 5px 0px;
@@ -1663,8 +1667,8 @@
   width: 100%;
   box-sizing: border-box;
 }
-/* line 19, ../scss/_newsletter.scss */
-.boxzilla-center-container .boxzilla-center .boxzilla-content input[type="submit"] {
+/* line 22, ../scss/_newsletter.scss */
+.boxzilla-center-container .boxzilla-center .boxzilla-content input[type="submit"], .boxzilla-center-container .boxzilla-bottom-right .boxzilla-content input[type="submit"], .boxzilla-bottom-right-container .boxzilla-center .boxzilla-content input[type="submit"], .boxzilla-bottom-right-container .boxzilla-bottom-right .boxzilla-content input[type="submit"] {
   font-family: 'whitney';
   border-radius: 5px;
   padding: 10px 15px;
@@ -1678,30 +1682,34 @@
   display: inline-block;
   margin-bottom: 10px;
 }
-/* line 32, ../scss/_newsletter.scss */
-.boxzilla-center-container .boxzilla-center .boxzilla-content input[type="submit"]:hover {
+/* line 35, ../scss/_newsletter.scss */
+.boxzilla-center-container .boxzilla-center .boxzilla-content input[type="submit"]:hover, .boxzilla-center-container .boxzilla-bottom-right .boxzilla-content input[type="submit"]:hover, .boxzilla-bottom-right-container .boxzilla-center .boxzilla-content input[type="submit"]:hover, .boxzilla-bottom-right-container .boxzilla-bottom-right .boxzilla-content input[type="submit"]:hover {
   background: #ff82c8 !important;
   color: white;
 }
 
 @media screen and (min-width: 480px) {
   /* line 46, ../scss/_newsletter.scss */
-  .boxzilla-center-container .boxzilla-center .boxzilla-content table td {
-    display: table-cell;
-  }
-  /* line 48, ../scss/_newsletter.scss */
-  .boxzilla-center-container .boxzilla-center .boxzilla-content table td.label {
-    width: 125px;
+  .boxzilla-center-container .boxzilla-bottom-right, .boxzilla-bottom-right-container .boxzilla-bottom-right {
+    box-shadow: 10px 10px 100px black;
   }
   /* line 52, ../scss/_newsletter.scss */
-  .boxzilla-center-container .boxzilla-center .boxzilla-content table input[type="email"] {
+  .boxzilla-center-container .boxzilla-center .boxzilla-content table td, .boxzilla-center-container .boxzilla-bottom-right .boxzilla-content table td, .boxzilla-bottom-right-container .boxzilla-center .boxzilla-content table td, .boxzilla-bottom-right-container .boxzilla-bottom-right .boxzilla-content table td {
+    display: table-cell;
+  }
+  /* line 54, ../scss/_newsletter.scss */
+  .boxzilla-center-container .boxzilla-center .boxzilla-content table td.label, .boxzilla-center-container .boxzilla-bottom-right .boxzilla-content table td.label, .boxzilla-bottom-right-container .boxzilla-center .boxzilla-content table td.label, .boxzilla-bottom-right-container .boxzilla-bottom-right .boxzilla-content table td.label {
+    width: 125px;
+  }
+  /* line 58, ../scss/_newsletter.scss */
+  .boxzilla-center-container .boxzilla-center .boxzilla-content table input[type="email"], .boxzilla-center-container .boxzilla-bottom-right .boxzilla-content table input[type="email"], .boxzilla-bottom-right-container .boxzilla-center .boxzilla-content table input[type="email"], .boxzilla-bottom-right-container .boxzilla-bottom-right .boxzilla-content table input[type="email"] {
     width: 100%;
     box-sizing: border-box;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 68, ../scss/_newsletter.scss */
-  .boxzilla-center-container .boxzilla-center .boxzilla-content table td.label {
+  /* line 74, ../scss/_newsletter.scss */
+  .boxzilla-center-container .boxzilla-center .boxzilla-content table td.label, .boxzilla-center-container .boxzilla-bottom-right .boxzilla-content table td.label, .boxzilla-bottom-right-container .boxzilla-center .boxzilla-content table td.label, .boxzilla-bottom-right-container .boxzilla-bottom-right .boxzilla-content table td.label {
     width: 145px;
   }
 }
