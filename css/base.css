@@ -1017,54 +1017,126 @@
   width: 75px;
   height: 72px;
 }
-/* line 208, ../scss/_index.scss */
+/* line 207, ../scss/_index.scss */
+#container #content .post-area .inline-mailchimp-form {
+  font-size: 16px;
+}
+/* line 209, ../scss/_index.scss */
+#container #content .post-area .inline-mailchimp-form h3 {
+  color: #ff82c8;
+  margin: 16px 0px;
+}
+/* line 213, ../scss/_index.scss */
+#container #content .post-area .inline-mailchimp-form .mc4wp-form {
+  border-top: 1px solid rgba(0, 0, 0, 0.14);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+  padding: 10px 0px;
+  clear: both;
+  line-height: 1.5;
+}
+/* line 219, ../scss/_index.scss */
+#container #content .post-area .inline-mailchimp-form .mc4wp-form table {
+  width: 100%;
+}
+/* line 221, ../scss/_index.scss */
+#container #content .post-area .inline-mailchimp-form .mc4wp-form table td {
+  display: table-cell;
+}
+/* line 223, ../scss/_index.scss */
+#container #content .post-area .inline-mailchimp-form .mc4wp-form table td.label {
+  width: 105px;
+}
+/* line 225, ../scss/_index.scss */
+#container #content .post-area .inline-mailchimp-form .mc4wp-form table td.label label {
+  margin-left: -3px;
+}
+/* line 229, ../scss/_index.scss */
+#container #content .post-area .inline-mailchimp-form .mc4wp-form table td.submit-container {
+  display: none;
+  width: 90px;
+  text-align: right;
+}
+/* line 233, ../scss/_index.scss */
+#container #content .post-area .inline-mailchimp-form .mc4wp-form table td.submit-container input[type="submit"] {
+  margin: 0px;
+}
+/* line 238, ../scss/_index.scss */
+#container #content .post-area .inline-mailchimp-form .mc4wp-form table input[type="email"] {
+  font-size: 16px;
+  font-weight: 100;
+  margin: 5px 0px;
+  padding: 5px 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+/* line 248, ../scss/_index.scss */
+#container #content .post-area .inline-mailchimp-form .mc4wp-form .button-container input[type="submit"] {
+  font-family: 'whitney';
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 5px 0px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  color: #ff82c8;
+  background: white;
+  border: 1px solid #ff82c8;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+/* line 261, ../scss/_index.scss */
+#container #content .post-area .inline-mailchimp-form .mc4wp-form .button-container input[type="submit"]:hover {
+  background: #ff82c8 !important;
+  color: white;
+}
+/* line 270, ../scss/_index.scss */
 #container #content .post-area .rp4wp-related-posts .related-posts-list, #container #content .post-area .rp4wp-related-post .related-posts-list {
   padding: 0px;
   margin: 0px;
 }
-/* line 211, ../scss/_index.scss */
+/* line 273, ../scss/_index.scss */
 #container #content .post-area .rp4wp-related-posts .related-posts-list .related-post, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post {
   padding: 25px 0px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.14);
 }
-/* line 214, ../scss/_index.scss */
+/* line 276, ../scss/_index.scss */
 #container #content .post-area .rp4wp-related-posts .related-posts-list .related-post.first, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post.first {
   border-top: 1px solid rgba(0, 0, 0, 0.14);
 }
-/* line 217, ../scss/_index.scss */
+/* line 279, ../scss/_index.scss */
 #container #content .post-area .rp4wp-related-posts .related-posts-list .related-post div, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post div {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 221, ../scss/_index.scss */
+/* line 283, ../scss/_index.scss */
 #container #content .post-area .rp4wp-related-posts .related-posts-list .related-post .related-post-info, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post .related-post-info {
   width: 75%;
   padding-right: 15px;
   box-sizing: border-box;
 }
-/* line 225, ../scss/_index.scss */
+/* line 287, ../scss/_index.scss */
 #container #content .post-area .rp4wp-related-posts .related-posts-list .related-post .related-post-info h4.related, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post .related-post-info h4.related {
   margin: 0px;
   font-size: 14px;
 }
-/* line 229, ../scss/_index.scss */
+/* line 291, ../scss/_index.scss */
 #container #content .post-area .rp4wp-related-posts .related-posts-list .related-post .related-post-info h3.related, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post .related-post-info h3.related {
   margin: 0px;
 }
-/* line 231, ../scss/_index.scss */
+/* line 293, ../scss/_index.scss */
 #container #content .post-area .rp4wp-related-posts .related-posts-list .related-post .related-post-info h3.related a, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post .related-post-info h3.related a {
   color: black;
 }
-/* line 235, ../scss/_index.scss */
+/* line 297, ../scss/_index.scss */
 #container #content .post-area .rp4wp-related-posts .related-posts-list .related-post .related-post-info p, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post .related-post-info p {
   margin: 0px;
   font-size: 18px;
 }
-/* line 240, ../scss/_index.scss */
+/* line 302, ../scss/_index.scss */
 #container #content .post-area .rp4wp-related-posts .related-posts-list .related-post .related-post-image, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post .related-post-image {
   width: 25%;
 }
-/* line 247, ../scss/_index.scss */
+/* line 309, ../scss/_index.scss */
 #container #content .share-bar {
   font-size: 0;
   visibility: hidden;
@@ -1079,16 +1151,16 @@
   margin: 0 auto;
   text-align: center;
 }
-/* line 260, ../scss/_index.scss */
+/* line 322, ../scss/_index.scss */
 #container #content .share-bar.is-visible {
   visibility: visible;
   transition-delay: 0s;
 }
-/* line 264, ../scss/_index.scss */
+/* line 326, ../scss/_index.scss */
 #container #content .share-bar.is-visible .share-bar-container .share-bar-content {
   transform: translateY(0);
 }
-/* line 269, ../scss/_index.scss */
+/* line 331, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container {
   position: relative;
   height: 0;
@@ -1103,7 +1175,7 @@
   flex-direction: row;
   align-items: stretch;
 }
-/* line 282, ../scss/_index.scss */
+/* line 344, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content {
   box-sizing: border-box;
   position: absolute;
@@ -1117,11 +1189,11 @@
   margin-right: -20px;
   margin-left: -20px;
 }
-/* line 294, ../scss/_index.scss */
+/* line 356, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content a {
   color: black;
 }
-/* line 297, ../scss/_index.scss */
+/* line 359, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share {
   width: 33.3%;
   display: inline-block;
@@ -1133,37 +1205,37 @@
   -webkit-transition: background-color 200ms;
   transition: background-color 200ms;
 }
-/* line 307, ../scss/_index.scss */
+/* line 369, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share.mid {
   border-left: 1px solid rgba(0, 0, 0, 0.14);
   border-right: 1px solid rgba(0, 0, 0, 0.14);
   box-sizing: border-box;
 }
-/* line 313, ../scss/_index.scss */
+/* line 375, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share.twitter:hover {
   background: #32CCFE;
 }
-/* line 315, ../scss/_index.scss */
+/* line 377, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share.twitter:hover i {
   color: white;
 }
-/* line 321, ../scss/_index.scss */
+/* line 383, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share.facebook:hover {
   background: #3c5a9e;
 }
-/* line 323, ../scss/_index.scss */
+/* line 385, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share.facebook:hover i {
   color: white;
 }
-/* line 329, ../scss/_index.scss */
+/* line 391, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share.email:hover {
   background: #ff82c8;
 }
-/* line 331, ../scss/_index.scss */
+/* line 393, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share.email:hover i {
   color: white;
 }
-/* line 336, ../scss/_index.scss */
+/* line 398, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share i {
   padding: 0px;
   -moz-transition: color 200ms;
@@ -1173,27 +1245,47 @@
 }
 
 @media screen and (min-width: 768px) {
-  /* line 351, ../scss/_index.scss */
+  /* line 413, ../scss/_index.scss */
   #container {
     margin-top: 20px;
   }
-  /* line 355, ../scss/_index.scss */
+  /* line 417, ../scss/_index.scss */
   #container #content .post-area blockquote {
     margin-left: -23px;
   }
-  /* line 359, ../scss/_index.scss */
+  /* line 421, ../scss/_index.scss */
   #container #content .post-area .post-author-container .post-author-image {
     width: 66px;
     height: 66px;
   }
-  /* line 364, ../scss/_index.scss */
+  /* line 426, ../scss/_index.scss */
   #container #content .post-area .post-date {
     height: 32px;
     font-size: 18px;
   }
-  /* line 368, ../scss/_index.scss */
+  /* line 430, ../scss/_index.scss */
   #container #content .post-area .mtg_deck.mtg_deck_embedded .card_box {
     display: block;
+  }
+  /* line 433, ../scss/_index.scss */
+  #container #content .post-area .inline-mailchimp-form {
+    text-align: center;
+  }
+  /* line 436, ../scss/_index.scss */
+  #container #content .post-area .inline-mailchimp-form .mc4wp-form table {
+    margin-bottom: 16px;
+  }
+  /* line 439, ../scss/_index.scss */
+  #container #content .post-area .inline-mailchimp-form .mc4wp-form table td.label {
+    width: 110px;
+  }
+  /* line 442, ../scss/_index.scss */
+  #container #content .post-area .inline-mailchimp-form .mc4wp-form table td.submit-container {
+    display: table-cell;
+  }
+  /* line 447, ../scss/_index.scss */
+  #container #content .post-area .inline-mailchimp-form .mc4wp-form .button-container {
+    display: none;
   }
 }
 /* line 3, ../scss/_category.scss */
@@ -1688,27 +1780,81 @@
   color: white;
 }
 
+/* line 44, ../scss/_newsletter.scss */
+.inline-mailchimp-form {
+  font-size: 16px;
+}
+/* line 46, ../scss/_newsletter.scss */
+.inline-mailchimp-form h3 {
+  color: #ff82c8;
+}
+/* line 49, ../scss/_newsletter.scss */
+.inline-mailchimp-form .mc4wp-form {
+  border-top: 1px solid rgba(0, 0, 0, 0.14);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+  padding: 10px 0px;
+  clear: both;
+  line-height: 1.5;
+}
+/* line 55, ../scss/_newsletter.scss */
+.inline-mailchimp-form .mc4wp-form table {
+  width: 100%;
+}
+/* line 57, ../scss/_newsletter.scss */
+.inline-mailchimp-form .mc4wp-form table td {
+  display: block;
+}
+/* line 60, ../scss/_newsletter.scss */
+.inline-mailchimp-form .mc4wp-form table input[type="email"] {
+  font-size: 16px;
+  font-weight: 100;
+  margin: 5px 0px;
+  padding: 5px 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+/* line 69, ../scss/_newsletter.scss */
+.inline-mailchimp-form .mc4wp-form input[type="submit"] {
+  font-family: 'whitney';
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 5px 0px;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  color: #ff82c8;
+  background: white;
+  border: 1px solid #ff82c8;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+/* line 82, ../scss/_newsletter.scss */
+.inline-mailchimp-form .mc4wp-form input[type="submit"]:hover {
+  background: #ff82c8 !important;
+  color: white;
+}
+
 @media screen and (min-width: 480px) {
-  /* line 46, ../scss/_newsletter.scss */
+  /* line 92, ../scss/_newsletter.scss */
   .boxzilla-center-container .boxzilla-bottom-right, .boxzilla-bottom-right-container .boxzilla-bottom-right {
     box-shadow: 10px 10px 100px black;
   }
-  /* line 52, ../scss/_newsletter.scss */
+  /* line 98, ../scss/_newsletter.scss */
   .boxzilla-center-container .boxzilla-center .boxzilla-content table td, .boxzilla-center-container .boxzilla-bottom-right .boxzilla-content table td, .boxzilla-bottom-right-container .boxzilla-center .boxzilla-content table td, .boxzilla-bottom-right-container .boxzilla-bottom-right .boxzilla-content table td {
     display: table-cell;
   }
-  /* line 54, ../scss/_newsletter.scss */
+  /* line 100, ../scss/_newsletter.scss */
   .boxzilla-center-container .boxzilla-center .boxzilla-content table td.label, .boxzilla-center-container .boxzilla-bottom-right .boxzilla-content table td.label, .boxzilla-bottom-right-container .boxzilla-center .boxzilla-content table td.label, .boxzilla-bottom-right-container .boxzilla-bottom-right .boxzilla-content table td.label {
     width: 125px;
   }
-  /* line 58, ../scss/_newsletter.scss */
+  /* line 104, ../scss/_newsletter.scss */
   .boxzilla-center-container .boxzilla-center .boxzilla-content table input[type="email"], .boxzilla-center-container .boxzilla-bottom-right .boxzilla-content table input[type="email"], .boxzilla-bottom-right-container .boxzilla-center .boxzilla-content table input[type="email"], .boxzilla-bottom-right-container .boxzilla-bottom-right .boxzilla-content table input[type="email"] {
     width: 100%;
     box-sizing: border-box;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 74, ../scss/_newsletter.scss */
+  /* line 120, ../scss/_newsletter.scss */
   .boxzilla-center-container .boxzilla-center .boxzilla-content table td.label, .boxzilla-center-container .boxzilla-bottom-right .boxzilla-content table td.label, .boxzilla-bottom-right-container .boxzilla-center .boxzilla-content table td.label, .boxzilla-bottom-right-container .boxzilla-bottom-right .boxzilla-content table td.label {
     width: 145px;
   }

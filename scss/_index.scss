@@ -204,6 +204,68 @@
           }
         }
       }
+      .inline-mailchimp-form {
+        font-size: 16px;
+        h3 {
+          color: #ff82c8;
+          margin: 16px 0px;
+        }
+        .mc4wp-form {
+          border-top: 1px solid rgba(0, 0, 0, 0.14);
+          border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+          padding: 10px 0px;
+          clear: both;
+          line-height: 1.5;
+          table {
+            width: 100%;
+            td {
+              display: table-cell;
+              &.label {
+                width: 105px;
+                label {
+                  margin-left: -3px;
+                }
+              }
+              &.submit-container {
+                display: none;
+                width: 90px;
+                text-align: right;
+                input[type="submit"] {
+                  margin: 0px;
+                }
+              }
+            }
+            input[type="email"] {
+              font-size: 16px;
+              font-weight: 100;
+              margin: 5px 0px;
+              padding: 5px 10px;
+              width: 100%;
+              box-sizing: border-box;
+            }
+          }
+          .button-container {
+            input[type="submit"] {
+              font-family: 'whitney';
+              border-radius: 5px;
+              padding: 10px 15px;
+              margin: 5px 0px;
+              font-size: 13px;
+              text-transform: uppercase;;
+              letter-spacing: 0.3px;
+              color: #ff82c8;
+              background: white;
+              border: 1px solid #ff82c8;
+              display: inline-block;
+              margin-bottom: 10px;
+              &:hover {
+                background: #ff82c8 !important;
+                color: white;
+              }
+            }
+          }
+        }
+      }
       .rp4wp-related-posts, .rp4wp-related-post {
         .related-posts-list {
           padding: 0px;
@@ -367,6 +429,25 @@
         }
         .mtg_deck.mtg_deck_embedded .card_box {
           display: block;
+        }
+        .inline-mailchimp-form {
+          text-align: center;
+          .mc4wp-form {
+            table {
+              margin-bottom: 16px;
+              td {
+                &.label {
+                  width: 110px;
+                }
+                &.submit-container {
+                  display: table-cell;
+                }
+              }
+            }
+            .button-container {
+              display: none;
+            }
+          }
         }
       }
     }

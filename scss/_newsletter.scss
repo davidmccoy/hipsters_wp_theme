@@ -41,6 +41,52 @@
   }
 }
 
+.inline-mailchimp-form {
+  font-size: 16px;
+  h3 {
+    color: #ff82c8;
+  }
+  .mc4wp-form {
+    border-top: 1px solid rgba(0, 0, 0, 0.14);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.14);
+    padding: 10px 0px;
+    clear: both;
+    line-height: 1.5;
+    table {
+      width: 100%;
+      td {
+        display: block;
+      }
+      input[type="email"] {
+        font-size: 16px;
+        font-weight: 100;
+        margin: 5px 0px;
+        padding: 5px 10px;
+        width: 100%;
+        box-sizing: border-box;
+      }
+    }
+    input[type="submit"] {
+      font-family: 'whitney';
+      border-radius: 5px;
+      padding: 10px 15px;
+      margin: 5px 0px;
+      font-size: 13px;
+      text-transform: uppercase;;
+      letter-spacing: 0.3px;
+      color: #ff82c8;
+      background: white;
+      border: 1px solid #ff82c8;
+      display: inline-block;
+      margin-bottom: 10px;
+      &:hover {
+        background: #ff82c8 !important;
+        color: white;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 480px) {
   .boxzilla-center-container, .boxzilla-bottom-right-container {
     .boxzilla-bottom-right {
