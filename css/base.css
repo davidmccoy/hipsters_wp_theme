@@ -1059,8 +1059,9 @@
 /* line 233, ../scss/_index.scss */
 #container #content .post-area .inline-mailchimp-form .mc4wp-form table td.submit-container input[type="submit"] {
   margin: 0px;
+  -webkit-appearance: none;
 }
-/* line 238, ../scss/_index.scss */
+/* line 239, ../scss/_index.scss */
 #container #content .post-area .inline-mailchimp-form .mc4wp-form table input[type="email"] {
   font-size: 16px;
   font-weight: 100;
@@ -1069,7 +1070,7 @@
   width: 100%;
   box-sizing: border-box;
 }
-/* line 248, ../scss/_index.scss */
+/* line 249, ../scss/_index.scss */
 #container #content .post-area .inline-mailchimp-form .mc4wp-form .button-container input[type="submit"] {
   font-family: 'whitney';
   border-radius: 5px;
@@ -1083,60 +1084,61 @@
   border: 1px solid #ff82c8;
   display: inline-block;
   margin-bottom: 10px;
+  -webkit-appearance: none;
 }
-/* line 261, ../scss/_index.scss */
+/* line 263, ../scss/_index.scss */
 #container #content .post-area .inline-mailchimp-form .mc4wp-form .button-container input[type="submit"]:hover {
   background: #ff82c8 !important;
   color: white;
 }
-/* line 270, ../scss/_index.scss */
+/* line 272, ../scss/_index.scss */
 #container #content .post-area .rp4wp-related-posts .related-posts-list, #container #content .post-area .rp4wp-related-post .related-posts-list {
   padding: 0px;
   margin: 0px;
 }
-/* line 273, ../scss/_index.scss */
+/* line 275, ../scss/_index.scss */
 #container #content .post-area .rp4wp-related-posts .related-posts-list .related-post, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post {
   padding: 25px 0px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.14);
 }
-/* line 276, ../scss/_index.scss */
+/* line 278, ../scss/_index.scss */
 #container #content .post-area .rp4wp-related-posts .related-posts-list .related-post.first, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post.first {
   border-top: 1px solid rgba(0, 0, 0, 0.14);
 }
-/* line 279, ../scss/_index.scss */
+/* line 281, ../scss/_index.scss */
 #container #content .post-area .rp4wp-related-posts .related-posts-list .related-post div, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post div {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 283, ../scss/_index.scss */
+/* line 285, ../scss/_index.scss */
 #container #content .post-area .rp4wp-related-posts .related-posts-list .related-post .related-post-info, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post .related-post-info {
   width: 75%;
   padding-right: 15px;
   box-sizing: border-box;
 }
-/* line 287, ../scss/_index.scss */
+/* line 289, ../scss/_index.scss */
 #container #content .post-area .rp4wp-related-posts .related-posts-list .related-post .related-post-info h4.related, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post .related-post-info h4.related {
   margin: 0px;
   font-size: 14px;
 }
-/* line 291, ../scss/_index.scss */
+/* line 293, ../scss/_index.scss */
 #container #content .post-area .rp4wp-related-posts .related-posts-list .related-post .related-post-info h3.related, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post .related-post-info h3.related {
   margin: 0px;
 }
-/* line 293, ../scss/_index.scss */
+/* line 295, ../scss/_index.scss */
 #container #content .post-area .rp4wp-related-posts .related-posts-list .related-post .related-post-info h3.related a, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post .related-post-info h3.related a {
   color: black;
 }
-/* line 297, ../scss/_index.scss */
+/* line 299, ../scss/_index.scss */
 #container #content .post-area .rp4wp-related-posts .related-posts-list .related-post .related-post-info p, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post .related-post-info p {
   margin: 0px;
   font-size: 18px;
 }
-/* line 302, ../scss/_index.scss */
+/* line 304, ../scss/_index.scss */
 #container #content .post-area .rp4wp-related-posts .related-posts-list .related-post .related-post-image, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post .related-post-image {
   width: 25%;
 }
-/* line 309, ../scss/_index.scss */
+/* line 311, ../scss/_index.scss */
 #container #content .share-bar {
   font-size: 0;
   visibility: hidden;
@@ -1151,16 +1153,16 @@
   margin: 0 auto;
   text-align: center;
 }
-/* line 322, ../scss/_index.scss */
+/* line 324, ../scss/_index.scss */
 #container #content .share-bar.is-visible {
   visibility: visible;
   transition-delay: 0s;
 }
-/* line 326, ../scss/_index.scss */
+/* line 328, ../scss/_index.scss */
 #container #content .share-bar.is-visible .share-bar-container .share-bar-content {
   transform: translateY(0);
 }
-/* line 331, ../scss/_index.scss */
+/* line 333, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container {
   position: relative;
   height: 0;
@@ -1175,7 +1177,7 @@
   flex-direction: row;
   align-items: stretch;
 }
-/* line 344, ../scss/_index.scss */
+/* line 346, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content {
   box-sizing: border-box;
   position: absolute;
@@ -1189,11 +1191,11 @@
   margin-right: -20px;
   margin-left: -20px;
 }
-/* line 356, ../scss/_index.scss */
+/* line 358, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content a {
   color: black;
 }
-/* line 359, ../scss/_index.scss */
+/* line 361, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share {
   width: 33.3%;
   display: inline-block;
@@ -1205,37 +1207,37 @@
   -webkit-transition: background-color 200ms;
   transition: background-color 200ms;
 }
-/* line 369, ../scss/_index.scss */
+/* line 371, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share.mid {
   border-left: 1px solid rgba(0, 0, 0, 0.14);
   border-right: 1px solid rgba(0, 0, 0, 0.14);
   box-sizing: border-box;
 }
-/* line 375, ../scss/_index.scss */
+/* line 377, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share.twitter:hover {
   background: #32CCFE;
 }
-/* line 377, ../scss/_index.scss */
+/* line 379, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share.twitter:hover i {
   color: white;
 }
-/* line 383, ../scss/_index.scss */
+/* line 385, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share.facebook:hover {
   background: #3c5a9e;
 }
-/* line 385, ../scss/_index.scss */
+/* line 387, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share.facebook:hover i {
   color: white;
 }
-/* line 391, ../scss/_index.scss */
+/* line 393, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share.email:hover {
   background: #ff82c8;
 }
-/* line 393, ../scss/_index.scss */
+/* line 395, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share.email:hover i {
   color: white;
 }
-/* line 398, ../scss/_index.scss */
+/* line 400, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share i {
   padding: 0px;
   -moz-transition: color 200ms;
@@ -1245,45 +1247,45 @@
 }
 
 @media screen and (min-width: 768px) {
-  /* line 413, ../scss/_index.scss */
+  /* line 415, ../scss/_index.scss */
   #container {
     margin-top: 20px;
   }
-  /* line 417, ../scss/_index.scss */
+  /* line 419, ../scss/_index.scss */
   #container #content .post-area blockquote {
     margin-left: -23px;
   }
-  /* line 421, ../scss/_index.scss */
+  /* line 423, ../scss/_index.scss */
   #container #content .post-area .post-author-container .post-author-image {
     width: 66px;
     height: 66px;
   }
-  /* line 426, ../scss/_index.scss */
+  /* line 428, ../scss/_index.scss */
   #container #content .post-area .post-date {
     height: 32px;
     font-size: 18px;
   }
-  /* line 430, ../scss/_index.scss */
+  /* line 432, ../scss/_index.scss */
   #container #content .post-area .mtg_deck.mtg_deck_embedded .card_box {
     display: block;
   }
-  /* line 433, ../scss/_index.scss */
+  /* line 435, ../scss/_index.scss */
   #container #content .post-area .inline-mailchimp-form {
     text-align: center;
   }
-  /* line 436, ../scss/_index.scss */
+  /* line 438, ../scss/_index.scss */
   #container #content .post-area .inline-mailchimp-form .mc4wp-form table {
     margin-bottom: 16px;
   }
-  /* line 439, ../scss/_index.scss */
+  /* line 441, ../scss/_index.scss */
   #container #content .post-area .inline-mailchimp-form .mc4wp-form table td.label {
     width: 110px;
   }
-  /* line 442, ../scss/_index.scss */
+  /* line 444, ../scss/_index.scss */
   #container #content .post-area .inline-mailchimp-form .mc4wp-form table td.submit-container {
     display: table-cell;
   }
-  /* line 447, ../scss/_index.scss */
+  /* line 449, ../scss/_index.scss */
   #container #content .post-area .inline-mailchimp-form .mc4wp-form .button-container {
     display: none;
   }

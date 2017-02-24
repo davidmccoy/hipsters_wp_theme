@@ -232,6 +232,7 @@
                 text-align: right;
                 input[type="submit"] {
                   margin: 0px;
+                  -webkit-appearance: none;
                 }
               }
             }
@@ -258,6 +259,7 @@
               border: 1px solid #ff82c8;
               display: inline-block;
               margin-bottom: 10px;
+              -webkit-appearance: none;
               &:hover {
                 background: #ff82c8 !important;
                 color: white;
