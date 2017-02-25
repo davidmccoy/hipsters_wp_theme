@@ -40,7 +40,16 @@
 			<img src="/assets/hipsters_logo.jpeg" id="full-logo"/>
     </div>
     <div id="navbar">
-    	<i class="fa fa-times fa-lg" aria-hidden="true"></i>
+      <div class="mobile-menu-header">
+        <div class="mobile-menu-logo">
+          <a href="/">
+            <img src="/assets/hipsters_logo_small.svg" id="mobile-logo-small"/>
+          </a>
+        </div>
+        <div class="mobile-menu-close">
+          <i class="fa fa-times fa-lg" aria-hidden="true"></i>
+        </div>
+      </div>
 			<?php if ( function_exists('wp_nav_menu') ) {
 				// Check for 3.0+ menus
 				wp_nav_menu( array( 'title_li' => '', 'depth' => 4, 'container_class' => 'menu' ) );
