@@ -34,11 +34,13 @@ jQuery(document).ready(function($){
     $('html').css("overflow", "visible");
     $('#overlay').hide();
   });
-
-  $('#navbar li').on('click mousedown mouseup touchstart touchmove', function (e) {
+  $('.sub-menu').on('click mousedown mouseup touchstart touchmove', function (e) {
+    e.stopPropagation();
+  })
+  $('#navbar .menu-item').on('click mousedown mouseup touchstart touchmove', function (e) {
     e.stopPropagation();
     if ( $(window).width() < 768 ){
-      if ( $(this).find('ul').hasClass('open') && !$(this).closest('ul').hasClass('open')) {
+      if ( $(this).hasClass('open') ) {
         $('.open').removeClass('open');
 
         if ($($(this).find('a')[0]).attr('href') !== undefined ) {
@@ -48,22 +50,55 @@ jQuery(document).ready(function($){
           return false;
         }
       }
-      $('.open').not($(this).closest('ul')).removeClass('open');
-      $(this).find('ul').addClass('open');
+      $('.open').not($(this)).removeClass('open');
+      $(this).addClass('open');
       if ($($(this).find('a')[0]).attr('href') !== undefined ) {
         window.location.href = $($(this).find('a')[0]).attr('href')
         return false;
       } else {
         return false;
       }
+      // if ( $(this).find('ul').hasClass('open') && !$(this).closest('ul').hasClass('open')) {
+      //   $('.open').removeClass('open');
+      //
+      //   if ($($(this).find('a')[0]).attr('href') !== undefined ) {
+      //     window.location.href = $($(this).find('a')[0]).attr('href')
+      //     return false;
+      //   } else {
+      //     return false;
+      //   }
+      // }
+      // $('.open').not($(this).closest('ul')).removeClass('open');
+      // $(this).find('ul').addClass('open');
+      // if ($($(this).find('a')[0]).attr('href') !== undefined ) {
+      //   window.location.href = $($(this).find('a')[0]).attr('href')
+      //   return false;
+      // } else {
+      //   return false;
+      // }
     }
   });
-  if ( $(window).width() < 768 ){
-    $(document).on('click', function() {
-      if( $('.open').length > 0 ) {
-        $('.open').removeClass('open');
-        return false;
-      }
-    });
-  }
+
+  // $('ul.sub-menu li a').on('click mousedown mouseup touchstart touchmove', function (e) {
+  //   console.log($(this).attr('href'));
+  //   e.stopPropagation();
+  //   if ( $(window).width() < 768 ){
+  //     if( $('.hovered').length > 0 ) {
+  //       // $('.hovered').removeClass('hovered');
+  //     } else {
+  //       e.preventDefault();
+  //       $(this).closest('li').addClass('hovered');
+  //     }
+  //   }
+  // });
+
+
+  // if ( $(window).width() < 768 ){
+  //   $(document).on('click', function() {
+  //     if( $('.open').length > 0 ) {
+  //       $('.open').removeClass('open');
+  //       return false;
+  //     }
+  //   });
+  // }
 });

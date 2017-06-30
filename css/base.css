@@ -151,7 +151,6 @@
   margin: 0 auto;
   float: none;
   text-align: center;
-  /*** shadows for all but IE6 ***/
 }
 /* line 21, ../scss/_navbar.scss */
 #navbar .menu ul {
@@ -160,54 +159,34 @@
 /* line 23, ../scss/_navbar.scss */
 #navbar .menu ul ul {
   position: absolute;
-  top: -9999px;
-  width: 180px;
-  /* left offset of submenus need to match (see below) */
+  display: none;
+  width: 175px;
 }
-/* line 27, ../scss/_navbar.scss */
-#navbar .menu ul ul .sf-sub-indicator {
-  background-position: -10px 0;
-}
-/* line 33, ../scss/_navbar.scss */
-#navbar .menu ul ul a:focus > .sf-sub-indicator, #navbar .menu ul ul a:hover > .sf-sub-indicator, #navbar .menu ul ul a:active > .sf-sub-indicator {
-  background-position: -10px 0;
-  /* arrow hovers for modern browsers*/
-}
-/* line 37, ../scss/_navbar.scss */
-#navbar .menu ul ul a > .sf-sub-indicator {
-  top: 10px;
-  background-position: 0 0;
-}
-/* line 45, ../scss/_navbar.scss */
-#navbar .menu ul ul li:hover a > .sf-sub-indicator, #navbar .menu ul ul li.sfHover a > .sf-sub-indicator {
-  background-position: -10px 0;
-  /* arrow hovers for modern browsers*/
-}
-/* line 52, ../scss/_navbar.scss */
+/* line 28, ../scss/_navbar.scss */
 #navbar .menu ul li {
   list-style: none;
   border-bottom: 2px solid white;
 }
-/* line 56, ../scss/_navbar.scss */
-#navbar .menu ul li.my-nav-menu-search:hover {
-  border-bottom: 2px solid white;
-}
-/* line 60, ../scss/_navbar.scss */
+/* line 31, ../scss/_navbar.scss */
 #navbar .menu ul li:hover {
   border-bottom: 2px solid black;
 }
-/* line 64, ../scss/_navbar.scss */
+/* line 33, ../scss/_navbar.scss */
+#navbar .menu ul li:hover ul {
+  display: block;
+}
+/* line 38, ../scss/_navbar.scss */
 #navbar .menu ul li ul li {
   width: 100%;
   border: none;
   margin: 0px 0px 0px 0px;
   background: white;
 }
-/* line 72, ../scss/_navbar.scss */
+/* line 46, ../scss/_navbar.scss */
 #navbar .menu ul li form div {
   width: 105px;
 }
-/* line 75, ../scss/_navbar.scss */
+/* line 49, ../scss/_navbar.scss */
 #navbar .menu ul li form input[type="text"] {
   font-size: 16px;
   border: none;
@@ -219,39 +198,39 @@
   padding: 3px 5px;
   margin-left: 23px;
 }
-/* line 85, ../scss/_navbar.scss */
+/* line 59, ../scss/_navbar.scss */
 #navbar .menu ul li form input[type="text"]::-webkit-input-placeholder {
   /* WebKit, Blink, Edge */
   color: #ff82c8;
 }
-/* line 88, ../scss/_navbar.scss */
+/* line 62, ../scss/_navbar.scss */
 #navbar .menu ul li form input[type="text"]:-moz-placeholder {
   /* Mozilla Firefox 4 to 18 */
   color: #ff82c8;
   opacity: 1;
 }
-/* line 92, ../scss/_navbar.scss */
+/* line 66, ../scss/_navbar.scss */
 #navbar .menu ul li form input[type="text"]::-moz-placeholder {
   /* Mozilla Firefox 19+ */
   color: #ff82c8;
   opacity: 1;
 }
-/* line 96, ../scss/_navbar.scss */
+/* line 70, ../scss/_navbar.scss */
 #navbar .menu ul li form input[type="text"]:-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: #ff82c8;
 }
-/* line 99, ../scss/_navbar.scss */
+/* line 73, ../scss/_navbar.scss */
 #navbar .menu ul li form input[type="text"]:focus {
   outline: none;
   width: auto;
   border: none;
 }
-/* line 108, ../scss/_navbar.scss */
+/* line 82, ../scss/_navbar.scss */
 #navbar .menu ul li form input[type="submit"] {
   display: none;
 }
-/* line 111, ../scss/_navbar.scss */
+/* line 85, ../scss/_navbar.scss */
 #navbar .menu ul li form i {
   position: absolute;
   top: 0;
@@ -261,83 +240,51 @@
   width: 15px;
   height: 16px;
 }
-/* line 119, ../scss/_navbar.scss */
+/* line 93, ../scss/_navbar.scss */
 #navbar .menu ul li form i:hover {
   cursor: pointer;
 }
-/* line 126, ../scss/_navbar.scss */
+/* line 100, ../scss/_navbar.scss */
 #navbar .menu ul.menu {
   margin: 0px;
   padding: 0px;
   list-style: none;
 }
-/* line 130, ../scss/_navbar.scss */
+/* line 104, ../scss/_navbar.scss */
 #navbar .menu ul.menu ul {
   position: absolute;
-  top: -9999px;
-  width: 180px;
-  /* left offset of submenus need to match (see below) */
 }
-/* line 134, ../scss/_navbar.scss */
+/* line 106, ../scss/_navbar.scss */
 #navbar .menu ul.menu ul li {
   background: white;
   width: 100%;
   border: none;
   margin: 0px 0px 0px 0px;
 }
-/* line 139, ../scss/_navbar.scss */
+/* line 111, ../scss/_navbar.scss */
 #navbar .menu ul.menu ul li:hover {
   border: none;
 }
-/* line 141, ../scss/_navbar.scss */
+/* line 113, ../scss/_navbar.scss */
 #navbar .menu ul.menu ul li:hover a {
   color: #ff82c8;
 }
-/* line 146, ../scss/_navbar.scss */
-#navbar .menu ul.menu ul .sf-sub-indicator {
-  background-position: -10px 0;
-}
-/* line 149, ../scss/_navbar.scss */
-#navbar .menu ul.menu ul a > .sf-sub-indicator {
-  top: 10px;
-  background-position: 0 0;
-}
-/* line 159, ../scss/_navbar.scss */
-#navbar .menu ul.menu li:hover li ul, #navbar .menu ul.menu li.sfHover li ul {
-  top: -9999px;
-}
-/* line 166, ../scss/_navbar.scss */
-#navbar .menu ul.menu li li:hover ul, #navbar .menu ul.menu li li.sfHover ul {
-  left: 180px;
-  /* match ul width */
-  top: 0;
-}
-/* line 172, ../scss/_navbar.scss */
-#navbar .menu ul.menu li li:hover li:hover ul, #navbar .menu ul.menu li li:hover li.sfHover ul, #navbar .menu ul.menu li li.sfHover li:hover ul, #navbar .menu ul.menu li li.sfHover li.sfHover ul {
-  left: 180px;
-  /* match ul width */
-  top: 0;
-}
-/* line 177, ../scss/_navbar.scss */
-#navbar .menu ul.menu li li:hover li ul, #navbar .menu ul.menu li li.sfHover li ul {
-  top: -9999px;
-}
-/* line 185, ../scss/_navbar.scss */
+/* line 120, ../scss/_navbar.scss */
 #navbar .menu li {
   display: inline-block;
   position: relative;
   background: none;
 }
-/* line 189, ../scss/_navbar.scss */
-#navbar .menu li:hover, #navbar .menu li.sfHover {
+/* line 124, ../scss/_navbar.scss */
+#navbar .menu li:hover {
   visibility: inherit;
   /* fixes IE7 'sticky bug' */
   background: none;
   border-bottom: none;
   outline: 0;
 }
-/* line 194, ../scss/_navbar.scss */
-#navbar .menu li:hover ul, #navbar .menu li.sfHover ul {
+/* line 129, ../scss/_navbar.scss */
+#navbar .menu li:hover ul {
   left: 0;
   top: 35px;
   /* match top ul list item height */
@@ -345,22 +292,22 @@
   padding-top: 10px;
   text-align: left;
 }
-/* line 201, ../scss/_navbar.scss */
-#navbar .menu li:hover a > .sf-sub-indicator, #navbar .menu li.sfHover a > .sf-sub-indicator {
+/* line 136, ../scss/_navbar.scss */
+#navbar .menu li:hover a > .sf-sub-indicator {
   background-position: -10px -100px;
   /* arrow hovers for modern browsers*/
 }
-/* line 206, ../scss/_navbar.scss */
+/* line 141, ../scss/_navbar.scss */
 #navbar .menu li .current_page_item a, #navbar .menu li .current_page_item a:hover, #navbar .menu li .current-menu-item a, #navbar .menu li .current-menu-item a:hover, #navbar .menu li .current-cat a, #navbar .menu li .current-cat a:hover {
   color: black !important;
   border-bottom: none;
 }
-/* line 212, ../scss/_navbar.scss */
+/* line 147, ../scss/_navbar.scss */
 #navbar .menu li li {
   background: #FFFFFF;
   border: none;
 }
-/* line 215, ../scss/_navbar.scss */
+/* line 150, ../scss/_navbar.scss */
 #navbar .menu li li a, #navbar .menu li li a:visited {
   color: black;
   padding: 10px 10px 10px 10px;
@@ -369,25 +316,25 @@
   text-shadow: none;
   border: none;
 }
-/* line 222, ../scss/_navbar.scss */
+/* line 157, ../scss/_navbar.scss */
 #navbar .menu li li a:focus, #navbar .menu li li a:hover, #navbar .menu li li a:active, #navbar .menu li li a:visited:focus, #navbar .menu li li a:visited:hover, #navbar .menu li li a:visited:active {
   color: black;
   border-bottom: none;
   outline: 0;
 }
-/* line 229, ../scss/_navbar.scss */
+/* line 163, ../scss/_navbar.scss */
 #navbar .menu li li li {
   background: #FFFFFF;
   border: none;
 }
-/* line 233, ../scss/_navbar.scss */
-#navbar .menu li li:hover, #navbar .menu li li.sfHover {
+/* line 167, ../scss/_navbar.scss */
+#navbar .menu li li:hover {
   color: black;
   border: none;
   outline: 0;
   padding: 0px;
 }
-/* line 243, ../scss/_navbar.scss */
+/* line 176, ../scss/_navbar.scss */
 #navbar .menu a {
   display: block;
   position: relative;
@@ -398,78 +345,33 @@
   line-height: 16px;
   color: black;
 }
-/* line 253, ../scss/_navbar.scss */
+/* line 185, ../scss/_navbar.scss */
 #navbar .menu a:visited {
   color: black;
 }
-/* line 256, ../scss/_navbar.scss */
+/* line 188, ../scss/_navbar.scss */
 #navbar .menu a:focus, #navbar .menu a:hover, #navbar .menu a:active {
   background: none;
   color: #151515;
   outline: 0;
 }
-/* line 261, ../scss/_navbar.scss */
-#navbar .menu a:focus > .sf-sub-indicator, #navbar .menu a:hover > .sf-sub-indicator, #navbar .menu a:active > .sf-sub-indicator {
-  background-position: -10px -100px;
-  /* arrow hovers for modern browsers*/
-}
-/* line 266, ../scss/_navbar.scss */
-#navbar .menu a.sf-with-ul {
-  padding-right: 25px;
-  min-width: 1px;
-  /* trigger IE7 hasLayout so spans position accurately */
-}
-/* line 271, ../scss/_navbar.scss */
-#navbar .menu a > .sf-sub-indicator {
-  /* give all except IE6 the correct values */
-  top: 19px;
-  background-position: 0 -100px;
-  /* use translucent arrow for modern browsers*/
-}
-/* line 277, ../scss/_navbar.scss */
-#navbar .menu .sf-sub-indicator {
-  position: absolute;
-  display: block;
-  right: 10px;
-  top: 19px;
-  /* IE6 only */
-  width: 10px;
-  height: 10px;
-  text-indent: -9999px;
-  overflow: hidden;
-  background: url(../images/arrows-ffffff.png) no-repeat -10px -100px;
-  /* 8-bit indexed alpha png. IE6 gets solid image only */
-}
-/* line 290, ../scss/_navbar.scss */
+/* line 196, ../scss/_navbar.scss */
 #navbar .menu .current_page_item a, #navbar .menu .current_page_ancestor a, #navbar .menu .current-menu-item a, #navbar .menu .current-cat a, #navbar .menu .current-menu-ancestor a {
   color: #151515 !important;
 }
-/* line 296, ../scss/_navbar.scss */
+/* line 201, ../scss/_navbar.scss */
 #navbar .menu .current_page_item ul li a, #navbar .menu .current_page_ancestor ul li a, #navbar .menu .current-menu-item ul li a, #navbar .menu .current-cat ul li a, #navbar .menu .current-menu-ancestor ul li a {
   background-color: #FFFFFF;
   color: #151515 !important;
   border-bottom: none;
 }
-/* line 300, ../scss/_navbar.scss */
+/* line 205, ../scss/_navbar.scss */
 #navbar .menu .current_page_item ul li a:hover, #navbar .menu .current_page_ancestor ul li a:hover, #navbar .menu .current-menu-item ul li a:hover, #navbar .menu .current-cat ul li a:hover, #navbar .menu .current-menu-ancestor ul li a:hover {
   color: black !important;
   border-bottom: none;
 }
-/* line 313, ../scss/_navbar.scss */
-#navbar .menu .sf-shadow ul ul {
-  background: none;
-  padding: 0 8px 9px 0;
-  -moz-border-radius-bottomleft: 17px;
-  -moz-border-radius-topright: 17px;
-  -webkit-border-top-right-radius: 17px;
-  -webkit-border-bottom-left-radius: 17px;
-}
-/* line 324, ../scss/_navbar.scss */
-#navbar .menu .sf-shadow ul.sf-shadow-off {
-  background: transparent;
-}
 
-/* line 331, ../scss/_navbar.scss */
+/* line 217, ../scss/_navbar.scss */
 #overlay {
   background: 0 0 rgba(0, 0, 0, 0.8);
   display: none;
@@ -486,7 +388,7 @@
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 346, ../scss/_navbar.scss */
+  /* line 232, ../scss/_navbar.scss */
   .responsive-nav-icon,
   .responsive-nav-close {
     display: block;
@@ -494,7 +396,7 @@
     z-index: 1;
   }
 
-  /* line 353, ../scss/_navbar.scss */
+  /* line 239, ../scss/_navbar.scss */
   #navbar {
     height: 100%;
     padding: 20px;
@@ -507,11 +409,25 @@
     transition: all 0.2s linear 0s;
     width: 0;
   }
-  /* line 365, ../scss/_navbar.scss */
+  /* line 251, ../scss/_navbar.scss */
   #navbar .mobile-menu-header {
     display: block;
   }
-  /* line 369, ../scss/_navbar.scss */
+  /* line 254, ../scss/_navbar.scss */
+  #navbar div {
+    display: inline-block;
+  }
+  /* line 256, ../scss/_navbar.scss */
+  #navbar div.mobile-menu-close {
+    vertical-align: top;
+    float: right;
+  }
+  /* line 261, ../scss/_navbar.scss */
+  #navbar img#mobile-logo-small {
+    width: 160px;
+    height: 59px;
+  }
+  /* line 266, ../scss/_navbar.scss */
   #navbar.slide-in {
     left: 0;
     width: 250px;
@@ -519,40 +435,40 @@
     background: black;
     overflow: auto;
   }
-  /* line 376, ../scss/_navbar.scss */
+  /* line 273, ../scss/_navbar.scss */
   #navbar.slide-in i {
     display: block;
     color: white;
     float: right;
     padding-top: 14px;
   }
-  /* line 381, ../scss/_navbar.scss */
+  /* line 278, ../scss/_navbar.scss */
   #navbar.slide-in i:hover, #navbar.slide-in i:focus {
     cursor: pointer;
   }
-  /* line 388, ../scss/_navbar.scss */
+  /* line 285, ../scss/_navbar.scss */
   #navbar .menu {
     width: auto;
     text-align: left;
     margin-right: 20px;
   }
-  /* line 392, ../scss/_navbar.scss */
+  /* line 289, ../scss/_navbar.scss */
   #navbar .menu a {
     color: white;
   }
-  /* line 394, ../scss/_navbar.scss */
+  /* line 291, ../scss/_navbar.scss */
   #navbar .menu a:visited {
     color: white;
   }
-  /* line 397, ../scss/_navbar.scss */
+  /* line 294, ../scss/_navbar.scss */
   #navbar .menu a:hover, #navbar .menu a:focus {
     color: white;
   }
-  /* line 403, ../scss/_navbar.scss */
+  /* line 300, ../scss/_navbar.scss */
   #navbar .menu li:hover ul {
     padding-top: 0px;
   }
-  /* line 409, ../scss/_navbar.scss */
+  /* line 306, ../scss/_navbar.scss */
   #navbar .menu ul.menu li {
     color: black;
     background: none;
@@ -560,83 +476,105 @@
     float: none;
     border: none;
   }
-  /* line 415, ../scss/_navbar.scss */
+  /* line 312, ../scss/_navbar.scss */
   #navbar .menu ul.menu li a {
     color: white !important;
     background: black;
   }
-  /* line 418, ../scss/_navbar.scss */
+  /* line 315, ../scss/_navbar.scss */
   #navbar .menu ul.menu li a:visited {
     color: white;
   }
-  /* line 422, ../scss/_navbar.scss */
+  /* line 320, ../scss/_navbar.scss */
+  #navbar .menu ul.menu li.open a {
+    color: #ff82c8 !important;
+  }
+  /* line 323, ../scss/_navbar.scss */
+  #navbar .menu ul.menu li.open ul {
+    display: block;
+    width: 100%;
+  }
+  /* line 326, ../scss/_navbar.scss */
+  #navbar .menu ul.menu li.open ul li {
+    width: 70%;
+  }
+  /* line 331, ../scss/_navbar.scss */
   #navbar .menu ul.menu li.my-nav-menu-search {
     margin-bottom: 45px;
   }
-  /* line 424, ../scss/_navbar.scss */
+  /* line 332, ../scss/_navbar.scss */
+  #navbar .menu ul.menu li.my-nav-menu-search i {
+    color: #ff82c8;
+  }
+  /* line 336, ../scss/_navbar.scss */
   #navbar .menu ul.menu li.my-nav-menu-search:hover, #navbar .menu ul.menu li.my-nav-menu-search:focus {
     border: none;
   }
-  /* line 428, ../scss/_navbar.scss */
+  /* line 340, ../scss/_navbar.scss */
   #navbar .menu ul.menu li .sub-menu {
     top: 0;
     left: 20px;
     position: relative;
     display: none;
   }
-  /* line 433, ../scss/_navbar.scss */
+  /* line 345, ../scss/_navbar.scss */
   #navbar .menu ul.menu li .sub-menu.open {
     display: block;
+    width: 100%;
   }
-  /* line 442, ../scss/_navbar.scss */
+  /* line 348, ../scss/_navbar.scss */
+  #navbar .menu ul.menu li .sub-menu.open li {
+    width: 70%;
+  }
+  /* line 358, ../scss/_navbar.scss */
   #navbar .menu ul.menu li form {
     padding: 10px;
   }
-  /* line 445, ../scss/_navbar.scss */
+  /* line 361, ../scss/_navbar.scss */
   #navbar .menu ul.menu li form div i {
     padding: 0;
   }
-  /* line 448, ../scss/_navbar.scss */
+  /* line 364, ../scss/_navbar.scss */
   #navbar .menu ul.menu li form div input[type="text"] {
     background: black;
     color: white;
   }
-  /* line 451, ../scss/_navbar.scss */
+  /* line 367, ../scss/_navbar.scss */
   #navbar .menu ul.menu li form div input[type="text"]:focus {
     width: 180px;
   }
-  /* line 454, ../scss/_navbar.scss */
+  /* line 370, ../scss/_navbar.scss */
   #navbar .menu ul.menu li form div input[type="text"]::-webkit-input-placeholder {
     /* WebKit, Blink, Edge */
     color: white;
   }
-  /* line 457, ../scss/_navbar.scss */
+  /* line 373, ../scss/_navbar.scss */
   #navbar .menu ul.menu li form div input[type="text"]:-moz-placeholder {
     /* Mozilla Firefox 4 to 18 */
     color: white;
     opacity: 1;
   }
-  /* line 461, ../scss/_navbar.scss */
+  /* line 377, ../scss/_navbar.scss */
   #navbar .menu ul.menu li form div input[type="text"]::-moz-placeholder {
     /* Mozilla Firefox 19+ */
     color: white;
     opacity: 1;
   }
-  /* line 465, ../scss/_navbar.scss */
+  /* line 381, ../scss/_navbar.scss */
   #navbar .menu ul.menu li form div input[type="text"]:-ms-input-placeholder {
     /* Internet Explorer 10-11 */
     color: white;
   }
-  /* line 473, ../scss/_navbar.scss */
+  /* line 389, ../scss/_navbar.scss */
   #navbar .menu ul.menu ul.sub-menu li {
     background: none;
   }
-  /* line 475, ../scss/_navbar.scss */
+  /* line 391, ../scss/_navbar.scss */
   #navbar .menu ul.menu ul.sub-menu li a {
     color: white !important;
     background: black;
   }
-  /* line 478, ../scss/_navbar.scss */
+  /* line 394, ../scss/_navbar.scss */
   #navbar .menu ul.menu ul.sub-menu li a:hover, #navbar .menu ul.menu ul.sub-menu li a:focus, #navbar .menu ul.menu ul.sub-menu li a:visited {
     color: white;
   }

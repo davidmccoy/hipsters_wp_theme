@@ -22,43 +22,17 @@
       padding: 0px;
       ul {
         position: absolute;
-        top: -9999px;
-        width: 180px; /* left offset of submenus need to match (see below) */
-        .sf-sub-indicator {
-          background-position:  -10px 0;
-        }
-
-        a {
-          &:focus, &:hover, &:active {
-            > .sf-sub-indicator {
-              background-position: -10px 0; /* arrow hovers for modern browsers*/
-            }
-          }
-          > .sf-sub-indicator {
-            top: 10px;
-            background-position:  0 0;
-          }
-        }
-
-        li {
-          &:hover, &.sfHover {
-            a > .sf-sub-indicator {
-              background-position: -10px 0; /* arrow hovers for modern browsers*/
-            }
-          }
-        }
+        display: none;
+        width: 175px;
       }
-
       li {
         list-style: none;
         border-bottom: 2px solid white;
-        &.my-nav-menu-search {
-          &:hover {
-            border-bottom: 2px solid white;
-          }
-        }
         &:hover {
           border-bottom: 2px solid black;
+          ul {
+            display: block;
+          }
         }
         ul {
           li {
@@ -129,8 +103,6 @@
       list-style: none;
       ul {
         position: absolute;
-        top: -9999px;
-        width: 180px; /* left offset of submenus need to match (see below) */
         li {
           background: white;
           width: 100%;
@@ -143,50 +115,13 @@
             }
           }
         }
-        .sf-sub-indicator {
-          background-position:  -10px 0;
-        }
-        a > .sf-sub-indicator {
-          top: 10px;
-          background-position:  0 0;
-        }
-      }
-      li {
-        // border-bottom: 2px solid white;
-        &:hover, &.sfHover {
-          // border-bottom: 2px solid black;
-          li {
-            ul {
-              top: -9999px;
-            }
-          }
-        }
-        li {
-          &:hover, &.sfHover {
-            ul {
-              left: 180px; /* match ul width */
-              top: 0;
-            }
-            li {
-              &:hover, &.sfHover {
-                ul {
-                  left: 180px; /* match ul width */
-                  top: 0;
-                }
-              }
-              ul {
-                top: -9999px;
-              }
-            }
-          }
-        }
       }
     }
     li {
       display: inline-block;
       position: relative;
       background: none;
-      &:hover, &.sfHover {
+      &:hover {
         visibility: inherit; /* fixes IE7 'sticky bug' */
         background: none;
         border-bottom: none;
@@ -220,7 +155,6 @@
           text-shadow: none;
           border: none;
           &:focus, &:hover, &:active {
-            // background: #151515;
             color: black;
             border-bottom: none;
             outline: 0;
@@ -230,8 +164,7 @@
           background: #FFFFFF;
           border: none;
         }
-        &:hover, &.sfHover {
-          // background: #151515;
+        &:hover {
           color: black;
           border: none;
           outline: 0;
@@ -243,7 +176,6 @@
     a {
       display: block;
       position: relative;
-      // border-bottom: 4px solid #F9F9F9;
       padding: 17px 10px 8px 10px;
       text-decoration: none;
       font-style: normal;
@@ -255,41 +187,14 @@
       }
       &:focus, &:hover, &:active {
         background: none;
-        // border-bottom: 4px solid #151515;
         color: #151515;
         outline: 0;
-        > .sf-sub-indicator {
-          background-position: -10px -100px; /* arrow hovers for modern browsers*/
-        }
       }
-
-      &.sf-with-ul {
-        padding-right: 25px;
-        min-width: 1px; /* trigger IE7 hasLayout so spans position accurately */
-      }
-
-      > .sf-sub-indicator {  /* give all except IE6 the correct values */
-        top: 19px;
-        background-position: 0 -100px; /* use translucent arrow for modern browsers*/
-      }
-    }
-
-    .sf-sub-indicator {
-      position: absolute;
-      display: block;
-      right: 10px;
-      top: 19px; /* IE6 only */
-      width: 10px;
-      height: 10px;
-      text-indent: -9999px;
-      overflow: hidden;
-      background: url(../images/arrows-ffffff.png) no-repeat -10px -100px; /* 8-bit indexed alpha png. IE6 gets solid image only */
     }
 
     .current_page_item, .current_page_ancestor, .current-menu-item, .current-cat, .current-menu-ancestor {
       a {
         color: #151515 !important;
-        // border-bottom: 4px solid #151515;
       }
       ul {
         li {
@@ -304,25 +209,6 @@
             }
           }
         }
-      }
-    }
-
-    /*** shadows for all but IE6 ***/
-    .sf-shadow {
-      ul {
-        ul {
-          background: none;
-          padding: 0 8px 9px 0;
-          -moz-border-radius-bottomleft: 17px;
-          -moz-border-radius-topright: 17px;
-          -webkit-border-top-right-radius: 17px;
-          -webkit-border-bottom-left-radius: 17px;
-        }
-      }
-    }
-    .sf-shadow {
-      ul.sf-shadow-off {
-        background: transparent;
       }
     }
   }
@@ -364,6 +250,17 @@
 
     .mobile-menu-header {
       display: block;
+    }
+    div {
+      display: inline-block;
+      &.mobile-menu-close {
+        vertical-align: top;
+        float: right;
+      }
+    }
+    img#mobile-logo-small {
+      width: 160px;
+      height: 59px;
     }
 
     &.slide-in {
@@ -419,7 +316,22 @@
               color: white;
             }
           }
+          &.open {
+            a {
+              color: #ff82c8 !important;
+            }
+            ul {
+              display: block;
+              width: 100%;
+              li {
+                width: 70%;
+              }
+            }
+          }
           &.my-nav-menu-search {
+            i {
+              color: #ff82c8;
+            }
             margin-bottom: 45px;
             &:hover, &:focus {
               border: none;
@@ -432,6 +344,10 @@
             display: none;
             &.open {
               display: block;
+              width: 100%;
+              li {
+                width: 70%;
+              }
             }
           }
           &:hover, &:focus {
