@@ -9,6 +9,10 @@
     display: none;
   }
 
+  .mobile-menu-header {
+    display: none;
+  }
+
   .menu {
     width: auto;
     margin: 0 auto;
@@ -357,6 +361,10 @@
     -ms-transition: all 0.2s linear 0s;
     transition: all 0.2s linear 0s;
     width: 0;
+
+    .mobile-menu-header {
+      display: block;
+    }
 
     &.slide-in {
     left: 0;
