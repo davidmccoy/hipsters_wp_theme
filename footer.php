@@ -29,16 +29,6 @@
 
 <?php do_action('wp_footer'); ?>
 
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-42146894-1', 'hipstersofthecoast.com');
-  ga('send', 'pageview');
-</script>
-
 <script type="text/javascript">
   var userAgent = navigator.userAgent || navigator.vendor || window.opera;
   var body = document.getElementsByTagName("BODY")[0];
