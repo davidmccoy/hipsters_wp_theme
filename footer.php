@@ -20,7 +20,7 @@
           </div>
           <div class="footerbottom">
             <p>
-              Problems? Blame <a href="http://www.davidmccoy.com" target="_blank">David</a>.
+              Problems? Blame <a href="https://www.twitter.com/dmccoy" target="_blank">David</a>.
             </p>
           </div>
   	</div>
