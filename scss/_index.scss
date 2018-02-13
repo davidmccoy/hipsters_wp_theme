@@ -7,6 +7,13 @@
     max-width: 700px;
     margin: 0 auto;
     .post-area {
+      a {
+        color: black;
+        border-bottom: 2px solid #ff82c8;
+        &:hover {
+          color: #ff82c8;
+        }
+      }
       .post-content {
         margin: 1em 0px;
       }
@@ -49,10 +56,10 @@
         width: auto;
         height: auto;
       }
-      a {
-        text-decoration: none;
-        color: #ff82c8;
-      }
+      // a {
+      //   text-decoration: none;
+      //   color: #ff82c8;
+      // }
       .post-title {
         margin-top: 0px;
         margin-bottom: 15px;
@@ -72,6 +79,10 @@
           vertical-align: middle;
           margin-left: 5px;
           .post-author {
+            a {
+              color: #ff82c8;
+              border: none;
+            }
             a[rel="twitter"] {
               color: black;
               &:hover {
@@ -102,6 +113,7 @@
         margin-top: 10px;
         a{
           color: #ff82c8;
+          border: none;
         }
         ul {
           margin: 0px;
