@@ -8,8 +8,12 @@
     float: none;
     text-align: center;
     a {
-      color: #ff82c8 !important;
+      color: black;
       text-decoration: none;
+      border-bottom: 2px solid #ff82c8;
+      &:hover {
+        color: #ff82c8;
+      }
     }
   }
 }
