@@ -625,42 +625,45 @@
 }
 /* line 39, ../scss/_home.scss */
 #homepage .homepagecontent .post_container .featured_image {
-  height: 220px;
+  height: auto;
+  padding-bottom: 68%;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 50, ../scss/_home.scss */
+  /* line 51, ../scss/_home.scss */
   #homepage {
     line-height: 1.5;
     font-size: 0px;
   }
-  /* line 53, ../scss/_home.scss */
+  /* line 54, ../scss/_home.scss */
   #homepage .homepagecontent {
     font-size: 18px;
     margin-bottom: 0px;
     width: 33.3%;
-    padding-bottom: 480px;
+    padding-bottom: 48%;
+    min-height: 480px;
+    box-sizing: border-box;
     display: inline-block;
     vertical-align: top;
     position: relative;
   }
-  /* line 61, ../scss/_home.scss */
+  /* line 65, ../scss/_home.scss */
   #homepage .homepagecontent#sticky {
     width: 66.6%;
   }
-  /* line 64, ../scss/_home.scss */
+  /* line 68, ../scss/_home.scss */
   #homepage .homepagecontent#sticky .post_container h3 {
     font-size: 28px;
     margin: 5px 0px;
   }
-  /* line 68, ../scss/_home.scss */
+  /* line 72, ../scss/_home.scss */
   #homepage .homepagecontent#sticky .post_container .featured_image {
     background-position: top center;
   }
-  /* line 73, ../scss/_home.scss */
+  /* line 77, ../scss/_home.scss */
   #homepage .homepagecontent .post_container {
     position: absolute;
     left: 10px;
