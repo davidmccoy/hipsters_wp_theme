@@ -203,17 +203,24 @@
           font-family: 'whitney';
           font-size: 16px;
         }
-        .sponsor-left {
-          margin-right: 10px;
+        a {
+          border: none;
+        }
+        .cardkingdom-sponsor-left {
+          margin: 0 10px;
           p {
-            margin: 0px;
+            margin: 5px 0;
           }
         }
-        .sponsor-right {
-          width: 90px;
+        .cardkingdom-sponsor-right {
+          width: 257px;
+          margin: 0 10px;
+        }
+        &.cardkingdom-mid-banner {
           img {
-              width: 75px;
-              height: 72px;
+            width: 100%;
+            height: auto;
+            margin: 3px 0;
           }
         }
       }
