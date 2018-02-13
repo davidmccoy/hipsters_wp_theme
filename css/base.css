@@ -623,28 +623,7 @@
 #homepage .homepagecontent .homeinfo p {
   margin: 10px 0px 15px;
 }
-/* line 40, ../scss/_home.scss */
-#homepage .homepagecontent .post_container.ad_container h4 {
-  color: #ff82c8;
-}
-/* line 43, ../scss/_home.scss */
-#homepage .homepagecontent .post_container.ad_container img {
-  height: 200px;
-  width: 200px;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  margin: auto;
-}
-/* line 53, ../scss/_home.scss */
-#homepage .homepagecontent .post_container.ad_container .featured_image {
-  background: black;
-  text-align: center;
-  position: relative;
-}
-/* line 59, ../scss/_home.scss */
+/* line 39, ../scss/_home.scss */
 #homepage .homepagecontent .post_container .featured_image {
   height: 220px;
   background-size: cover;
@@ -653,12 +632,12 @@
 }
 
 @media screen and (min-width: 768px) {
-  /* line 70, ../scss/_home.scss */
+  /* line 50, ../scss/_home.scss */
   #homepage {
     line-height: 1.5;
     font-size: 0px;
   }
-  /* line 73, ../scss/_home.scss */
+  /* line 53, ../scss/_home.scss */
   #homepage .homepagecontent {
     font-size: 18px;
     margin-bottom: 0px;
@@ -668,20 +647,20 @@
     vertical-align: top;
     position: relative;
   }
-  /* line 81, ../scss/_home.scss */
+  /* line 61, ../scss/_home.scss */
   #homepage .homepagecontent#sticky {
     width: 66.6%;
   }
-  /* line 84, ../scss/_home.scss */
+  /* line 64, ../scss/_home.scss */
   #homepage .homepagecontent#sticky .post_container h3 {
     font-size: 28px;
     margin: 5px 0px;
   }
-  /* line 88, ../scss/_home.scss */
+  /* line 68, ../scss/_home.scss */
   #homepage .homepagecontent#sticky .post_container .featured_image {
     background-position: top center;
   }
-  /* line 93, ../scss/_home.scss */
+  /* line 73, ../scss/_home.scss */
   #homepage .homepagecontent .post_container {
     position: absolute;
     left: 10px;

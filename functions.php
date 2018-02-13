@@ -521,28 +521,29 @@ function ad_injection() {
 		global $wp_query;
 		if( $wp_query->current_post%4 == 0 && $wp_query->current_post >0 && $wp_query->current_post < 8 ) {
 			echo '<div class="homepagecontent">
-			<div class="post_container ad_container">
-		    <a href="http://www.casthaven.com" target="_blank">
-		      <div class="featured_image">
-						<img src="/assets/casthaven-ad.png" />
+			<div class="post_container">
+		    <a href="http://www.cardkingdom.com/hipsters" target="_blank">
+		      <div class="featured_image" style="background-image: url(/assets/cardkingdom/Hipsters_Ad_Shipping.jpg)">
 		      </div>
 		    </a>
 		    <div class="homeinfo">
 		      <div class="post-category">
 		        <h4>
-		          ADVERTISEMENT
+							<a href="http://www.cardkingdom.com/hipsters" target="_blank">
+								ADVERTISEMENT
+							</a>
 		        </h4>
 		      </div>
 		      <div class="post-title">
 		       <h3>
 		          <a href="http://www.casthaven.com" target="_blank" rel="bookmark">
-		            Hipsters is Brought to You by Casthaven
+		            Card Kingdom
 		          </a>
 		        </h3>
 		      </div>
 		      <div class="home_excerpt">
 		        <p>
-							Build your Magic collection like a pro with Casthaven.
+							Lightning-fast shipping, exceptional customer service, unique MTG products, and general awesomeness since 1999.
 						</p>
 		      </div>
 		    </div>
