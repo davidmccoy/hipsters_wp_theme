@@ -522,21 +522,21 @@ function ad_injection() {
 		if( $wp_query->current_post%4 == 0 && $wp_query->current_post >0 && $wp_query->current_post < 8 ) {
 			echo '<div class="homepagecontent">
 			<div class="post_container">
-		    <a href="https://www.cardkingdom.com/hipsters" target="_blank">
+		    <a href="https://www.cardkingdom.com/hipsters" target="_blank" onclick="ga(\'send\', \'event\', \'Card Kingdom Homepage Ad\', \'click\', \'Card Kingdom 2018\');">
 		      <div class="featured_image" style="background-image: url(/assets/cardkingdom/Hipsters_Ad_Shipping.jpg)">
 		      </div>
 		    </a>
 		    <div class="homeinfo">
 		      <div class="post-category">
 		        <h4>
-							<a href="https://www.cardkingdom.com/hipsters" target="_blank">
+							<a href="https://www.cardkingdom.com/hipsters" target="_blank" onclick="ga(\'send\', \'event\', \'Card Kingdom Homepage Ad\', \'click\', \'Card Kingdom 2018\');">
 								ADVERTISEMENT
 							</a>
 		        </h4>
 		      </div>
 		      <div class="post-title">
 		       <h3>
-		          <a href="https://www.cardkingdom.com/hipsters" target="_blank" rel="bookmark">
+		          <a href="https://www.cardkingdom.com/hipsters" target="_blank" rel="bookmark"  onclick="ga(\'send\', \'event\', \'Card Kingdom Homepage Ad\', \'click\', \'Card Kingdom 2018\');">
 		            Card Kingdom
 		          </a>
 		        </h3>
