@@ -126,12 +126,12 @@
     <div class="share-bar">
       <div class="share-bar-container">
         <div class="share-bar-content">
-          <a href="https://twitter.com/intent/tweet?url=<?php echo urlencode(get_permalink($post->ID)); ?>&text=<?php the_title(); ?> via @hotcblog" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')" target="_blank">
+          <a href="https://twitter.com/intent/tweet?url=<?php echo urlencode(wp_get_shortlink($post->ID)); ?>&text=<?php the_title(); ?> via @hotcblog" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')" target="_blank">
             <div class="social-share twitter">
               <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
             </div>
           </a>
-          <a href="https://www.facebook.com/sharer.php?u=<?php echo urlencode(get_permalink($post->ID)); ?>" onclick="return !window.open(this.href, 'Facebook', 'width=500,height=500')" target="_blank">
+          <a href="https://www.facebook.com/sharer.php?u=<?php echo urlencode(wp_get_shortlink($post->ID)); ?>" onclick="return !window.open(this.href, 'Facebook', 'width=500,height=500')" target="_blank">
             <div class="social-share mid facebook">
               <i class="fa fa-facebook fa-2x" aria-hidden="true"></i>
             </div>
@@ -141,7 +141,7 @@
             $tags = array("<p>", "</p>");
             $myExcerpt = str_replace($tags, "", $myExcerpt);
             ?>
-          <a href="mailto:?subject=<?php urlencode(the_title()); ?>&amp;body=<?php echo $myExcerpt; ?>%0A%0ARead More:%0A<?php echo get_permalink($post->ID); ?>" class="email-link">
+          <a href="mailto:?subject=<?php urlencode(the_title()); ?>&amp;body=<?php echo $myExcerpt; ?>%0A%0ARead More:%0A<?php echo wp_get_shortlink($post->ID); ?>" class="email-link">
             <div class="social-share email">
               <i class="fa fa-envelope fa-2x" aria-hidden="true"></i>
             </div>
