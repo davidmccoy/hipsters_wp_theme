@@ -11,6 +11,8 @@
         color: black;
         text-decoration: underline;
         text-decoration-color: #ff82c8;
+        -moz-text-decoration-color: #ff82c8;
+        -webkit-text-decoration-color: #ff82c8;
         &:hover {
           color: #ff82c8;
         }
@@ -149,6 +151,7 @@
           color: #ff82c8;
           border: 1px solid #ff82c8;
           display: inline-block;
+          text-decoration: none;
           &:hover {
             background: #ff82c8 !important;
             color: white;
