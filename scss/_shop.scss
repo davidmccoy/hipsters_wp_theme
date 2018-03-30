@@ -1,0 +1,80 @@
+#content {
+  &.shop {
+    .post-area {
+      .page-title {
+        text-align: center;
+      }
+    }
+    #shop {
+      .products-container {
+        font-size: 0;
+        text-align: left;
+        .product-container {
+          z-index: -1;
+          font-size: 18px;
+          margin-bottom: 0px;
+          width: 100%;
+          padding-bottom: 48%;
+          min-height: 400px;
+          box-sizing: border-box;
+          display: block;
+          vertical-align: top;
+          position: relative;
+          max-width: 400px;
+          margin: 0 auto;
+          p {
+            margin: 0;
+          }
+          .product {
+            position: absolute;
+            left: 10px;
+            right: 10px;
+            top: 10px;
+            bottom: 10px;
+            .product-image {
+              height: auto;
+              padding-bottom: 68%;
+              background-size: cover;
+              background-position: center center;
+              background-repeat: no-repeat;
+            }
+            .product-info {
+              .product-category {
+                color: $primary;
+                font-family: 'whitney';
+                text-transform: uppercase;
+                font-size: 14px;
+              }
+              .product-title {
+                font-family: "whitney-semibold";
+                text-transform: uppercase;
+                font-size: 20px;
+                a {
+                  color: black;
+                  text-decoration: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 560px) {
+  #content {
+    &.shop {
+      #shop {
+        .products-container {
+          .product-container {
+            width: 49.99%;
+            max-width: none;
+            min-height: 400px;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}

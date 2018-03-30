@@ -1212,43 +1212,43 @@
 @media screen and (min-width: 768px) {
   /* line 451, ../scss/_index.scss */
   #container {
-    margin-top: 20px;
+    margin-top: 9px;
   }
-  /* line 455, ../scss/_index.scss */
+  /* line 456, ../scss/_index.scss */
   #container #content .post-area blockquote {
     margin-left: -23px;
   }
-  /* line 459, ../scss/_index.scss */
+  /* line 460, ../scss/_index.scss */
   #container #content .post-area .post-author-container .post-author-image {
     width: 66px;
     height: 66px;
   }
-  /* line 464, ../scss/_index.scss */
+  /* line 465, ../scss/_index.scss */
   #container #content .post-area .post-date {
     height: 32px;
     font-size: 18px;
   }
-  /* line 468, ../scss/_index.scss */
+  /* line 469, ../scss/_index.scss */
   #container #content .post-area .mtg_deck.mtg_deck_embedded .card_box {
     display: block;
   }
-  /* line 471, ../scss/_index.scss */
+  /* line 472, ../scss/_index.scss */
   #container #content .post-area .inline-mailchimp-form {
     text-align: center;
   }
-  /* line 474, ../scss/_index.scss */
+  /* line 475, ../scss/_index.scss */
   #container #content .post-area .inline-mailchimp-form .mc4wp-form table {
     margin-bottom: 16px;
   }
-  /* line 477, ../scss/_index.scss */
+  /* line 478, ../scss/_index.scss */
   #container #content .post-area .inline-mailchimp-form .mc4wp-form table td.label {
     width: 110px;
   }
-  /* line 480, ../scss/_index.scss */
+  /* line 481, ../scss/_index.scss */
   #container #content .post-area .inline-mailchimp-form .mc4wp-form table td.submit-container {
     display: table-cell;
   }
-  /* line 485, ../scss/_index.scss */
+  /* line 486, ../scss/_index.scss */
   #container #content .post-area .inline-mailchimp-form .mc4wp-form .button-container {
     display: none;
   }
@@ -1825,7 +1825,79 @@
     width: 145px;
   }
 }
-/* line 15, ../scss/base.scss */
+/* line 4, ../scss/_shop.scss */
+#content.shop .post-area .page-title {
+  text-align: center;
+}
+/* line 9, ../scss/_shop.scss */
+#content.shop #shop .products-container {
+  font-size: 0;
+  text-align: left;
+}
+/* line 12, ../scss/_shop.scss */
+#content.shop #shop .products-container .product-container {
+  z-index: -1;
+  font-size: 18px;
+  margin-bottom: 0px;
+  width: 100%;
+  padding-bottom: 48%;
+  min-height: 400px;
+  box-sizing: border-box;
+  display: block;
+  vertical-align: top;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+/* line 25, ../scss/_shop.scss */
+#content.shop #shop .products-container .product-container p {
+  margin: 0;
+}
+/* line 28, ../scss/_shop.scss */
+#content.shop #shop .products-container .product-container .product {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  top: 10px;
+  bottom: 10px;
+}
+/* line 34, ../scss/_shop.scss */
+#content.shop #shop .products-container .product-container .product .product-image {
+  height: auto;
+  padding-bottom: 68%;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/* line 42, ../scss/_shop.scss */
+#content.shop #shop .products-container .product-container .product .product-info .product-category {
+  color: #e83e8c;
+  font-family: 'whitney';
+  text-transform: uppercase;
+  font-size: 14px;
+}
+/* line 48, ../scss/_shop.scss */
+#content.shop #shop .products-container .product-container .product .product-info .product-title {
+  font-family: "whitney-semibold";
+  text-transform: uppercase;
+  font-size: 20px;
+}
+/* line 52, ../scss/_shop.scss */
+#content.shop #shop .products-container .product-container .product .product-info .product-title a {
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 560px) {
+  /* line 70, ../scss/_shop.scss */
+  #content.shop #shop .products-container .product-container {
+    width: 49.99%;
+    max-width: none;
+    min-height: 400px;
+    display: inline-block;
+  }
+}
+/* line 16, ../scss/base.scss */
 body {
   width: 100%;
   height: auto;
@@ -1834,96 +1906,96 @@ body {
   font-size: 18px;
   line-height: 1.5;
 }
-/* line 23, ../scss/base.scss */
+/* line 24, ../scss/base.scss */
 body h1, body h2, body h3, body h4, body h5 {
   font-family: 'whitney';
   -ms-word-wrap: break-word;
   word-wrap: break-word;
 }
-/* line 27, ../scss/base.scss */
+/* line 28, ../scss/base.scss */
 body h1.mtg_deck_title, body h2.mtg_deck_title, body h3.mtg_deck_title, body h4.mtg_deck_title, body h5.mtg_deck_title {
   text-decoration: none;
 }
-/* line 32, ../scss/base.scss */
+/* line 33, ../scss/base.scss */
 body h1 {
   line-height: 1.4;
 }
-/* line 36, ../scss/base.scss */
+/* line 37, ../scss/base.scss */
 body #wrap {
   max-width: 1024px;
   padding: 0px 15px;
   margin: 0 auto;
   letter-spacing: .05px;
 }
-/* line 42, ../scss/base.scss */
+/* line 43, ../scss/base.scss */
 body #wrap #spacer img {
   width: 90%;
   padding: 15px;
   visibility: collapse;
 }
-/* line 48, ../scss/base.scss */
+/* line 49, ../scss/base.scss */
 body #wrap #pagination {
   text-align: center;
   -ms-word-wrap: break-word;
   word-wrap: break-word;
 }
-/* line 52, ../scss/base.scss */
+/* line 53, ../scss/base.scss */
 body #wrap #pagination a {
   margin: 0 5px;
 }
-/* line 58, ../scss/base.scss */
+/* line 59, ../scss/base.scss */
 body .highlight-and-share-wrapper div {
   margin: 0px;
   background: white;
   border: 1px solid rgba(0, 0, 0, 0.14);
 }
-/* line 63, ../scss/base.scss */
+/* line 64, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_twitter a {
   color: black;
 }
-/* line 66, ../scss/base.scss */
+/* line 67, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_twitter:hover {
   background: #32CCFE;
 }
-/* line 68, ../scss/base.scss */
+/* line 69, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_twitter:hover a {
   color: white;
 }
-/* line 73, ../scss/base.scss */
+/* line 74, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_facebook {
   background: white;
   border-left: none;
 }
-/* line 76, ../scss/base.scss */
+/* line 77, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_facebook a {
   color: black;
 }
-/* line 79, ../scss/base.scss */
+/* line 80, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_facebook:hover {
   background: #3c5a9e;
 }
-/* line 81, ../scss/base.scss */
+/* line 82, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_facebook:hover a {
   color: white;
 }
-/* line 86, ../scss/base.scss */
+/* line 87, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_email {
   background: white;
   border-left: none;
 }
-/* line 89, ../scss/base.scss */
+/* line 90, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_email a {
   color: black;
 }
-/* line 92, ../scss/base.scss */
+/* line 93, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_email:hover {
   background: #e83e8c;
 }
-/* line 94, ../scss/base.scss */
+/* line 95, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_email:hover a {
   color: white;
 }
-/* line 99, ../scss/base.scss */
+/* line 100, ../scss/base.scss */
 body .highlight-and-share-wrapper div a {
   padding: 0px;
   -moz-transition: color 200ms;
@@ -1931,32 +2003,32 @@ body .highlight-and-share-wrapper div a {
   -webkit-transition: color 200ms;
   transition: color 200ms;
 }
-/* line 105, ../scss/base.scss */
+/* line 106, ../scss/base.scss */
 body .highlight-and-share-wrapper div a:hover {
   padding: 0px;
 }
-/* line 108, ../scss/base.scss */
+/* line 109, ../scss/base.scss */
 body .highlight-and-share-wrapper div a i {
   width: 31px;
   height: 28px;
   text-align: center;
 }
-/* line 115, ../scss/base.scss */
+/* line 116, ../scss/base.scss */
 body .highlight-and-share-wrapper .fa {
   font-size: 2em;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 122, ../scss/base.scss */
+  /* line 123, ../scss/base.scss */
   body {
     font-size: 21px;
     line-height: 1.58;
   }
-  /* line 126, ../scss/base.scss */
+  /* line 127, ../scss/base.scss */
   body h1 {
     line-height: 1.5;
   }
-  /* line 130, ../scss/base.scss */
+  /* line 131, ../scss/base.scss */
   body #wrap #spacer {
     display: none;
   }

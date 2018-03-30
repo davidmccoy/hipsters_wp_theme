@@ -33,7 +33,6 @@
   <a href="<?php bloginfo('url'); ?>/" title="Home" id="logo">
   	<img src="/assets/hipsters-of-the-coast-logo.png" id="full-logo"/>
   </a>
-
 </div>
 <div id="wrap">
 		<div id="spacer">
