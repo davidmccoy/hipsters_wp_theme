@@ -54,12 +54,13 @@
   #header {
     position: relative;
     padding: 15px 15px 0px;
+    margin-bottom: -13px;
     i.fa-bars {
       &.fa-2x {
         display: none;
       }
     }
-    a {  
+    a {
       width: 100%;
       img {
         &#full-logo {

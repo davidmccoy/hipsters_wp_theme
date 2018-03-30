@@ -259,8 +259,8 @@
       }
     }
     img#mobile-logo-small {
-      width: 160px;
-      height: 59px;
+      width: 215px;
+      height: auto;
     }
 
     &.slide-in {
@@ -274,7 +274,6 @@
         display: block;
         color: white;
         float: right;
-        padding-top: 14px;
         &:hover, &:focus {
           cursor: pointer;
         }
