@@ -57,18 +57,18 @@
             padding: 3px 5px;
             margin-left: 23px;
             &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-              color: #ff82c8;
+              color: $primary;
             }
             &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-              color: #ff82c8;
+              color: $primary;
               opacity: 1;
             }
             &::-moz-placeholder { /* Mozilla Firefox 19+ */
-              color: #ff82c8;
+              color: $primary;
               opacity: 1;
             }
             &:-ms-input-placeholder { /* Internet Explorer 10-11 */
-              color: #ff82c8;
+              color: $primary;
             }
             &:focus {
               outline: none;
@@ -111,7 +111,7 @@
           &:hover {
             border: none;
             a {
-              color: #ff82c8;
+              color: $primary;
             }
           }
         }
@@ -317,7 +317,7 @@
           }
           &.open {
             a {
-              color: #ff82c8 !important;
+              color: $primary !important;
             }
             ul {
               display: block;
@@ -329,7 +329,7 @@
           }
           &.my-nav-menu-search {
             i {
-              color: #ff82c8;
+              color: $primary;
             }
             margin-bottom: 45px;
             &:hover, &:focus {

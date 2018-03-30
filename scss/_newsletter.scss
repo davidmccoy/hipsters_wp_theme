@@ -27,13 +27,13 @@
         font-size: 13px;
         text-transform: uppercase;;
         letter-spacing: 0.3px;
-        color: #ff82c8;
+        color: $primary;
         background: white;
-        border: 1px solid #ff82c8;
+        border: 1px solid $primary;
         display: inline-block;
         margin-bottom: 10px;
         &:hover {
-          background: #ff82c8 !important;
+          background: $primary !important;
           color: white;
         }
       }
@@ -44,7 +44,7 @@
 .inline-mailchimp-form {
   font-size: 16px;
   h3 {
-    color: #ff82c8;
+    color: $primary;
   }
   .mc4wp-form {
     border-top: 1px solid rgba(0, 0, 0, 0.14);
@@ -74,13 +74,13 @@
       font-size: 13px;
       text-transform: uppercase;;
       letter-spacing: 0.3px;
-      color: #ff82c8;
+      color: $primary;
       background: white;
-      border: 1px solid #ff82c8;
+      border: 1px solid $primary;
       display: inline-block;
       margin-bottom: 10px;
       &:hover {
-        background: #ff82c8 !important;
+        background: $primary !important;
         color: white;
       }
     }

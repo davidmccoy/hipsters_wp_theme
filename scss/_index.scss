@@ -1,7 +1,7 @@
 #container {
   a {
     text-decoration: none;
-    color: #ff82c8;
+    color: $primary;
   }
   #content {
     max-width: 700px;
@@ -10,11 +10,11 @@
       a {
         color: black;
         text-decoration: underline;
-        text-decoration-color: #ff82c8;
-        -moz-text-decoration-color: #ff82c8;
-        -webkit-text-decoration-color: #ff82c8;
+        text-decoration-color: $primary;
+        -moz-text-decoration-color: $primary;
+        -webkit-text-decoration-color: $primary;
         &:hover {
-          color: #ff82c8;
+          color: $primary;
         }
       }
       .post-content {
@@ -61,7 +61,7 @@
       }
       // a {
       //   text-decoration: none;
-      //   color: #ff82c8;
+      //   color: $primary;
       // }
       .post-title {
         margin-top: 0px;
@@ -83,14 +83,14 @@
           margin-left: 5px;
           .post-author {
             a {
-              color: #ff82c8;
+              color: $primary;
               border: none;
               text-decoration: none;
             }
             a[rel="twitter"] {
               color: black;
               &:hover {
-                color: #ff82c8;
+                color: $primary;
               }
             }
             p {
@@ -116,7 +116,7 @@
         margin: 0px;
         margin-top: 10px;
         a{
-          color: #ff82c8;
+          color: $primary;
           text-decoration: none;
         }
         ul {
@@ -148,12 +148,12 @@
           font-size: 13px;
           text-transform: lowercase;
           letter-spacing: 0.3px;
-          color: #ff82c8;
-          border: 1px solid #ff82c8;
+          color: $primary;
+          border: 1px solid $primary;
           display: inline-block;
           text-decoration: none;
           &:hover {
-            background: #ff82c8 !important;
+            background: $primary !important;
             color: white;
           }
         }
@@ -232,7 +232,7 @@
       .inline-mailchimp-form {
         font-size: 16px;
         h3 {
-          color: #ff82c8;
+          color: $primary;
           margin: 16px 0px;
         }
         .mc4wp-form {
@@ -279,14 +279,14 @@
               font-size: 13px;
               text-transform: uppercase;;
               letter-spacing: 0.3px;
-              color: #ff82c8;
+              color: $primary;
               background: white;
-              border: 1px solid #ff82c8;
+              border: 1px solid $primary;
               display: inline-block;
               margin-bottom: 10px;
               -webkit-appearance: none;
               &:hover {
-                background: #ff82c8 !important;
+                background: $primary !important;
                 color: white;
               }
             }
@@ -333,7 +333,7 @@
               .related.post-date {
                 a {
                   text-decoration: none;
-                  color: #ff82c8;
+                  color: $primary;
                 }
               }
             }
@@ -427,7 +427,7 @@
             }
             &.email {
               &:hover {
-                background: #ff82c8;
+                background: $primary;
                 i {
                   color: white;
                 }

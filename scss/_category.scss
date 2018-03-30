@@ -8,7 +8,7 @@
     h4.tag, h4.search-query {
       margin: 0;
       text-transform: uppercase;
-      color: #ff82c8;
+      color: $primary;
     }
     .category-post, .tag-post, .search-post {
       margin-bottom: 30px;
@@ -40,7 +40,7 @@
             a[rel="twitter"] {
               color: black;
               &:hover {
-                color: #ff82c8;
+                color: $primary;
               }
             }
             p {
@@ -67,7 +67,7 @@
         margin: 0px;
         margin-top: 10px;
         a{
-          color: #ff82c8;
+          color: $primary;
         }
         ul {
           margin: 0px;
@@ -101,12 +101,12 @@
           font-size: 13px;
           text-transform: lowercase;
           letter-spacing: 0.3px;
-          color: #ff82c8;
-          border: 1px solid #ff82c8;
+          color: $primary;
+          border: 1px solid $primary;
           display: inline-block;
           margin-bottom: 10px;
           &:hover {
-            background: #ff82c8 !important;
+            background: $primary !important;
             color: white;
           }
         }
