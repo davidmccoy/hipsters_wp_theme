@@ -1276,13 +1276,14 @@
 /* line 17, ../scss/_category.scss */
 #container #content.category .category-post h2 a, #container #content.category .tag-post h2 a, #container #content.category .search-post h2 a, #container #content.tag .category-post h2 a, #container #content.tag .tag-post h2 a, #container #content.tag .search-post h2 a, #container #content.search .category-post h2 a, #container #content.search .tag-post h2 a, #container #content.search .search-post h2 a {
   color: black;
+  text-decoration: none;
 }
-/* line 21, ../scss/_category.scss */
+/* line 22, ../scss/_category.scss */
 #container #content.category .category-post .post-title, #container #content.category .tag-post .post-title, #container #content.category .search-post .post-title, #container #content.tag .category-post .post-title, #container #content.tag .tag-post .post-title, #container #content.tag .search-post .post-title, #container #content.search .category-post .post-title, #container #content.search .tag-post .post-title, #container #content.search .search-post .post-title {
   margin-top: 0px;
   margin-bottom: 15px;
 }
-/* line 26, ../scss/_category.scss */
+/* line 27, ../scss/_category.scss */
 #container #content.category .category-post .post-author-container .post-author-image, #container #content.category .tag-post .post-author-container .post-author-image, #container #content.category .search-post .post-author-container .post-author-image, #container #content.tag .category-post .post-author-container .post-author-image, #container #content.tag .tag-post .post-author-container .post-author-image, #container #content.tag .search-post .post-author-container .post-author-image, #container #content.search .category-post .post-author-container .post-author-image, #container #content.search .tag-post .post-author-container .post-author-image, #container #content.search .search-post .post-author-container .post-author-image {
   display: inline-block;
   vertical-align: middle;
@@ -1292,82 +1293,82 @@
   width: 54px;
   border-radius: 50%;
 }
-/* line 35, ../scss/_category.scss */
+/* line 36, ../scss/_category.scss */
 #container #content.category .category-post .post-author-container .post-author-info, #container #content.category .tag-post .post-author-container .post-author-info, #container #content.category .search-post .post-author-container .post-author-info, #container #content.tag .category-post .post-author-container .post-author-info, #container #content.tag .tag-post .post-author-container .post-author-info, #container #content.tag .search-post .post-author-container .post-author-info, #container #content.search .category-post .post-author-container .post-author-info, #container #content.search .tag-post .post-author-container .post-author-info, #container #content.search .search-post .post-author-container .post-author-info {
   display: inline-block;
   vertical-align: middle;
   margin-left: 5px;
 }
-/* line 40, ../scss/_category.scss */
+/* line 41, ../scss/_category.scss */
 #container #content.category .category-post .post-author-container .post-author-info .post-author a[rel="twitter"], #container #content.category .tag-post .post-author-container .post-author-info .post-author a[rel="twitter"], #container #content.category .search-post .post-author-container .post-author-info .post-author a[rel="twitter"], #container #content.tag .category-post .post-author-container .post-author-info .post-author a[rel="twitter"], #container #content.tag .tag-post .post-author-container .post-author-info .post-author a[rel="twitter"], #container #content.tag .search-post .post-author-container .post-author-info .post-author a[rel="twitter"], #container #content.search .category-post .post-author-container .post-author-info .post-author a[rel="twitter"], #container #content.search .tag-post .post-author-container .post-author-info .post-author a[rel="twitter"], #container #content.search .search-post .post-author-container .post-author-info .post-author a[rel="twitter"] {
   color: black;
 }
-/* line 42, ../scss/_category.scss */
+/* line 43, ../scss/_category.scss */
 #container #content.category .category-post .post-author-container .post-author-info .post-author a[rel="twitter"]:hover, #container #content.category .tag-post .post-author-container .post-author-info .post-author a[rel="twitter"]:hover, #container #content.category .search-post .post-author-container .post-author-info .post-author a[rel="twitter"]:hover, #container #content.tag .category-post .post-author-container .post-author-info .post-author a[rel="twitter"]:hover, #container #content.tag .tag-post .post-author-container .post-author-info .post-author a[rel="twitter"]:hover, #container #content.tag .search-post .post-author-container .post-author-info .post-author a[rel="twitter"]:hover, #container #content.search .category-post .post-author-container .post-author-info .post-author a[rel="twitter"]:hover, #container #content.search .tag-post .post-author-container .post-author-info .post-author a[rel="twitter"]:hover, #container #content.search .search-post .post-author-container .post-author-info .post-author a[rel="twitter"]:hover {
   color: #e83e8c;
 }
-/* line 46, ../scss/_category.scss */
+/* line 47, ../scss/_category.scss */
 #container #content.category .category-post .post-author-container .post-author-info .post-author p, #container #content.category .tag-post .post-author-container .post-author-info .post-author p, #container #content.category .search-post .post-author-container .post-author-info .post-author p, #container #content.tag .category-post .post-author-container .post-author-info .post-author p, #container #content.tag .tag-post .post-author-container .post-author-info .post-author p, #container #content.tag .search-post .post-author-container .post-author-info .post-author p, #container #content.search .category-post .post-author-container .post-author-info .post-author p, #container #content.search .tag-post .post-author-container .post-author-info .post-author p, #container #content.search .search-post .post-author-container .post-author-info .post-author p {
   margin: 0px;
 }
-/* line 52, ../scss/_category.scss */
+/* line 53, ../scss/_category.scss */
 #container #content.category .category-post .post-date, #container #content.category .tag-post .post-date, #container #content.category .search-post .post-date, #container #content.tag .category-post .post-date, #container #content.tag .tag-post .post-date, #container #content.tag .search-post .post-date, #container #content.search .category-post .post-date, #container #content.search .tag-post .post-date, #container #content.search .search-post .post-date {
   font-size: 16px;
   line-height: 1.9;
   height: auto;
   margin-bottom: -5px;
 }
-/* line 57, ../scss/_category.scss */
+/* line 58, ../scss/_category.scss */
 #container #content.category .category-post .post-date p, #container #content.category .tag-post .post-date p, #container #content.category .search-post .post-date p, #container #content.tag .category-post .post-date p, #container #content.tag .tag-post .post-date p, #container #content.tag .search-post .post-date p, #container #content.search .category-post .post-date p, #container #content.search .tag-post .post-date p, #container #content.search .search-post .post-date p {
   display: inline-block;
   margin: 0px;
 }
-/* line 61, ../scss/_category.scss */
+/* line 62, ../scss/_category.scss */
 #container #content.category .category-post .post-date div, #container #content.category .tag-post .post-date div, #container #content.category .search-post .post-date div, #container #content.tag .category-post .post-date div, #container #content.tag .tag-post .post-date div, #container #content.tag .search-post .post-date div, #container #content.search .category-post .post-date div, #container #content.search .tag-post .post-date div, #container #content.search .search-post .post-date div {
   display: inline-block;
 }
-/* line 65, ../scss/_category.scss */
+/* line 66, ../scss/_category.scss */
 #container #content.category .category-post .category, #container #content.category .tag-post .category, #container #content.category .search-post .category, #container #content.tag .category-post .category, #container #content.tag .tag-post .category, #container #content.tag .search-post .category, #container #content.search .category-post .category, #container #content.search .tag-post .category, #container #content.search .search-post .category {
   text-transform: uppercase;
   margin: 0px;
   margin-top: 10px;
 }
-/* line 69, ../scss/_category.scss */
+/* line 70, ../scss/_category.scss */
 #container #content.category .category-post .category a, #container #content.category .tag-post .category a, #container #content.category .search-post .category a, #container #content.tag .category-post .category a, #container #content.tag .tag-post .category a, #container #content.tag .search-post .category a, #container #content.search .category-post .category a, #container #content.search .tag-post .category a, #container #content.search .search-post .category a {
   color: #e83e8c;
 }
-/* line 72, ../scss/_category.scss */
+/* line 73, ../scss/_category.scss */
 #container #content.category .category-post .category ul, #container #content.category .tag-post .category ul, #container #content.category .search-post .category ul, #container #content.tag .category-post .category ul, #container #content.tag .tag-post .category ul, #container #content.tag .search-post .category ul, #container #content.search .category-post .category ul, #container #content.search .tag-post .category ul, #container #content.search .search-post .category ul {
   margin: 0px;
   padding: 0px;
   list-style: none;
 }
-/* line 76, ../scss/_category.scss */
+/* line 77, ../scss/_category.scss */
 #container #content.category .category-post .category ul li, #container #content.category .tag-post .category ul li, #container #content.category .search-post .category ul li, #container #content.tag .category-post .category ul li, #container #content.tag .tag-post .category ul li, #container #content.tag .search-post .category ul li, #container #content.search .category-post .category ul li, #container #content.search .tag-post .category ul li, #container #content.search .search-post .category ul li {
   list-style: none;
 }
-/* line 81, ../scss/_category.scss */
+/* line 82, ../scss/_category.scss */
 #container #content.category .category-post .featured_image, #container #content.category .tag-post .featured_image, #container #content.category .search-post .featured_image, #container #content.tag .category-post .featured_image, #container #content.tag .tag-post .featured_image, #container #content.tag .search-post .featured_image, #container #content.search .category-post .featured_image, #container #content.search .tag-post .featured_image, #container #content.search .search-post .featured_image {
   width: 100%;
   background-position: center;
   background-size: cover;
   height: 220px;
 }
-/* line 86, ../scss/_category.scss */
+/* line 87, ../scss/_category.scss */
 #container #content.category .category-post .featured_image img, #container #content.category .tag-post .featured_image img, #container #content.category .search-post .featured_image img, #container #content.tag .category-post .featured_image img, #container #content.tag .tag-post .featured_image img, #container #content.tag .search-post .featured_image img, #container #content.search .category-post .featured_image img, #container #content.search .tag-post .featured_image img, #container #content.search .search-post .featured_image img {
   width: 100%;
 }
-/* line 90, ../scss/_category.scss */
+/* line 91, ../scss/_category.scss */
 #container #content.category .category-post .postauthor, #container #content.category .tag-post .postauthor, #container #content.category .search-post .postauthor, #container #content.tag .category-post .postauthor, #container #content.tag .tag-post .postauthor, #container #content.tag .search-post .postauthor, #container #content.search .category-post .postauthor, #container #content.search .tag-post .postauthor, #container #content.search .search-post .postauthor {
   margin: 15px 0px;
 }
-/* line 93, ../scss/_category.scss */
+/* line 94, ../scss/_category.scss */
 #container #content.category .category-post .postmeta, #container #content.category .tag-post .postmeta, #container #content.category .search-post .postmeta, #container #content.tag .category-post .postmeta, #container #content.tag .tag-post .postmeta, #container #content.tag .search-post .postmeta, #container #content.search .category-post .postmeta, #container #content.search .tag-post .postmeta, #container #content.search .search-post .postmeta {
   -ms-word-wrap: break-word;
   word-wrap: break-word;
   margin: 30px 0px;
 }
-/* line 97, ../scss/_category.scss */
+/* line 98, ../scss/_category.scss */
 #container #content.category .category-post .postmeta a, #container #content.category .tag-post .postmeta a, #container #content.category .search-post .postmeta a, #container #content.tag .category-post .postmeta a, #container #content.tag .tag-post .postmeta a, #container #content.tag .search-post .postmeta a, #container #content.search .category-post .postmeta a, #container #content.search .tag-post .postmeta a, #container #content.search .search-post .postmeta a {
   border-radius: 5px;
   padding: 5px 10px 7px;
@@ -1380,38 +1381,38 @@
   display: inline-block;
   margin-bottom: 10px;
 }
-/* line 108, ../scss/_category.scss */
+/* line 109, ../scss/_category.scss */
 #container #content.category .category-post .postmeta a:hover, #container #content.category .tag-post .postmeta a:hover, #container #content.category .search-post .postmeta a:hover, #container #content.tag .category-post .postmeta a:hover, #container #content.tag .tag-post .postmeta a:hover, #container #content.tag .search-post .postmeta a:hover, #container #content.search .category-post .postmeta a:hover, #container #content.search .tag-post .postmeta a:hover, #container #content.search .search-post .postmeta a:hover {
   background: #e83e8c !important;
   color: white;
 }
-/* line 116, ../scss/_category.scss */
+/* line 117, ../scss/_category.scss */
 #container #content.category .category-post h2, #container #content.tag .category-post h2, #container #content.search .category-post h2 {
   margin-top: 5px;
 }
-/* line 121, ../scss/_category.scss */
+/* line 122, ../scss/_category.scss */
 #container #content.category .tag-post h4.category, #container #content.tag .tag-post h4.category, #container #content.search .tag-post h4.category {
   margin-top: 15px;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 131, ../scss/_category.scss */
+  /* line 132, ../scss/_category.scss */
   #container #content.category h1, #container #content.tag h1, #container #content.search h1 {
     margin-bottom: 35px;
   }
-  /* line 134, ../scss/_category.scss */
+  /* line 135, ../scss/_category.scss */
   #container #content.category .category-post, #container #content.tag .category-post, #container #content.search .category-post {
     margin-bottom: 65px;
   }
-  /* line 136, ../scss/_category.scss */
+  /* line 137, ../scss/_category.scss */
   #container #content.category .category-post h2, #container #content.tag .category-post h2, #container #content.search .category-post h2 {
     margin-top: 10px;
   }
-  /* line 140, ../scss/_category.scss */
+  /* line 141, ../scss/_category.scss */
   #container #content.category .tag-post, #container #content.tag .tag-post, #container #content.search .tag-post {
     margin-bottom: 65px;
   }
-  /* line 142, ../scss/_category.scss */
+  /* line 143, ../scss/_category.scss */
   #container #content.category .tag-post h4.category, #container #content.tag .tag-post h4.category, #container #content.search .tag-post h4.category {
     margin-top: 20px;
   }
