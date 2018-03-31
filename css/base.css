@@ -1875,21 +1875,23 @@
   font-family: 'whitney';
   text-transform: uppercase;
   font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
 }
-/* line 48, ../scss/_shop.scss */
+/* line 50, ../scss/_shop.scss */
 #content.shop #shop .products-container .product-container .product .product-info .product-title {
   font-family: "whitney-semibold";
   text-transform: uppercase;
   font-size: 20px;
 }
-/* line 52, ../scss/_shop.scss */
+/* line 54, ../scss/_shop.scss */
 #content.shop #shop .products-container .product-container .product .product-info .product-title a {
   color: black;
   text-decoration: none;
 }
 
 @media screen and (min-width: 560px) {
-  /* line 70, ../scss/_shop.scss */
+  /* line 72, ../scss/_shop.scss */
   #content.shop #shop .products-container .product-container {
     width: 49.99%;
     max-width: none;

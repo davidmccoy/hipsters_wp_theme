@@ -31,18 +31,18 @@
 	<i class="fa fa-bars fa-lg" aria-hidden="true"></i>
   <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
   <a href="<?php bloginfo('url'); ?>/" title="Home" id="logo">
-  	<img src="/assets/hipsters-of-the-coast-logo.png" id="full-logo"/>
+  	<img src="/assets/hipsters-of-the-coast-logo.svg" id="full-logo" onerror="this.onerror=null; this.src='/assets/hipsters-of-the-coast-logo.png'" />
   </a>
 </div>
 <div id="wrap">
 		<div id="spacer">
-			<img src="/assets/hipsters-of-the-coast-logo.png" id="full-logo"/>
+			<img src="/assets/hipsters-of-the-coast-logo.svg" id="full-logo" onerror="this.onerror=null; this.src='/assets/hipsters-of-the-coast-logo.png'"/>
     </div>
     <div id="navbar">
       <div class="mobile-menu-header">
         <div class="mobile-menu-logo">
           <a href="/">
-            <img src="/assets/hipsters-of-the-coast-logo-stacked.png" id="mobile-logo-small"/>
+            <img src="/assets/hipsters-of-the-coast-logo-stacked.svg" id="mobile-logo-small" onerror="this.onerror=null; this.src='/assets/hipsters-of-the-coast-logo-stacked.png'" />
           </a>
         </div>
         <div class="mobile-menu-close">
