@@ -49,6 +49,9 @@ Template Name: Shop
                                       <div class="product-description">
                                         Available in nine colors and in sizes XS-3XL.
                                       </div>
+                                      <div class="product-price">
+                                        <em>$23.99</em>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
@@ -71,6 +74,9 @@ Template Name: Shop
                                       </div>
                                       <div class="product-description">
                                         Available in eight colors and in sizes XS-3XL.
+                                      </div>
+                                      <div class="product-price">
+                                        <em>$23.99</em>
                                       </div>
                                     </div>
                                   </div>
@@ -95,6 +101,9 @@ Template Name: Shop
                                       <div class="product-description">
                                         Available in white and in sizes XS-3XL.
                                       </div>
+                                      <div class="product-price">
+                                        <em>$23.99</em>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
@@ -117,6 +126,9 @@ Template Name: Shop
                                       </div>
                                       <div class="product-description">
                                         Available in six colors and in sizes S-2XL.
+                                      </div>
+                                      <div class="product-price">
+                                        <em>$44.99</em>
                                       </div>
                                     </div>
                                   </div>
@@ -141,6 +153,9 @@ Template Name: Shop
                                       <div class="product-description">
                                         Available in five colors and in sizes S-2XL.
                                       </div>
+                                      <div class="product-price">
+                                        <em>$44.99</em>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
@@ -163,6 +178,9 @@ Template Name: Shop
                                       </div>
                                       <div class="product-description">
                                         Available in white and gray and in sizes S-2XL.
+                                      </div>
+                                      <div class="product-price">
+                                        <em>$44.99</em>
                                       </div>
                                     </div>
                                   </div>
