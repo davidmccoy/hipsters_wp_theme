@@ -61,28 +61,29 @@
   margin: 0 auto;
   box-sizing: border-box;
   font-size: 16px;
+  z-index: 1;
 }
-/* line 11, ../scss/_header.scss */
+/* line 12, ../scss/_header.scss */
 #header i.fa-bars {
   vertical-align: middle;
 }
-/* line 13, ../scss/_header.scss */
+/* line 14, ../scss/_header.scss */
 #header i.fa-bars.fa-lg {
   display: inline-block;
   width: 8%;
 }
-/* line 17, ../scss/_header.scss */
+/* line 18, ../scss/_header.scss */
 #header i.fa-bars.fa-2x {
   display: none;
 }
-/* line 21, ../scss/_header.scss */
+/* line 22, ../scss/_header.scss */
 #header a {
   display: inline-block;
   width: 90%;
   vertical-align: middle;
   box-sizing: border-box;
 }
-/* line 27, ../scss/_header.scss */
+/* line 28, ../scss/_header.scss */
 #header a img#full-logo {
   display: inline-block;
   width: 100%;
@@ -90,39 +91,39 @@
 }
 
 @media screen and (min-width: 490px) {
-  /* line 38, ../scss/_header.scss */
+  /* line 39, ../scss/_header.scss */
   #header i.fa-bars {
     width: 7%;
   }
-  /* line 40, ../scss/_header.scss */
+  /* line 41, ../scss/_header.scss */
   #header i.fa-bars.fa-lg {
     display: none;
   }
-  /* line 43, ../scss/_header.scss */
+  /* line 44, ../scss/_header.scss */
   #header i.fa-bars.fa-2x {
     display: inline-block;
   }
-  /* line 47, ../scss/_header.scss */
+  /* line 48, ../scss/_header.scss */
   #header a {
     width: 92%;
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 54, ../scss/_header.scss */
+  /* line 55, ../scss/_header.scss */
   #header {
     position: relative;
     padding: 15px 15px 0px;
     margin-bottom: -13px;
   }
-  /* line 59, ../scss/_header.scss */
+  /* line 60, ../scss/_header.scss */
   #header i.fa-bars.fa-2x {
     display: none;
   }
-  /* line 63, ../scss/_header.scss */
+  /* line 64, ../scss/_header.scss */
   #header a {
     width: 100%;
   }
-  /* line 66, ../scss/_header.scss */
+  /* line 67, ../scss/_header.scss */
   #header a img#full-logo {
     display: block;
     width: 100%;
@@ -1836,7 +1837,6 @@
 }
 /* line 12, ../scss/_shop.scss */
 #content.shop #shop .products-container .product-container {
-  z-index: -1;
   font-size: 18px;
   margin-bottom: 0px;
   width: 100%;
@@ -1884,14 +1884,19 @@
   text-transform: uppercase;
   font-size: 20px;
 }
-/* line 54, ../scss/_shop.scss */
-#content.shop #shop .products-container .product-container .product .product-info .product-title a {
+/* line 55, ../scss/_shop.scss */
+#content.shop #shop .products-container .product-container .product .product-info a {
   color: black;
   text-decoration: none;
 }
+/* line 58, ../scss/_shop.scss */
+#content.shop #shop .products-container .product-container .product .product-info a:hover {
+  color: #e83e8c;
+  text-decoration: underline;
+}
 
 @media screen and (min-width: 560px) {
-  /* line 72, ../scss/_shop.scss */
+  /* line 76, ../scss/_shop.scss */
   #content.shop #shop .products-container .product-container {
     width: 49.99%;
     max-width: none;

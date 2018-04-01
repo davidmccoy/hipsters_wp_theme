@@ -8,13 +8,12 @@ Template Name: Shop
 
 <div id="container">
 
-        <div id="featureimg">
-                <?php echo clean_wp_width_height(get_the_post_thumbnail(get_the_ID(),'page-feature')); ?>
-        </div>
 
 	<div id="content" class="shop">
 
                 <div class="post-area">
+                  <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id( get_the_ID() ), 'single-post-thumbnail' )[0]; ?>
+                  <div class="postimg_single" style="background-image: url('<?php echo $image ?>');"></div>
 
                         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                           <div class="page-title">
@@ -28,7 +27,188 @@ Template Name: Shop
                               Get your hands on some sweet Hipsters gear!
                             </p>
 
-                            <?php the_content(__("Read More", 'organicthemes'));?>
+                            <div id="shop">
+                              <div class="products-container">
+                                <div class="product-container">
+                                  <div class="product">
+                                    <div>
+                                      <a href="https://teespring.com/hipsters-of-the-coast-sunset" target="_blank" onclick="ga('send', 'event', 'Sun Logo T-Shirt', 'click', 'Hipsters Apparel Spring 2018');">
+                                        <div class="product-image" style="background-image: url('/assets/products/hipsters-store-sunset-t-shirts.jpg')">
+                                        </div>
+                                      </a>
+                                    </div>
+                                    <div class="product-info">
+                                      <div class="product-category">
+                                        T-SHIRT
+                                      </div>
+                                      <div class="product-title">
+                                        <a href="https://teespring.com/hipsters-of-the-coast-sunset" target="_blank" onclick="ga('send', 'event', 'Sun Logo T-Shirt', 'click', 'Hipsters Apparel Spring 2018');">
+                                          T-Shirt With Sun Logo
+                                        </a>
+                                      </div>
+                                      <div class="product-description">
+                                        Available in nine colors and in sizes XS-3XL.
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="product-container">
+                                  <div class="product">
+                                    <div>
+                                      <a href="https://teespring.com/hipsters-of-the-coast-stacked" target="_blank" onclick="ga('send', 'event', 'Stacked Logo Dark T-Shirt', 'click', 'Hipsters Apparel Spring 2018');">
+                                        <div class="product-image" style="background-image: url('/assets/products/hipsters-store-stacked-t-shirts.jpg')">
+                                        </div>
+                                      </a>
+                                    </div>
+                                    <div class="product-info">
+                                      <div class="product-category">
+                                        T-SHIRT
+                                      </div>
+                                      <div class="product-title">
+                                        <a href="https://teespring.com/hipsters-of-the-coast-stacked" target="_blank" onclick="ga('send', 'event', 'Stacked Logo Dark T-Shirt', 'click', 'Hipsters Apparel Spring 2018');">
+                                          T-Shirt With Stacked Logo
+                                        </a>
+                                      </div>
+                                      <div class="product-description">
+                                        Available in eight colors and in sizes XS-3XL.
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="product-container">
+                                  <div class="product">
+                                    <div>
+                                      <a href="https://teespring.com/hipsters-of-the-coast-stackedw" target="_blank" onclick="ga('send', 'event', 'Stacked Logo Light T-Shirt', 'click', 'Hipsters Apparel Spring 2018');">
+                                        <div class="product-image" style="background-image: url('/assets/products/hipsters-store-stacked-white-t-shirts.jpg')">
+                                        </div>
+                                      </a>
+                                    </div>
+                                    <div class="product-info">
+                                      <div class="product-category">
+                                        T-SHIRT
+                                      </div>
+                                      <div class="product-title">
+                                        <a href="https://teespring.com/hipsters-of-the-coast-stackedw" target="_blank" onclick="ga('send', 'event', 'Stacked Logo Light T-Shirt', 'click', 'Hipsters Apparel Spring 2018');">
+                                          T-Shirt With Stacked Logo
+                                        </a>
+                                      </div>
+                                      <div class="product-description">
+                                        Available in white and in sizes XS-3XL.
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="product-container">
+                                  <div class="product">
+                                    <div>
+                                      <a href="https://teespring.com/hipsters-sunset-sweatshirt" target="_blank" onclick="ga('send', 'event', 'Sun Logo Sweatshirt', 'click', 'Hipsters Apparel Spring 2018');">
+                                        <div class="product-image" style="background-image: url('/assets/products/hipsters-store-stacked-sweatshirts.jpg')">
+                                        </div>
+                                      </a>
+                                    </div>
+                                    <div class="product-info">
+                                      <div class="product-category">
+                                        SWEATSHIRT
+                                      </div>
+                                      <div class="product-title">
+                                        <a href="https://teespring.com/hipsters-sunset-sweatshirt" target="_blank" onclick="ga('send', 'event', 'Sun Logo Sweatshirt', 'click', 'Hipsters Apparel Spring 2018');">
+                                          Sweatshirt With Sun Logo
+                                        </a>
+                                      </div>
+                                      <div class="product-description">
+                                        Available in six colors and in sizes S-2XL.
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="product-container">
+                                  <div class="product">
+                                    <div>
+                                      <a href="https://teespring.com/hipsters-stacked-sweatshirt" target="_blank" onclick="ga('send', 'event', 'Stacked Logo Dark Sweatshirt', 'click', 'Hipsters Apparel Spring 2018');">
+                                        <div class="product-image" style="background-image: url('/assets/products/hipsters-store-stacked-sweatshirts.png')">
+                                        </div>
+                                      </a>
+                                    </div>
+                                    <div class="product-info">
+                                      <div class="product-category">
+                                        SWEATSHIRT
+                                      </div>
+                                      <div class="product-title">
+                                        <a href="https://teespring.com/hipsters-stacked-sweatshirt" target="_blank" onclick="ga('send', 'event', 'Stacked Logo Dark Sweatshirt', 'click', 'Hipsters Apparel Spring 2018');">
+                                          Sweathirt With Stacked Logo
+                                        </a>
+                                      </div>
+                                      <div class="product-description">
+                                        Available in five colors and in sizes S-2XL.
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="product-container">
+                                  <div class="product">
+                                    <div>
+                                      <a href="https://teespring.com/hipsters-light-sweatshirt" target="_blank" onclick="ga('send', 'event', 'Stacked Logo Light Sweatshirt', 'click', 'Hipsters Apparel Spring 2018');">
+                                        <div class="product-image" style="background-image: url('/assets/products/hipsters-store-stacked-light-sweatshirts.png')">
+                                        </div>
+                                      </a>
+                                    </div>
+                                    <div class="product-info">
+                                      <div class="product-category">
+                                        SWEATSHIRT
+                                      </div>
+                                      <div class="product-title">
+                                        <a href="https://teespring.com/hipsters-light-sweatshirt" target="_blank" onclick="ga('send', 'event', 'Stacked Logo Light Sweatshirt', 'click', 'Hipsters Apparel Spring 2018');">
+                                          Sweathirt With Stacked Logo
+                                        </a>
+                                      </div>
+                                      <div class="product-description">
+                                        Available in white and gray and in sizes S-2XL.
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="product-container">
+                                  <div class="product">
+                                    <div>
+                                      <div class="product-image" style="background-image: url('/assets/products/hipsters-store-playmat-sun-logo.jpg')">
+                                      </div>
+                                    </div>
+                                    <div class="product-info">
+                                      <div class="product-category">
+                                        PLAYMAT
+                                      </div>
+                                      <div class="product-title">
+                                        Playmat With Sun Logo
+                                      </div>
+                                      <div class="product-description">
+                                        Coming soon!
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="product-container">
+                                  <div class="product">
+                                    <div>
+                                      <a href="#">
+                                        <div class="product-image" style="background-image: url('/assets/products/hipsters-store-sunset-playmat.jpg')">
+                                        </div>
+                                      </a>
+                                    </div>
+                                    <div class="product-info">
+                                      <div class="product-category">
+                                        PLAYMAT
+                                      </div>
+                                      <div class="product-title">
+                                        Playmat With Stacked Logo
+                                      </div>
+                                      <div class="product-description">
+                                        Coming soon!
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
 
                         <?php if(of_get_option('display_socialpage') == '1') { ?>
