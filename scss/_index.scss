@@ -8,11 +8,12 @@
     margin: 0 auto;
     .post-area {
       a {
-        color: black;
-        text-decoration: underline;
-        text-decoration-color: $primary;
-        -moz-text-decoration-color: $primary;
-        -webkit-text-decoration-color: $primary;
+        color: $black;
+        box-shadow: inset 0 -1px 0 white, inset 0 -3px 0 #e83e8c;
+        // text-decoration: underline;
+        // text-decoration-color: $primary;
+        // -moz-text-decoration-color: $primary;
+        // -webkit-text-decoration-color: $primary;
         &:hover {
           color: $primary;
         }
@@ -82,13 +83,15 @@
           vertical-align: middle;
           margin-left: 5px;
           .post-author {
+            line-height: 1.5;
             a {
               color: $primary;
               border: none;
               text-decoration: none;
+              box-shadow: none;
             }
             a[rel="twitter"] {
-              color: black;
+              color: $black;
               &:hover {
                 color: $primary;
               }
@@ -118,6 +121,7 @@
         a{
           color: $primary;
           text-decoration: none;
+          box-shadow: none;
         }
         ul {
           margin: 0px;
@@ -143,7 +147,7 @@
         margin: 30px 0px;
         a {
           border-radius: 5px;
-          padding: 5px 10px 7px;
+          padding: 5px 10px 5px;
           margin: 5px 10px 5px 0px;
           font-size: 13px;
           text-transform: lowercase;
@@ -152,6 +156,7 @@
           border: 1px solid $primary;
           display: inline-block;
           text-decoration: none;
+          box-shadow: none;
           &:hover {
             background: $primary !important;
             color: white;
@@ -160,7 +165,7 @@
       }
       blockquote {
         margin-top: 29px;
-        border-left: 3px solid black;
+        border-left: 3px solid $black;
         padding-left: 20px;
         padding-bottom: 3px;
         margin-left: 0px;
@@ -210,6 +215,7 @@
         }
         a {
           text-decoration: none;
+          box-shadow: none;
         }
         .cardkingdom-sponsor-left {
           margin: 0 10px;
@@ -318,7 +324,7 @@
               h3.related {
                 margin: 0px;
                 a {
-                  color: black;
+                  color: $black;
                 }
               }
               p {
@@ -392,7 +398,7 @@
           margin-right: -20px;
           margin-left: -20px;
           a {
-            color: black;
+            color: $black;
           }
           .social-share {
             width: 33.3%;
@@ -456,6 +462,13 @@
         blockquote {
           margin-left: -23px;
         }
+        a {
+          box-shadow: none;
+          text-decoration: underline;
+          text-decoration-color: $primary;
+          -moz-text-decoration-color: $primary;
+          -webkit-text-decoration-color: $primary;
+        }
         .post-author-container {
           .post-author-image {
             width: 66px;
@@ -464,7 +477,7 @@
         }
         .post-date {
           height: 32px;
-          font-size: 18px;
+          font-size: 16px;
         }
         .mtg_deck.mtg_deck_embedded .card_box {
           display: block;

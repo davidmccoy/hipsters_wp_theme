@@ -24,7 +24,7 @@ Template Name: Shop
                               <?php edit_post_link(__("(Edit)", 'organicthemes'), '', ''); ?>
                             </p>
                             <p>
-                              Get your hands on some sweet Hipsters gear!
+                              Get your hands on some sweet <a href="https://teespring.com/stores/hipsters-of-the-coast" traget="_blank" onclick="ga('send', 'event', 'Teespring Storefront', 'click', 'Hipsters Apparel Spring 2018');">Hipsters gear</a>!
                             </p>
 
                             <div id="shop">
@@ -207,7 +207,7 @@ Template Name: Shop
                                 <div class="product-container">
                                   <div class="product">
                                     <div>
-                                      <a href="#">
+                                      <a href="https://www.inkedgaming.com/collections/art/products/hipsters-of-the-coast-playmat" target="_blank" onclick="ga('send', 'event', 'Stacked Logo Playmat', 'click', 'Hipsters Apparel Spring 2018');">
                                         <div class="product-image" style="background-image: url('/assets/products/hipsters-store-sunset-playmat.jpg')">
                                         </div>
                                       </a>
@@ -217,10 +217,15 @@ Template Name: Shop
                                         PLAYMAT
                                       </div>
                                       <div class="product-title">
-                                        Playmat With Stacked Logo
+																				<a href="https://www.inkedgaming.com/collections/art/products/hipsters-of-the-coast-playmat" target="_blank" onclick="ga('send', 'event', 'Stacked Logo Playmat', 'click', 'Hipsters Apparel Spring 2018');">
+																					Playmat With Stacked Logo
+																				</a>
                                       </div>
                                       <div class="product-description">
-                                        Coming soon!
+                                        Standard playmat size of 24"x14".
+                                      </div>
+																			<div class="product-price">
+                                        <em>$19.99</em>
                                       </div>
                                     </div>
                                   </div>

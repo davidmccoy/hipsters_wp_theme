@@ -15,7 +15,7 @@
       h2 {
         margin: 0px;
         a {
-          color: black;
+          color: $black;
           text-decoration: none; 
         }
       }
@@ -39,7 +39,7 @@
           margin-left: 5px;
           .post-author {
             a[rel="twitter"] {
-              color: black;
+              color: $black;
               &:hover {
                 color: $primary;
               }

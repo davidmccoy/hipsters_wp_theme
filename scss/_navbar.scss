@@ -29,7 +29,7 @@
         list-style: none;
         border-bottom: 2px solid white;
         &:hover {
-          border-bottom: 2px solid black;
+          border-bottom: 2px solid $black;
           ul {
             display: block;
           }
@@ -139,7 +139,7 @@
       }
       .current_page_item, .current-menu-item, .current-cat {
         a, a:hover {
-          color: black !important;
+          color: $black !important;
           // background: #151515;
           border-bottom: none;
         }
@@ -148,14 +148,14 @@
         background: #FFFFFF;
         border: none;
         a, a:visited {
-          color: black;
+          color: $black;
           padding: 10px 10px 10px 10px;
           text-decoration: none;
           text-transform: none;
           text-shadow: none;
           border: none;
           &:focus, &:hover, &:active {
-            color: black;
+            color: $black;
             border-bottom: none;
             outline: 0;
           }
@@ -165,7 +165,7 @@
           border: none;
         }
         &:hover {
-          color: black;
+          color: $black;
           border: none;
           outline: 0;
           padding: 0px;
@@ -181,9 +181,9 @@
       font-style: normal;
       font-weight: bold;
       line-height: 16px;
-      color: black;
+      color: $black;
       &:visited {
-        color: black;
+        color: $black;
       }
       &:focus, &:hover, &:active {
         background: none;
@@ -204,7 +204,7 @@
             border-bottom: none;
             &:hover {
               // background: #151515;
-              color: black !important;
+              color: $black !important;
               border-bottom: none;
             }
           }
@@ -267,7 +267,7 @@
     left: 0;
     width: 250px;
     z-index: 999;
-    background: black;
+    background: $black;
     overflow: auto;
 
       i {
@@ -303,14 +303,14 @@
       }
       ul.menu {
         li {
-          color: black;
+          color: $black;
           background: none;
           display: block;
           float: none;
           border: none;
           a {
             color: white !important;
-            background: black;
+            background: $black;
             &:visited {
               color: white;
             }
@@ -361,7 +361,7 @@
                 padding: 0;
               }
               input[type="text"] {
-                background: black;
+                background: $black;
                 color: white;
                 &:focus {
                   width: 180px;
@@ -389,7 +389,7 @@
             background: none;
             a {
               color: white !important;
-              background: black;
+              background: $black;
               &:hover, &:focus, &:visited {
                 color: white;
               }
