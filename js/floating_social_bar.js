@@ -53,9 +53,9 @@
 	    $(document).bind('touchmove', function(e) {
 	        var te = e.originalEvent.changedTouches[0].clientY;
 	        if (ts > te) {
-						$('div.share-bar').addClass('is-visible');
-	        } else {
 						$('div.share-bar').removeClass('is-visible');
+	        } else {
+						$('div.share-bar').addClass('is-visible');
 	        }
 	    });
 		}
