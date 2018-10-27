@@ -8,7 +8,7 @@
           </div>
 
           <div class="footerbottom">
-              <p><a href="<?php bloginfo('rss_url'); ?>" target="_blank"><?php _e("RSS Feed", 'hipsters'); ?></a> &middot; <?php wp_loginout(); ?></p>
+              <p><a href="<?php bloginfo('rss_url'); ?>" target="_blank"><?php _e("RSS Feed", 'hipsters'); ?></a></p>
           </div>
       </div>
 
