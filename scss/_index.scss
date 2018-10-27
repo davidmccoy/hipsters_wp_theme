@@ -252,7 +252,7 @@
             td {
               display: table-cell;
               &.label {
-                width: 105px;
+                width: 55px;
                 label {
                   margin-left: -3px;
                 }
@@ -277,6 +277,7 @@
             }
           }
           .button-container {
+            text-align: right;
             input[type="submit"] {
               font-family: 'whitney';
               border-radius: 5px;

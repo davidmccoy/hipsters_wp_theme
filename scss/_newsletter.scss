@@ -11,6 +11,7 @@
           display: block;
         }
         input[type="email"] {
+          font-family: 'whitney';
           font-size: 16px;
           font-weight: 100;
           margin: 5px 0px;
@@ -58,6 +59,7 @@
         display: block;
       }
       input[type="email"] {
+        font-family: 'whitney';
         font-size: 16px;
         font-weight: 100;
         margin: 5px 0px;
@@ -98,7 +100,7 @@
           td {
             display: table-cell;
             &.label {
-              width: 125px;
+              width: 55px;
             }
           }
           input[type="email"] {
@@ -118,7 +120,7 @@
         table {
           td {
             &.label {
-              width: 145px;
+              width: 55px;
             }
           }
         }
