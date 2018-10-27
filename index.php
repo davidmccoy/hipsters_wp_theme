@@ -126,7 +126,7 @@
     <div class="share-bar">
       <div class="share-bar-container">
         <div class="share-bar-content">
-          <a href="https://twitter.com/intent/tweet?url=<?php echo urlencode(wp_get_shortlink($post->ID)); ?>&text=<?php the_title(); ?> via @hotcblog" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')" target="_blank">
+          <a href="https://twitter.com/intent/tweet?url=<?php echo urlencode(wp_get_shortlink($post->ID)); ?>&text=<?php the_title(); ?> via @HipstersMTG" onclick="return !window.open(this.href, 'Twitter', 'width=500,height=500')" target="_blank">
             <div class="social-share twitter">
               <i class="fa fa-twitter fa-2x" aria-hidden="true"></i>
             </div>
