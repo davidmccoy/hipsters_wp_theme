@@ -1570,18 +1570,22 @@
 }
 /* line 32, ../scss/_author.scss */
 #container #content.author .author-post h2 {
+  font-size: 2rem;
   margin: 0px;
+  line-height: 1.5;
 }
-/* line 34, ../scss/_author.scss */
+/* line 36, ../scss/_author.scss */
 #container #content.author .author-post h2 a {
   color: rgba(0, 0, 0, 0.84);
+  text-decoration: none;
+  box-shadow: none;
 }
-/* line 38, ../scss/_author.scss */
+/* line 42, ../scss/_author.scss */
 #container #content.author .author-post .post-title {
   margin-top: 0px;
   margin-bottom: 15px;
 }
-/* line 43, ../scss/_author.scss */
+/* line 47, ../scss/_author.scss */
 #container #content.author .author-post .post-author-container .post-author-image {
   display: inline-block;
   vertical-align: middle;
@@ -1591,25 +1595,25 @@
   width: 54px;
   border-radius: 50%;
 }
-/* line 52, ../scss/_author.scss */
+/* line 56, ../scss/_author.scss */
 #container #content.author .author-post .post-author-container .post-author-info {
   display: inline-block;
   vertical-align: middle;
   margin-left: 5px;
 }
-/* line 57, ../scss/_author.scss */
+/* line 61, ../scss/_author.scss */
 #container #content.author .author-post .post-author-container .post-author-info .post-author a[rel="twitter"] {
   color: rgba(0, 0, 0, 0.84);
 }
-/* line 59, ../scss/_author.scss */
+/* line 63, ../scss/_author.scss */
 #container #content.author .author-post .post-author-container .post-author-info .post-author a[rel="twitter"]:hover {
   color: #e83e8c;
 }
-/* line 63, ../scss/_author.scss */
+/* line 67, ../scss/_author.scss */
 #container #content.author .author-post .post-author-container .post-author-info .post-author p {
   margin: 0px;
 }
-/* line 69, ../scss/_author.scss */
+/* line 73, ../scss/_author.scss */
 #container #content.author .author-post .post-date {
   font-size: 16px;
   line-height: 1.9;
@@ -1617,60 +1621,60 @@
   margin-top: 2px;
   margin-bottom: -5px;
 }
-/* line 75, ../scss/_author.scss */
+/* line 79, ../scss/_author.scss */
 #container #content.author .author-post .post-date p {
   display: inline-block;
   margin: 0px;
 }
-/* line 79, ../scss/_author.scss */
+/* line 83, ../scss/_author.scss */
 #container #content.author .author-post .post-date div {
   display: inline-block;
 }
-/* line 83, ../scss/_author.scss */
+/* line 87, ../scss/_author.scss */
 #container #content.author .author-post .category {
   text-transform: uppercase;
   margin: 0px;
   margin-top: 10px;
 }
-/* line 87, ../scss/_author.scss */
+/* line 91, ../scss/_author.scss */
 #container #content.author .author-post .category a {
   color: #e83e8c;
 }
-/* line 90, ../scss/_author.scss */
+/* line 94, ../scss/_author.scss */
 #container #content.author .author-post .category ul {
   margin: 0px;
   padding: 0px;
   list-style: none;
 }
-/* line 94, ../scss/_author.scss */
+/* line 98, ../scss/_author.scss */
 #container #content.author .author-post .category ul li {
   list-style: none;
 }
-/* line 99, ../scss/_author.scss */
+/* line 103, ../scss/_author.scss */
 #container #content.author .author-post .featured_image {
   width: 100%;
   background-position: center;
   background-size: cover;
   height: 220px;
 }
-/* line 104, ../scss/_author.scss */
+/* line 108, ../scss/_author.scss */
 #container #content.author .author-post .featured_image img {
   width: 100%;
 }
-/* line 108, ../scss/_author.scss */
+/* line 112, ../scss/_author.scss */
 #container #content.author .author-post .postauthor {
   margin: 15px 0px;
 }
-/* line 111, ../scss/_author.scss */
+/* line 115, ../scss/_author.scss */
 #container #content.author .author-post .postmeta {
   -ms-word-wrap: break-word;
   word-wrap: break-word;
   margin: 30px 0px;
 }
-/* line 115, ../scss/_author.scss */
+/* line 119, ../scss/_author.scss */
 #container #content.author .author-post .postmeta a {
   border-radius: 5px;
-  padding: 5px 10px 7px;
+  padding: 5px 10px 5px;
   margin-right: 10px;
   font-size: 13px;
   text-transform: lowercase;
@@ -1680,37 +1684,102 @@
   display: inline-block;
   margin-bottom: 10px;
 }
-/* line 126, ../scss/_author.scss */
+/* line 130, ../scss/_author.scss */
 #container #content.author .author-post .postmeta a:hover {
   background: #e83e8c !important;
   color: white;
 }
+/* line 137, ../scss/_author.scss */
+#container #content.author .homepagecontent {
+  margin-bottom: 30px;
+}
+/* line 139, ../scss/_author.scss */
+#container #content.author .homepagecontent a {
+  text-decoration: none;
+  box-shadow: none;
+}
+/* line 143, ../scss/_author.scss */
+#container #content.author .homepagecontent .featured_image {
+  background-image: url("/assets/cardkingdom/Hipsters_Ad_Sell.jpg") !important;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 31.25%;
+}
+/* line 150, ../scss/_author.scss */
+#container #content.author .homepagecontent .post-title {
+  margin: 0;
+}
+/* line 153, ../scss/_author.scss */
+#container #content.author .homepagecontent h4 {
+  text-transform: uppercase;
+  margin: 0px;
+  margin-top: 10px;
+}
+/* line 157, ../scss/_author.scss */
+#container #content.author .homepagecontent h4 a {
+  color: #e83e8c;
+}
+/* line 160, ../scss/_author.scss */
+#container #content.author .homepagecontent h4 ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+/* line 164, ../scss/_author.scss */
+#container #content.author .homepagecontent h4 ul li {
+  list-style: none;
+}
+/* line 169, ../scss/_author.scss */
+#container #content.author .homepagecontent h3 {
+  font-size: 2rem;
+  margin: 0px;
+  line-height: 1.5;
+}
+/* line 173, ../scss/_author.scss */
+#container #content.author .homepagecontent h3 a {
+  color: rgba(0, 0, 0, 0.84);
+  text-decoration: none;
+  box-shadow: none;
+}
 
 @media screen and (min-width: 768px) {
-  /* line 139, ../scss/_author.scss */
+  /* line 186, ../scss/_author.scss */
   #container #content.author .author-post {
     margin-bottom: 65px;
   }
-  /* line 141, ../scss/_author.scss */
+  /* line 188, ../scss/_author.scss */
+  #container #content.author .author-post h2 {
+    font-size: 3rem;
+  }
+  /* line 191, ../scss/_author.scss */
   #container #content.author .author-post .post-date {
     margin-top: 4px;
   }
-  /* line 145, ../scss/_author.scss */
+  /* line 195, ../scss/_author.scss */
   #container #content.author .author-info {
     margin-bottom: 35px;
   }
-  /* line 147, ../scss/_author.scss */
+  /* line 197, ../scss/_author.scss */
   #container #content.author .author-info .author-left {
     width: 75%;
   }
-  /* line 150, ../scss/_author.scss */
+  /* line 200, ../scss/_author.scss */
   #container #content.author .author-info .author-right {
     width: 25%;
   }
-  /* line 152, ../scss/_author.scss */
+  /* line 202, ../scss/_author.scss */
   #container #content.author .author-info .author-right .author-image {
     height: 120px;
     width: 120px;
+  }
+  /* line 208, ../scss/_author.scss */
+  #container #content.author .homepagecontent {
+    margin-bottom: 65px;
+  }
+  /* line 210, ../scss/_author.scss */
+  #container #content.author .homepagecontent h3 {
+    font-size: 3rem;
   }
 }
 /* line 4, ../scss/_masthead.scss */
