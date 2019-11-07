@@ -760,21 +760,24 @@
 #footer .footerleft a, #footer .footerright a {
   color: rgba(0, 0, 0, 0.84);
   text-decoration: none;
-  box-shadow: inset 0 -1px 0 white, inset 0 -3px 0 #e83e8c;
+  text-decoration: underline;
+  text-decoration-color: #e83e8c;
+  -moz-text-decoration-color: #e83e8c;
+  -webkit-text-decoration-color: #e83e8c;
 }
-/* line 14, ../scss/_footer.scss */
+/* line 17, ../scss/_footer.scss */
 #footer .footerleft a:hover, #footer .footerright a:hover {
   color: #e83e8c;
 }
 
 @media screen and (min-width: 576px) {
-  /* line 23, ../scss/_footer.scss */
+  /* line 26, ../scss/_footer.scss */
   #footer .footerleft {
     display: inline-block;
     float: left;
     text-align: left;
   }
-  /* line 28, ../scss/_footer.scss */
+  /* line 31, ../scss/_footer.scss */
   #footer .footerright {
     display: inline-block;
     float: right;
@@ -782,17 +785,9 @@
   }
 }
 @media screen and (min-width: 768px) {
-  /* line 37, ../scss/_footer.scss */
+  /* line 40, ../scss/_footer.scss */
   #footer {
     font-size: 20px;
-  }
-  /* line 40, ../scss/_footer.scss */
-  #footer .footerleft a, #footer .footerright a {
-    box-shadow: none;
-    text-decoration: underline;
-    text-decoration-color: #e83e8c;
-    -moz-text-decoration-color: #e83e8c;
-    -webkit-text-decoration-color: #e83e8c;
   }
 }
 /* line 2, ../scss/_index.scss */
@@ -808,7 +803,10 @@
 /* line 10, ../scss/_index.scss */
 #container #content .post-area a {
   color: rgba(0, 0, 0, 0.84);
-  box-shadow: inset 0 -1px 0 white, inset 0 -3px 0 #e83e8c;
+  text-decoration: underline;
+  text-decoration-color: #e83e8c;
+  -moz-text-decoration-color: #e83e8c;
+  -webkit-text-decoration-color: #e83e8c;
 }
 /* line 17, ../scss/_index.scss */
 #container #content .post-area a:hover {
@@ -891,75 +889,73 @@
   color: #e83e8c;
   border: none;
   text-decoration: none;
-  box-shadow: none;
 }
-/* line 93, ../scss/_index.scss */
+/* line 92, ../scss/_index.scss */
 #container #content .post-area .post-author-container .post-author-info .post-author a[rel="twitter"] {
   color: rgba(0, 0, 0, 0.84);
 }
-/* line 95, ../scss/_index.scss */
+/* line 94, ../scss/_index.scss */
 #container #content .post-area .post-author-container .post-author-info .post-author a[rel="twitter"]:hover {
   color: #e83e8c;
 }
-/* line 99, ../scss/_index.scss */
+/* line 98, ../scss/_index.scss */
 #container #content .post-area .post-author-container .post-author-info .post-author p {
   margin: 0px;
 }
-/* line 105, ../scss/_index.scss */
+/* line 104, ../scss/_index.scss */
 #container #content .post-area .post-date {
   font-size: 16px;
   line-height: 1.9;
   height: auto;
 }
-/* line 109, ../scss/_index.scss */
+/* line 108, ../scss/_index.scss */
 #container #content .post-area .post-date p {
   display: inline-block;
   margin: 0px;
 }
-/* line 113, ../scss/_index.scss */
+/* line 112, ../scss/_index.scss */
 #container #content .post-area .post-date div {
   display: inline-block;
 }
-/* line 117, ../scss/_index.scss */
+/* line 116, ../scss/_index.scss */
 #container #content .post-area .category {
   text-transform: uppercase;
   margin: 0px;
   margin-top: 10px;
 }
-/* line 121, ../scss/_index.scss */
+/* line 120, ../scss/_index.scss */
 #container #content .post-area .category a {
   color: #e83e8c;
   text-decoration: none;
-  box-shadow: none;
 }
-/* line 126, ../scss/_index.scss */
+/* line 124, ../scss/_index.scss */
 #container #content .post-area .category ul {
   margin: 0px;
   padding: 0px;
   list-style: none;
 }
-/* line 130, ../scss/_index.scss */
+/* line 128, ../scss/_index.scss */
 #container #content .post-area .category ul li {
   list-style: none;
 }
-/* line 135, ../scss/_index.scss */
+/* line 133, ../scss/_index.scss */
 #container #content .post-area .postimg_single {
   width: 100%;
   padding-bottom: 65%;
   background-size: cover;
   background-position: center;
 }
-/* line 141, ../scss/_index.scss */
+/* line 139, ../scss/_index.scss */
 #container #content .post-area .postauthor {
   margin: 15px 0px;
 }
-/* line 144, ../scss/_index.scss */
+/* line 142, ../scss/_index.scss */
 #container #content .post-area .postmeta {
   -ms-word-wrap: break-word;
   word-wrap: break-word;
   margin: 30px 0px;
 }
-/* line 148, ../scss/_index.scss */
+/* line 146, ../scss/_index.scss */
 #container #content .post-area .postmeta a {
   border-radius: 5px;
   padding: 5px 10px 5px;
@@ -973,12 +969,12 @@
   text-decoration: none;
   box-shadow: none;
 }
-/* line 160, ../scss/_index.scss */
+/* line 158, ../scss/_index.scss */
 #container #content .post-area .postmeta a:hover {
   background: #e83e8c !important;
   color: white;
 }
-/* line 166, ../scss/_index.scss */
+/* line 164, ../scss/_index.scss */
 #container #content .post-area blockquote {
   margin-top: 29px;
   border-left: 3px solid rgba(0, 0, 0, 0.84);
@@ -987,42 +983,42 @@
   margin-left: 0px;
   font-style: italic;
 }
-/* line 173, ../scss/_index.scss */
+/* line 171, ../scss/_index.scss */
 #container #content .post-area blockquote p {
   margin: 0px;
 }
-/* line 177, ../scss/_index.scss */
+/* line 175, ../scss/_index.scss */
 #container #content .post-area pre {
   white-space: pre;
   -ms-word-wrap: break-word;
   word-wrap: break-word;
   overflow-x: auto;
 }
-/* line 183, ../scss/_index.scss */
+/* line 181, ../scss/_index.scss */
 #container #content .post-area .wp-caption {
   text-align: center;
 }
-/* line 186, ../scss/_index.scss */
+/* line 184, ../scss/_index.scss */
 #container #content .post-area .wp-caption-text {
   font-size: 14px;
   text-align: center;
   font-family: "whitney";
 }
-/* line 191, ../scss/_index.scss */
+/* line 189, ../scss/_index.scss */
 #container #content .post-area twitterwidget {
   margin: 10px auto;
 }
-/* line 194, ../scss/_index.scss */
+/* line 192, ../scss/_index.scss */
 #container #content .post-area iframe {
   display: block;
   margin: 0 auto;
   max-width: 100%;
 }
-/* line 200, ../scss/_index.scss */
+/* line 198, ../scss/_index.scss */
 #container #content .post-area .mtg_deck.mtg_deck_embedded .card_box {
   display: none;
 }
-/* line 204, ../scss/_index.scss */
+/* line 202, ../scss/_index.scss */
 #container #content .post-area .hipsters-sponsor {
   text-align: center;
   border-top: 1px solid rgba(0, 0, 0, 0.14);
@@ -1030,47 +1026,47 @@
   padding: 10px 0px;
   clear: both;
 }
-/* line 210, ../scss/_index.scss */
+/* line 208, ../scss/_index.scss */
 #container #content .post-area .hipsters-sponsor div {
   display: inline-block;
   vertical-align: middle;
   font-family: 'whitney';
   font-size: 16px;
 }
-/* line 216, ../scss/_index.scss */
+/* line 214, ../scss/_index.scss */
 #container #content .post-area .hipsters-sponsor a {
   text-decoration: none;
   box-shadow: none;
 }
-/* line 220, ../scss/_index.scss */
+/* line 218, ../scss/_index.scss */
 #container #content .post-area .hipsters-sponsor .cardkingdom-sponsor-left {
   margin: 0 10px;
 }
-/* line 222, ../scss/_index.scss */
+/* line 220, ../scss/_index.scss */
 #container #content .post-area .hipsters-sponsor .cardkingdom-sponsor-left p {
   margin: 5px 0;
 }
-/* line 226, ../scss/_index.scss */
+/* line 224, ../scss/_index.scss */
 #container #content .post-area .hipsters-sponsor .cardkingdom-sponsor-right {
   width: 257px;
   margin: 0 10px;
 }
-/* line 231, ../scss/_index.scss */
+/* line 229, ../scss/_index.scss */
 #container #content .post-area .hipsters-sponsor.cardkingdom-mid-banner img {
   width: 100%;
   height: auto;
   margin: 3px 0;
 }
-/* line 238, ../scss/_index.scss */
+/* line 236, ../scss/_index.scss */
 #container #content .post-area .inline-mailchimp-form {
   font-size: 16px;
 }
-/* line 240, ../scss/_index.scss */
+/* line 238, ../scss/_index.scss */
 #container #content .post-area .inline-mailchimp-form h3 {
   color: #e83e8c;
   margin: 16px 0px;
 }
-/* line 244, ../scss/_index.scss */
+/* line 242, ../scss/_index.scss */
 #container #content .post-area .inline-mailchimp-form .mc4wp-form {
   border-top: 1px solid rgba(0, 0, 0, 0.14);
   border-bottom: 1px solid rgba(0, 0, 0, 0.14);
@@ -1078,34 +1074,34 @@
   clear: both;
   line-height: 1.5;
 }
-/* line 250, ../scss/_index.scss */
+/* line 248, ../scss/_index.scss */
 #container #content .post-area .inline-mailchimp-form .mc4wp-form table {
   width: 100%;
 }
-/* line 252, ../scss/_index.scss */
+/* line 250, ../scss/_index.scss */
 #container #content .post-area .inline-mailchimp-form .mc4wp-form table td {
   display: table-cell;
 }
-/* line 254, ../scss/_index.scss */
+/* line 252, ../scss/_index.scss */
 #container #content .post-area .inline-mailchimp-form .mc4wp-form table td.label {
   width: 55px;
 }
-/* line 256, ../scss/_index.scss */
+/* line 254, ../scss/_index.scss */
 #container #content .post-area .inline-mailchimp-form .mc4wp-form table td.label label {
   margin-left: -3px;
 }
-/* line 260, ../scss/_index.scss */
+/* line 258, ../scss/_index.scss */
 #container #content .post-area .inline-mailchimp-form .mc4wp-form table td.submit-container {
   display: none;
   width: 90px;
   text-align: right;
 }
-/* line 264, ../scss/_index.scss */
+/* line 262, ../scss/_index.scss */
 #container #content .post-area .inline-mailchimp-form .mc4wp-form table td.submit-container input[type="submit"] {
   margin: 0px;
   -webkit-appearance: none;
 }
-/* line 270, ../scss/_index.scss */
+/* line 268, ../scss/_index.scss */
 #container #content .post-area .inline-mailchimp-form .mc4wp-form table input[type="email"] {
   font-size: 16px;
   font-weight: 100;
@@ -1114,11 +1110,11 @@
   width: 100%;
   box-sizing: border-box;
 }
-/* line 279, ../scss/_index.scss */
+/* line 277, ../scss/_index.scss */
 #container #content .post-area .inline-mailchimp-form .mc4wp-form .button-container {
   text-align: right;
 }
-/* line 281, ../scss/_index.scss */
+/* line 279, ../scss/_index.scss */
 #container #content .post-area .inline-mailchimp-form .mc4wp-form .button-container input[type="submit"] {
   font-family: 'whitney';
   border-radius: 5px;
@@ -1134,68 +1130,68 @@
   margin-bottom: 10px;
   -webkit-appearance: none;
 }
-/* line 295, ../scss/_index.scss */
+/* line 293, ../scss/_index.scss */
 #container #content .post-area .inline-mailchimp-form .mc4wp-form .button-container input[type="submit"]:hover {
   background: #e83e8c !important;
   color: white;
 }
-/* line 304, ../scss/_index.scss */
+/* line 302, ../scss/_index.scss */
 #container #content .post-area .rp4wp-related-posts .related-posts-list, #container #content .post-area .rp4wp-related-post .related-posts-list {
   padding: 0px;
   margin: 0px;
 }
-/* line 307, ../scss/_index.scss */
+/* line 305, ../scss/_index.scss */
 #container #content .post-area .rp4wp-related-posts .related-posts-list .related-post, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post {
   padding: 25px 0px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.14);
 }
-/* line 310, ../scss/_index.scss */
+/* line 308, ../scss/_index.scss */
 #container #content .post-area .rp4wp-related-posts .related-posts-list .related-post.first, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post.first {
   border-top: 1px solid rgba(0, 0, 0, 0.14);
 }
-/* line 313, ../scss/_index.scss */
+/* line 311, ../scss/_index.scss */
 #container #content .post-area .rp4wp-related-posts .related-posts-list .related-post div, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post div {
   display: inline-block;
   vertical-align: middle;
 }
-/* line 317, ../scss/_index.scss */
+/* line 315, ../scss/_index.scss */
 #container #content .post-area .rp4wp-related-posts .related-posts-list .related-post .related-post-info, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post .related-post-info {
   width: 75%;
   padding-right: 15px;
   box-sizing: border-box;
 }
-/* line 321, ../scss/_index.scss */
+/* line 319, ../scss/_index.scss */
 #container #content .post-area .rp4wp-related-posts .related-posts-list .related-post .related-post-info h4.related, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post .related-post-info h4.related {
   margin: 0px;
   font-size: 14px;
 }
-/* line 325, ../scss/_index.scss */
+/* line 323, ../scss/_index.scss */
 #container #content .post-area .rp4wp-related-posts .related-posts-list .related-post .related-post-info h3.related, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post .related-post-info h3.related {
   margin: 0px;
 }
-/* line 327, ../scss/_index.scss */
+/* line 325, ../scss/_index.scss */
 #container #content .post-area .rp4wp-related-posts .related-posts-list .related-post .related-post-info h3.related a, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post .related-post-info h3.related a {
   color: rgba(0, 0, 0, 0.84);
 }
-/* line 331, ../scss/_index.scss */
+/* line 329, ../scss/_index.scss */
 #container #content .post-area .rp4wp-related-posts .related-posts-list .related-post .related-post-info p, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post .related-post-info p {
   margin: 0px;
   font-size: 18px;
 }
-/* line 336, ../scss/_index.scss */
+/* line 334, ../scss/_index.scss */
 #container #content .post-area .rp4wp-related-posts .related-posts-list .related-post .related-post-info .related.category a, #container #content .post-area .rp4wp-related-posts .related-posts-list .related-post .related-post-info .related.post-title a, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post .related-post-info .related.category a, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post .related-post-info .related.post-title a {
   text-decoration: none;
 }
-/* line 341, ../scss/_index.scss */
+/* line 339, ../scss/_index.scss */
 #container #content .post-area .rp4wp-related-posts .related-posts-list .related-post .related-post-info .related.post-date a, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post .related-post-info .related.post-date a {
   text-decoration: none;
   color: #e83e8c;
 }
-/* line 347, ../scss/_index.scss */
+/* line 345, ../scss/_index.scss */
 #container #content .post-area .rp4wp-related-posts .related-posts-list .related-post .related-post-image, #container #content .post-area .rp4wp-related-post .related-posts-list .related-post .related-post-image {
   width: 25%;
 }
-/* line 354, ../scss/_index.scss */
+/* line 352, ../scss/_index.scss */
 #container #content .share-bar {
   font-size: 0;
   visibility: hidden;
@@ -1210,16 +1206,16 @@
   margin: 0 auto;
   text-align: center;
 }
-/* line 367, ../scss/_index.scss */
+/* line 365, ../scss/_index.scss */
 #container #content .share-bar.is-visible {
   visibility: visible;
   transition-delay: 0s;
 }
-/* line 371, ../scss/_index.scss */
+/* line 369, ../scss/_index.scss */
 #container #content .share-bar.is-visible .share-bar-container .share-bar-content {
   transform: translateY(0);
 }
-/* line 376, ../scss/_index.scss */
+/* line 374, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container {
   position: relative;
   height: 0;
@@ -1234,7 +1230,7 @@
   flex-direction: row;
   align-items: stretch;
 }
-/* line 389, ../scss/_index.scss */
+/* line 387, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content {
   box-sizing: border-box;
   position: absolute;
@@ -1248,11 +1244,11 @@
   margin-right: -20px;
   margin-left: -20px;
 }
-/* line 401, ../scss/_index.scss */
+/* line 399, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content a {
   color: rgba(0, 0, 0, 0.84);
 }
-/* line 404, ../scss/_index.scss */
+/* line 402, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share {
   width: 33.3%;
   display: inline-block;
@@ -1264,37 +1260,37 @@
   -webkit-transition: background-color 200ms;
   transition: background-color 200ms;
 }
-/* line 414, ../scss/_index.scss */
+/* line 412, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share.mid {
   border-left: 1px solid rgba(0, 0, 0, 0.14);
   border-right: 1px solid rgba(0, 0, 0, 0.14);
   box-sizing: border-box;
 }
-/* line 420, ../scss/_index.scss */
+/* line 418, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share.twitter:hover {
   background: #32CCFE;
 }
-/* line 422, ../scss/_index.scss */
+/* line 420, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share.twitter:hover i {
   color: white;
 }
-/* line 428, ../scss/_index.scss */
+/* line 426, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share.facebook:hover {
   background: #3c5a9e;
 }
-/* line 430, ../scss/_index.scss */
+/* line 428, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share.facebook:hover i {
   color: white;
 }
-/* line 436, ../scss/_index.scss */
+/* line 434, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share.email:hover {
   background: #e83e8c;
 }
-/* line 438, ../scss/_index.scss */
+/* line 436, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share.email:hover i {
   color: white;
 }
-/* line 443, ../scss/_index.scss */
+/* line 441, ../scss/_index.scss */
 #container #content .share-bar .share-bar-container .share-bar-content .social-share i {
   padding: 0px;
   -moz-transition: color 200ms;
@@ -1304,53 +1300,52 @@
 }
 
 @media screen and (min-width: 768px) {
-  /* line 458, ../scss/_index.scss */
+  /* line 456, ../scss/_index.scss */
   #container {
     margin-top: 9px;
   }
-  /* line 463, ../scss/_index.scss */
+  /* line 461, ../scss/_index.scss */
   #container #content .post-area blockquote {
     margin-left: -23px;
   }
-  /* line 466, ../scss/_index.scss */
+  /* line 464, ../scss/_index.scss */
   #container #content .post-area a {
-    box-shadow: none;
     text-decoration: underline;
     text-decoration-color: #e83e8c;
     -moz-text-decoration-color: #e83e8c;
     -webkit-text-decoration-color: #e83e8c;
   }
-  /* line 474, ../scss/_index.scss */
+  /* line 471, ../scss/_index.scss */
   #container #content .post-area .post-author-container .post-author-image {
     width: 66px;
     height: 66px;
   }
-  /* line 479, ../scss/_index.scss */
+  /* line 476, ../scss/_index.scss */
   #container #content .post-area .post-date {
     height: 32px;
     font-size: 16px;
   }
-  /* line 483, ../scss/_index.scss */
+  /* line 480, ../scss/_index.scss */
   #container #content .post-area .mtg_deck.mtg_deck_embedded .card_box {
     display: block;
   }
-  /* line 486, ../scss/_index.scss */
+  /* line 483, ../scss/_index.scss */
   #container #content .post-area .inline-mailchimp-form {
     text-align: center;
   }
-  /* line 489, ../scss/_index.scss */
+  /* line 486, ../scss/_index.scss */
   #container #content .post-area .inline-mailchimp-form .mc4wp-form table {
     margin-bottom: 16px;
   }
-  /* line 492, ../scss/_index.scss */
+  /* line 489, ../scss/_index.scss */
   #container #content .post-area .inline-mailchimp-form .mc4wp-form table td.label {
     width: 110px;
   }
-  /* line 495, ../scss/_index.scss */
+  /* line 492, ../scss/_index.scss */
   #container #content .post-area .inline-mailchimp-form .mc4wp-form table td.submit-container {
     display: table-cell;
   }
-  /* line 500, ../scss/_index.scss */
+  /* line 497, ../scss/_index.scss */
   #container #content .post-area .inline-mailchimp-form .mc4wp-form .button-container {
     display: none;
   }
@@ -2132,7 +2127,15 @@
     display: inline-block;
   }
 }
-/* line 16, ../scss/base.scss */
+/* line 1, ../scss/_scryfall.scss */
+.scryfall_hover-zoom {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px !important;
+}
+
+/* line 17, ../scss/base.scss */
 body {
   width: 100%;
   height: auto;
@@ -2142,100 +2145,100 @@ body {
   line-height: 2;
   color: rgba(0, 0, 0, 0.84);
 }
-/* line 25, ../scss/base.scss */
+/* line 26, ../scss/base.scss */
 body strong {
   font-weight: 800;
 }
-/* line 29, ../scss/base.scss */
+/* line 30, ../scss/base.scss */
 body h1, body h2, body h3, body h4, body h5 {
   font-family: 'whitney';
   -ms-word-wrap: break-word;
   word-wrap: break-word;
 }
-/* line 33, ../scss/base.scss */
+/* line 34, ../scss/base.scss */
 body h1.mtg_deck_title, body h2.mtg_deck_title, body h3.mtg_deck_title, body h4.mtg_deck_title, body h5.mtg_deck_title {
   text-decoration: none;
 }
-/* line 38, ../scss/base.scss */
+/* line 39, ../scss/base.scss */
 body h1 {
   line-height: 1.4;
 }
-/* line 42, ../scss/base.scss */
+/* line 43, ../scss/base.scss */
 body #wrap {
   max-width: 1024px;
   padding: 0px 15px;
   margin: 0 auto;
   letter-spacing: .05px;
 }
-/* line 48, ../scss/base.scss */
+/* line 49, ../scss/base.scss */
 body #wrap #spacer img {
   width: 90%;
   padding: 15px;
   visibility: collapse;
 }
-/* line 54, ../scss/base.scss */
+/* line 55, ../scss/base.scss */
 body #wrap #pagination {
   text-align: center;
   -ms-word-wrap: break-word;
   word-wrap: break-word;
 }
-/* line 58, ../scss/base.scss */
+/* line 59, ../scss/base.scss */
 body #wrap #pagination a {
   margin: 0 5px;
 }
-/* line 64, ../scss/base.scss */
+/* line 65, ../scss/base.scss */
 body .highlight-and-share-wrapper div {
   margin: 0px;
   background: white;
   border: 1px solid rgba(0, 0, 0, 0.14);
 }
-/* line 69, ../scss/base.scss */
+/* line 70, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_twitter a {
   color: black;
 }
-/* line 72, ../scss/base.scss */
+/* line 73, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_twitter:hover {
   background: #32CCFE;
 }
-/* line 74, ../scss/base.scss */
+/* line 75, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_twitter:hover a {
   color: white;
 }
-/* line 79, ../scss/base.scss */
+/* line 80, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_facebook {
   background: white;
   border-left: none;
 }
-/* line 82, ../scss/base.scss */
+/* line 83, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_facebook a {
   color: black;
 }
-/* line 85, ../scss/base.scss */
+/* line 86, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_facebook:hover {
   background: #3c5a9e;
 }
-/* line 87, ../scss/base.scss */
+/* line 88, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_facebook:hover a {
   color: white;
 }
-/* line 92, ../scss/base.scss */
+/* line 93, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_email {
   background: white;
   border-left: none;
 }
-/* line 95, ../scss/base.scss */
+/* line 96, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_email a {
   color: black;
 }
-/* line 98, ../scss/base.scss */
+/* line 99, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_email:hover {
   background: #e83e8c;
 }
-/* line 100, ../scss/base.scss */
+/* line 101, ../scss/base.scss */
 body .highlight-and-share-wrapper div.has_email:hover a {
   color: white;
 }
-/* line 105, ../scss/base.scss */
+/* line 106, ../scss/base.scss */
 body .highlight-and-share-wrapper div a {
   padding: 0px;
   -moz-transition: color 200ms;
@@ -2243,33 +2246,33 @@ body .highlight-and-share-wrapper div a {
   -webkit-transition: color 200ms;
   transition: color 200ms;
 }
-/* line 111, ../scss/base.scss */
+/* line 112, ../scss/base.scss */
 body .highlight-and-share-wrapper div a:hover {
   padding: 0px;
 }
-/* line 114, ../scss/base.scss */
+/* line 115, ../scss/base.scss */
 body .highlight-and-share-wrapper div a i {
   width: 31px;
   height: 28px;
   text-align: center;
 }
-/* line 121, ../scss/base.scss */
+/* line 122, ../scss/base.scss */
 body .highlight-and-share-wrapper .fa {
   font-size: 2em;
 }
 
 @media screen and (min-width: 768px) {
-  /* line 128, ../scss/base.scss */
+  /* line 129, ../scss/base.scss */
   body {
     font-size: 20px;
     line-height: 2;
   }
-  /* line 132, ../scss/base.scss */
+  /* line 133, ../scss/base.scss */
   body h1 {
     font-size: 3rem;
     line-height: 1.5;
   }
-  /* line 137, ../scss/base.scss */
+  /* line 138, ../scss/base.scss */
   body #wrap #spacer {
     display: none;
   }

@@ -9,11 +9,11 @@
     .post-area {
       a {
         color: $black;
-        box-shadow: inset 0 -1px 0 white, inset 0 -3px 0 #e83e8c;
-        // text-decoration: underline;
-        // text-decoration-color: $primary;
-        // -moz-text-decoration-color: $primary;
-        // -webkit-text-decoration-color: $primary;
+        // box-shadow: inset 0 -1px 0 white, inset 0 -3px 0 #e83e8c;
+        text-decoration: underline;
+        text-decoration-color: $primary;
+        -moz-text-decoration-color: $primary;
+        -webkit-text-decoration-color: $primary;
         &:hover {
           color: $primary;
         }
@@ -88,7 +88,6 @@
               color: $primary;
               border: none;
               text-decoration: none;
-              box-shadow: none;
             }
             a[rel="twitter"] {
               color: $black;
@@ -121,7 +120,6 @@
         a{
           color: $primary;
           text-decoration: none;
-          box-shadow: none;
         }
         ul {
           margin: 0px;
@@ -464,7 +462,6 @@
           margin-left: -23px;
         }
         a {
-          box-shadow: none;
           text-decoration: underline;
           text-decoration-color: $primary;
           -moz-text-decoration-color: $primary;

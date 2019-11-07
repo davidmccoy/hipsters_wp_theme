@@ -188,18 +188,25 @@ Template Name: Shop
                                 <div class="product-container">
                                   <div class="product">
                                     <div>
-                                      <div class="product-image" style="background-image: url('/assets/products/hipsters-store-playmat-sun-logo.jpg')">
-                                      </div>
+                                      <a href="https://www.inkedgaming.com/products/hipster-sun-playmat" target="_blank" onclick="ga('send', 'event', 'Sun Logo Playmat', 'click', 'Hipsters Apparel Spring 2018');">
+                                        <div class="product-image" style="background-image: url('/assets/products/hipsters-store-playmat-sun-logo.jpg')">
+                                        </div>
+                                      </a>
                                     </div>
                                     <div class="product-info">
                                       <div class="product-category">
                                         PLAYMAT
                                       </div>
-                                      <div class="product-title">
-                                        Playmat With Sun Logo
-                                      </div>
+                                      <a href="https://www.inkedgaming.com/products/hipster-sun-playmat" target="_blank" onclick="ga('send', 'event', 'Sun Logo Playmat', 'click', 'Hipsters Apparel Spring 2018');">
+                                        <div class="product-title">
+                                          Playmat With Sun Logo
+                                        </div>
+                                      </a>
                                       <div class="product-description">
-                                        Coming soon!
+                                        Standard playmat size of 24" x 14".
+                                      </div>
+                                      <div class="product-price">
+                                        <em>$19.99</em>
                                       </div>
                                     </div>
                                   </div>
@@ -222,7 +229,7 @@ Template Name: Shop
 																				</a>
                                       </div>
                                       <div class="product-description">
-                                        Standard playmat size of 24"x14".
+                                        Standard playmat size of 24" x 14".
                                       </div>
 																			<div class="product-price">
                                         <em>$19.99</em>

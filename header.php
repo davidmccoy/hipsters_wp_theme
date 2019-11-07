@@ -10,7 +10,7 @@
 <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
 
 <title><?php wp_title(''); ?><?php if(wp_title('', false)) { echo ' :'; } ?> <?php bloginfo('name'); ?></title>
-<link rel="Shortcut Icon" href="http://www.hipstersofthecoast.com/favicon.ico" type="image/x-icon" />
+<link rel="Shortcut Icon" href="https://www.hipstersofthecoast.com/favicon.ico" type="image/x-icon" />
 
 <!-- style -->
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/base.css" type="text/css" media="screen" />
