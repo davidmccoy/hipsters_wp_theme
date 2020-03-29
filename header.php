@@ -20,6 +20,8 @@
 <link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> <?php _e("Atom Feed", 'organicthemes'); ?>" href="<?php bloginfo('atom_url'); ?>" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-42146894-1"></script>
+
 <?php wp_enqueue_script("jquery"); ?>
 <?php wp_head(); ?>
 

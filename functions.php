@@ -337,6 +337,20 @@ function custom_excerpt_length( $length ) {
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 
 /**
+ * Add Google Analytics
+ */
+
+function google_load_file() {
+	$this_post = get_queried_object();
+	$author_id = $this_post->post_author;
+	$name = get_the_author_meta('display_name', $author_id);
+
+	wp_enqueue_script( 'author-tracking', get_stylesheet_directory_uri() . '/js/google.js', array(), '1.0.0', true );
+	wp_localize_script( 'author-tracking', 'author', array( 'name' => $name ) );
+}
+add_action( 'wp_enqueue_scripts', 'google_load_file' );
+
+/**
  * Add infinite scroll to homepage
  */
 
