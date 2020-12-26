@@ -178,10 +178,10 @@
         word-wrap: break-word;
         overflow-x: auto;
       }
-      .wp-caption {
+      .wp-caption, figcaption {
         text-align: center;
       }
-      .wp-caption-text {
+      .wp-caption-text, figcaption {
         font-size: 14px;
         text-align: center;
         font-family: "whitney";

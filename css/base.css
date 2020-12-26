@@ -995,11 +995,11 @@
   overflow-x: auto;
 }
 /* line 181, ../scss/_index.scss */
-#container #content .post-area .wp-caption {
+#container #content .post-area .wp-caption, #container #content .post-area figcaption {
   text-align: center;
 }
 /* line 184, ../scss/_index.scss */
-#container #content .post-area .wp-caption-text {
+#container #content .post-area .wp-caption-text, #container #content .post-area figcaption {
   font-size: 14px;
   text-align: center;
   font-family: "whitney";
