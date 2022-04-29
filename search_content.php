@@ -36,7 +36,7 @@
     </a>
   </h2>
   <div class="post-author-container">
-    <div class="post-author-image" style="background-image: url('<?php echo get_wp_user_avatar_src($author, 66); ?> ');">
+    <div class="post-author-image" style="background-image: url('<?php echo get_wp_user_avatar_src(get_the_author_meta( 'ID' ), 66); ?> ');">
     </div>
     <div class="post-author-info">
       <div class="post-author">

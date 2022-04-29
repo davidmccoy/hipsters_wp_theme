@@ -537,7 +537,7 @@ function ad_injection() {
 			echo '<div class="homepagecontent">
 			<div class="post_container">
 		    <a href="https://www.cardkingdom.com/?utm_source=hipsters&utm_medium=affiliate" target="_blank" onclick="ga(\'send\', \'event\', \'Card Kingdom Homepage Ad\', \'click\', \'Card Kingdom 2018\');">
-		      <div class="featured_image" style="background-image: url(/assets/cardkingdom/Hipsters_Ad_Shipping_SNC-preorder.jpg.jpg)">
+		      <div class="featured_image" style="background-image: url(/assets/cardkingdom/Hipsters_Ad_Shipping_SNC-order.jpg)">
 		      </div>
 		    </a>
 		    <div class="homeinfo">

@@ -1504,7 +1504,7 @@
 }
 /* line 134, ../scss/_category.scss */
 #container #content.category .homepagecontent .featured_image, #container #content.tag .homepagecontent .featured_image, #container #content.search .homepagecontent .featured_image {
-  background-image: url("/assets/cardkingdom/Hipsters_Ad_Sell_SNC-preorder.jpg") !important;
+  background-image: url("/assets/cardkingdom/Hipsters_Ad_Sell_SNC-order.jpg") !important;
   width: 100%;
   background-position: center;
   background-size: cover;
@@ -1742,7 +1742,7 @@
 }
 /* line 143, ../scss/_author.scss */
 #container #content.author .homepagecontent .featured_image {
-  background-image: url("/assets/cardkingdom/Hipsters_Ad_Sell_SNC-preorder.jpg") !important;
+  background-image: url("/assets/cardkingdom/Hipsters_Ad_Sell_SNC-order.jpg") !important;
   width: 100%;
   background-position: center;
   background-size: cover;
